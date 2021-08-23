@@ -1,6 +1,6 @@
 <script>
-	import Navigation from '../data/Navigation';
-    import Constants from '../data/Constants'
+	import Navigation from '@/data/Navigation';
+    import Constants from '@/data/Constants'
 export default {
   data() {
     return {
@@ -27,7 +27,7 @@ export default {
 
 <header>
 	<div class="bg-transparent max-w-full block w-full fixed bg-discortics-500 z-50 md:bg-transparent md:static">
-		<div class="max-w-9xl mx-auto px-2 md:px-6 lg:px-8">
+		<div class="max-w-9xl mx-auto px-2 md:px-6 lg:px-8 md:mt-4">
 			<div class="relative flex items-center justify-between h-16">
 				<div class="relative inset-y-0 left-0 flex items-center md:hidden">
 					<button
@@ -79,14 +79,14 @@ export default {
                             <img class="h-12 w-auto p-2" src="/img/90x90.png" alt="Discortics" />
                             <p class = "p-2 text-2xl block md:hidden font-bold">{{ Constants.Name }}</p>
                         </div>
-						<div class="flex md:space-x-4 flex-col md:flex-row md:pt-0 pt-10 md:divide-x md:divide-gray-300">
+						<div class="flex md:space-x-4 flex-col md:flex-row md:pt-0 pt-10">
 								<a
                                 v-for = "{ name, route, key } in Navigation"
                                 :key = "key"
 								:href='(typeof route == "string") ? route : "#"'
-								:class="($nuxt.$route.path.replace(/\//g, '') === key
-								? 'bg-gray-900'
-								: '') + (Array.isArray(route) ? 'group' : '') + 'tracking-wide px-3 md:uppercase py-4 hover:rounded-md text-sm md:text-md font-medium text-gray-300 hover:text-white hover:bg-gray-900 block'"
+								:class="((title === key)
+								? 'bg-gray-900 '
+								: '') + (Array.isArray(route) ? 'group ' : '') + 'tracking-wide px-3 md:uppercase py-4 rounded-md text-sm md:text-md font-medium text-gray-300 hover:text-white hover:bg-gray-900 block'"
 									>
                                     {{ name }}
 									<div v-if = "Array.isArray(route)" class = "absolute flex bg-discortics-quote text-sm p-2 rounded-md flex-col invisible md:top-10 transform transition duration-300 ease-in-out group-focus:translate-y-10 group-focus:visible">
