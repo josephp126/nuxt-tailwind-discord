@@ -2,7 +2,7 @@
   <div class="error404 text-center">
     <div class="error-content">
       <div class="">
-        <h1 class="error-number">{status}</h1>
+        <h1 class="error-number">{{error.statusCode}}</h1>
         <p class="mini-text">Ooops!</p>
         <p class="error-text mb-4 mt-1">Are you lost? Don't Worry!</p>
         <div class="p-8">
@@ -34,6 +34,12 @@
 </template>
 <script>
 export default {
-  props: ['error'],
+  props: {
+    error: {
+      type: Object,
+      default() {return {statusCode: 400}},
+    }
+  },
 }
 </script>    
+<style scoped src = '@/static/css/400.css' />
