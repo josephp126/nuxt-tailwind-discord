@@ -35,6 +35,7 @@ module.exports = {
             'link': '#25d5e4',
             'header': '#1b2e4b',
             'server': '#1c283c',
+            'dashboard': '#0e1726'
           },
         },
         translate: {
