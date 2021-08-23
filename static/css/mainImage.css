@@ -1,0 +1,68 @@
+#headerWrapper .hero-img {
+    max-width: 770px;
+    margin: 20px auto 0;
+    position: relative;
+}
+#headerWrapper img {
+    position: absolute;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    border-radius: 6px;
+}
+#headerWrapper img.header-left {
+    animation-name: jumbo-left;
+    animation-delay: 0.4s;
+    top: 60px;
+    left: -165px;
+    transform: rotate(-10deg) translateX(280px);
+}
+#headerWrapper img.header-right {
+    animation-name: jumbo-right;
+    animation-delay: 0.4s;
+    top: 62px;
+    right: -165px;
+    transform: rotate(6deg) translateX(-280px);
+}
+#headerWrapper img.header-center {
+    animation-name: jumbo-intro;
+    left: 50%;
+    margin-left: -480px;
+}
+@keyframes jumbo-intro {
+    0% {
+        transform: translateY(140px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes jumbo-right {
+    0% {
+        transform: rotate(0deg) translateX(-280px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(6deg) translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes jumbo-left {
+
+    0% {
+        transform: rotate(0deg) translateX(280px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(-10deg) translateX(0px);
+        opacity: 1;
+    }
+}
+@media(max-width: 1199px) {
+    #headerWrapper img.header-right, #headerWrapper img.header-left { display: none; }
+    #headerWrapper img.header-center { margin-left: 0; left: 0; }
+}
