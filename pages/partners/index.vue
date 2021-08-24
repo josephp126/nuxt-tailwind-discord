@@ -107,7 +107,7 @@ export default {
       <div class="container" data-aos="fade-up">
         <div class="grid grid-cols-1 md:grid-cols-3 justify-between mx-auto">
           <div v-for="partner in PartnerList" :key="partner.title" class="p-2">
-            <Partner
+            <CardsPartner
               :title="partner.title"
               :description="partner.description"
               :link="partner.link"

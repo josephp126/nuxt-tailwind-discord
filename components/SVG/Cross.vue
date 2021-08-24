@@ -2,19 +2,19 @@
   <div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      fill="none"
       :width="size"
       :height="size"
       viewBox="0 0 24 24"
-      fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-bar-chart-2"
+      aria-hidden="true"
     >
-      <line x1="18" y1="20" x2="18" y2="10"></line>
-      <line x1="12" y1="20" x2="12" y2="4"></line>
-      <line x1="6" y1="20" x2="6" y2="14"></line>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      />
     </svg>
   </div>
 </template>
@@ -25,8 +25,8 @@ export default {
       type: String,
       default() {
         return '24'
-      }
-    }
-  }
+      },
+    },
+  },
 }
 </script>

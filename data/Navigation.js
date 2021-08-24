@@ -4,22 +4,26 @@ export default [
     {
         name: `Dashboard`,
         route: `/dashboard`,
-        key: `dashboard`
+        key: `dashboard`,
+        icon: `sliders`
     },
     {
         name: `Support`,
         route: `${Constants.Discord}`,
-        key: `support`
+        key: `support`,
+        icon: `helpcircle`
     },
     {
         name: `Documentation`,
         route: `${Constants.Documentation}`,
-        key: `documentation`
+        key: `documentation`,
+        icon: `book`
     },
     {
         name: `Partners`,
         route: `/partners`,
-        key: `partners`
+        key: `partners`,
+        icon: `sliders`
     },
     {
         name: `More`,
@@ -40,6 +44,7 @@ export default [
                 route2: "/privacy",
             },
         ],
-        key: `more`
+        key: `more`,
+        icon: `pluscircle`
     },
 ]
