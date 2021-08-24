@@ -30,6 +30,7 @@ module.exports = {
             '300': '#5c1ac3',
             '400': '#888ea8',
             '500': '#191e3a',
+            '600': '#1f2547',
             'container': '#111f346b',
             'quote': '#1b2e4b',
             'link': '#25d5e4',
@@ -63,7 +64,7 @@ module.exports = {
       extend: {
         backgroundImage: ['hover', 'focus'],
         translate: ['active', 'group-hover', 'group-focus', 'hover'],
-        visibility: ['hover', 'focus', 'group-focus'],
+        visibility: ['hover', 'focus', 'group-hover'],
       },
     },
     plugins: [],

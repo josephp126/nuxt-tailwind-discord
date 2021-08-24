@@ -20,6 +20,7 @@ export default {
     <LayoutHeader :title="$nuxt.$route.path.split('/').reverse()[0]" />
     <main class="flex-1 w-full max-w-9xl p-4 mx-auto md:px-8 md:py-16 mt-5">
       <Nuxt />
+      <LayoutFab />
     </main>
     <LayoutFooter />
   </div>
