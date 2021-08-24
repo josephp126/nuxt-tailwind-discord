@@ -1,48 +1,66 @@
 <template>
-<div>
-  <div class="fixed p-4 bottom-0 right-0 flex flex-col items-center z-40">
-    <div
-      id="fabItems"
-      :class="`transform transition duration-500 ease-in-out ${
-        toggleNav ? 'translate-y-0' : 'translate-y-120'
-      }`"
-    >
-      <ul class="p-4 flex-col justify-center space-y-1">
-        <a
-          v-for="navItem in Navigation"
-          :key="navItem.key"
-          :href="navItem.route"
-          class="relative p-2 group flex items-center"
-          v-tooltip="{placement: 'left', content: navItem.name, trigger: 'hover', classes: 'text-white font-bold text-md', html: false}"
-        >
-          <li class="rounded-full flex items-center p-4 w-16 bg-discortics-600">
-            <div class="px-auto">
-              <SVGWrapper :name="navItem.icon" />
-            </div>
-          </li>
-        </a>
-      </ul>
-    </div>
-
-    <div id="fabButton" class="rounded-full bg-discortics-500 w-16 z-50 bg-opacity-50 hover:bg-opacity-100">
-      <button
-        :class="`p-4 transform transition duration-500 ease-in-out mx-auto block ${
-          toggleNav ? 'rotate-90' : ''
+  <div>
+    <div class="fixed p-4 bottom-0 right-0 flex flex-col items-center z-40">
+      <div
+        id="fabItems"
+        :class="`transform transition duration-500 ease-in-out ${
+          toggleNav ? 'translate-y-0' : 'translate-y-120'
         }`"
-        @click="toggleBoth"
       >
-        <SVGBars v-if="!toggleNav" />
-        <SVGCross v-if="toggleNav" />
-      </button>
+        <ul class="p-4 flex-col justify-center space-y-1">
+          <a
+            v-for="navItem in Navigation"
+            :key="navItem.key"
+            v-tooltip="{
+              placement: 'left',
+              content: navItem.name,
+              trigger: 'hover',
+              classes: 'text-white font-bold text-md',
+              html: false,
+            }"
+            :href="navItem.route"
+            class="relative p-2 group flex items-center"
+          >
+            <li
+              class="rounded-full flex items-center p-4 w-16 bg-discortics-600"
+            >
+              <div class="px-auto">
+                <SVGWrapper :name="navItem.icon" />
+              </div>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div
+        id="fabButton"
+        class="
+          rounded-full
+          bg-discortics-500
+          w-16
+          z-50
+          bg-opacity-50
+          hover:bg-opacity-100
+        "
+      >
+        <button
+          :class="`p-4 transform transition duration-500 ease-in-out mx-auto block ${
+            toggleNav ? 'rotate-90' : ''
+          }`"
+          @click="toggleBoth"
+        >
+          <SVGBars v-if="!toggleNav" />
+          <SVGCross v-if="toggleNav" />
+        </button>
+      </div>
     </div>
-  </div>
-          <div
+    <div
       :class="`inset-0 w-full fixed h-full z-30 block ${
         toggleNav ? 'visible' : 'invisible'
       }`"
       @click="toggleOff"
     ></div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -58,7 +76,7 @@ export default {
   data() {
     return {
       toggleNav: false,
-      Navigation,
+      Navigation: Navigation.filter((x) => typeof x.route === 'string'),
       Constants,
     }
   },

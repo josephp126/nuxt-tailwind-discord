@@ -136,6 +136,7 @@ export default {
                   h-16
                 "
               >
+              <NuxtLink to = "/">
                 <img
                   class="h-12 w-auto p-2"
                   src="/img/90x90.png"
@@ -144,12 +145,13 @@ export default {
                 <p class="p-2 text-2xl block md:hidden font-bold">
                   {{ Constants.Name }}
                 </p>
+              </NuxtLink>
               </div>
               <div class="flex md:space-x-4 flex-col md:flex-row md:pt-0 pt-10">
-                <a
+                <NuxtLink
                   v-for="{ name, route, key, icon } in Navigation"
                   :key="key"
-                  :href="typeof route == 'string' ? route : '#'"
+                  :to="typeof route == 'string' ? route : '#'"
                   :class="
                     (title === key ? 'bg-gray-900 ' : '') +
                     (Array.isArray(route) ? 'group ' : '') +
@@ -177,7 +179,7 @@ export default {
                       group-focus:translate-y-10 group-focus:visible
                     "
                   >
-                    <a
+                    <NuxtLink
                       v-for="{ name2, route2, key2 } in route"
                       :key="key2"
                       class="
@@ -186,11 +188,11 @@ export default {
                         text-gray-300
                         hover:text-white
                       "
-                      :href="route2"
-                      >{{ name2 }}</a
+                      :to="route2"
+                      >{{ name2 }}</NuxtLink
                     >
                   </div>
-                </a>
+                </NuxtLink>
               </div>
             </div>
             <div

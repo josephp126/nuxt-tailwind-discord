@@ -25,55 +25,14 @@
 					on:click={fireSwal}
 					class="flex rounded-md border border-white block transition duration-500 ease-in-out transform hover:-translate-y-1 p-2 bg-gradient-to-r from-red-400 to-red-600"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-send"
-							><line x1="22" y1="2" x2="11" y2="13" /><polygon
-								points="22 2 15 22 11 13 2 9 22 2"
-							/></svg
-						> Invite Bot</button
+						<SVGSend size = "20"/> <span class = "px-2">Invite Bot</span></button
 					>
 					<a
 						id="dash3"
 						href="https://discord.com/api/oauth2/authorize?client_id=739735540483752006&redirect_uri=https%3A%2F%2Fdiscortics.com%2Fcallback.html&response_type=token&scope=identify%20guilds "
 						><button
 							class="flex rounded-md border border-white block transition duration-500 ease-in-out transform hover:-translate-y-1 p-2 bg-gradient-to-r from-gray-700 to-gray-900"
-							><svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-sliders"
-								><line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" /><line
-									x1="12"
-									y1="21"
-									x2="12"
-									y2="12"
-								/><line x1="12" y1="8" x2="12" y2="3" /><line
-									x1="20"
-									y1="21"
-									x2="20"
-									y2="16"
-								/><line x1="20" y1="12" x2="20" y2="3" /><line x1="1" y1="14" x2="7" y2="14" /><line
-									x1="9"
-									y1="8"
-									x2="15"
-									y2="8"
-								/><line x1="17" y1="16" x2="23" y2="16" /></svg
-							> Dashboard</button
+							><SVGSliders size = "20"/> <span class = "px-2">Dashboard</span></button
 						></a
 					>
 				</p>
