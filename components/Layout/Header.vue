@@ -148,10 +148,10 @@ export default {
               </NuxtLink>
               </div>
               <div class="flex md:space-x-4 flex-col md:flex-row md:pt-0 pt-10">
-                <NuxtLink
+                <a
                   v-for="{ name, route, key, icon } in Navigation"
                   :key="key"
-                  :to="typeof route == 'string' ? route : '#'"
+                  :href="typeof route == 'string' ? route : '#'"
                   :class="
                     (title === key ? 'bg-gray-900 ' : '') +
                     (Array.isArray(route) ? 'group ' : '') +
@@ -179,7 +179,7 @@ export default {
                       group-focus:translate-y-10 group-focus:visible
                     "
                   >
-                    <NuxtLink
+                    <a
                       v-for="{ name2, route2, key2 } in route"
                       :key="key2"
                       class="
@@ -188,11 +188,11 @@ export default {
                         text-gray-300
                         hover:text-white
                       "
-                      :to="route2"
-                      >{{ name2 }}</NuxtLink
+                      :href="route2"
+                      >{{ name2 }}</a
                     >
                   </div>
-                </NuxtLink>
+                </a>
               </div>
             </div>
             <div

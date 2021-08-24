@@ -22,9 +22,9 @@
             class="relative p-2 group flex items-center"
           >
             <li
-              class="rounded-full flex items-center p-4 w-16 bg-discortics-600"
+              class="rounded-full flex items-center p-4 w-16 h-16 bg-discortics-600"
             >
-              <div class="px-auto">
+              <div class="px-auto flex items-center">
                 <SVGWrapper :name="navItem.icon" />
               </div>
             </li>
@@ -37,7 +37,9 @@
         class="
           rounded-full
           bg-discortics-500
+          flex items-center
           w-16
+          h-16
           z-50
           bg-opacity-50
           hover:bg-opacity-100
