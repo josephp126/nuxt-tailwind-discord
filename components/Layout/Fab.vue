@@ -24,7 +24,7 @@
             <li
               class="rounded-full flex items-center p-4 w-16 h-16 bg-discortics-600"
             >
-              <div class="px-auto flex items-center">
+              <div class="px-auto flex items-center mx-auto">
                 <SVGWrapper :name="navItem.icon" />
               </div>
             </li>
@@ -66,19 +66,18 @@
 </template>
 
 <script>
-import Navigation from '@/data/Navigation'
 import Constants from '@/data/Constants'
 export default {
   props: {
-    title: {
-      type: String,
+    NavList: {
+      type: Array,
       default: null,
     },
   },
   data() {
     return {
       toggleNav: false,
-      Navigation: Navigation.filter((x) => typeof x.route === 'string'),
+      Navigation: this.NavList.filter((x) => typeof x.route === 'string'),
       Constants,
     }
   },

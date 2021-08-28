@@ -111,11 +111,13 @@ export default {
             "
           >
             <div class="flex-shrink-0 flex items-center">
-              <img
-                class="h-8 w-auto hidden lg:block"
-                src="/img/90x90.png"
-                alt="Discortics"
-              />
+              <NuxtLink to="/">
+                <img
+                  class="h-8 w-auto hidden lg:block"
+                  src="/img/90x90.png"
+                  alt="Discortics"
+                />
+              </NuxtLink>
             </div>
             <div
               :class="`z-40 block h-full top-0 left-0 bg-black md:bg-transparent fixed md:static transform transition duration-500 ease-in-out md:translate-x-0 p-8 md:p-0 md:block ${
@@ -136,63 +138,178 @@ export default {
                   h-16
                 "
               >
-              <NuxtLink to = "/">
-                <img
-                  class="h-12 w-auto p-2"
-                  src="/img/90x90.png"
-                  alt="Discortics"
-                />
-                <p class="p-2 text-2xl block md:hidden font-bold">
-                  {{ Constants.Name }}
-                </p>
-              </NuxtLink>
+                <NuxtLink to="/">
+                  <img
+                    class="h-12 w-auto p-2"
+                    src="/img/90x90.png"
+                    alt="Discortics"
+                  />
+                  <p class="p-2 text-2xl block md:hidden font-bold">
+                    {{ Constants.Name }}
+                  </p>
+                </NuxtLink>
               </div>
-              <div class="flex md:space-x-4 flex-col md:flex-row md:pt-0 pt-10">
-                <a
-                  v-for="{ name, route, key, icon } in Navigation"
-                  :key="key"
-                  :href="typeof route == 'string' ? route : '#'"
-                  :class="
-                    (title === key ? 'bg-gray-900 ' : '') +
-                    (Array.isArray(route) ? 'group ' : '') +
-                    'tracking-wide px-3 flex flex-row space-x-4 md:uppercase py-4 rounded-md text-xs md:text-md font-medium text-gray-300 hover:text-white hover:bg-gray-900 block'
-                  "
+              <div
+                class="
+                  flex flex-col
+                  md:flex-row
+                  justify-between
+                  space-x-1
+                  w-full
+                "
+              >
+                <div
+                  class="flex md:space-x-4 flex-col md:flex-row md:pt-0 pt-10"
                 >
-                  <span><SVGWrapper :name="icon" /></span>
-                  <span class="py-1">{{ name }}</span>
                   <div
-                    v-if="Array.isArray(route)"
-                    class="
-                      absolute
-                      flex
-                      bg-discortics-quote
-                      text-sm
-                      p-2
-                      rounded-md
-                      flex-col
-                      invisible
-                      md:top-10
-                      transform
-                      transition
-                      duration-300
-                      ease-in-out
-                      group-focus:translate-y-10 group-focus:visible
-                    "
+                    v-for="{ name, route, key, icon } in Navigation"
+                    :key="key"
                   >
+                    <NuxtLink
+                      v-if="typeof route === 'string' && route.startsWith('/')"
+                      :to="typeof route == 'string' ? route : '#'"
+                      :class="
+                        (title === key ? 'bg-gray-900 ' : '') +
+                        (Array.isArray(route) ? 'group ' : '') +
+                        'tracking-wide px-3 flex flex-row space-x-4 md:uppercase py-4 rounded-md text-xs md:text-md font-medium text-gray-300 hover:text-white hover:bg-gray-900 block'
+                      "
+                    >
+                      <span><SVGWrapper :name="icon" /></span>
+                      <span class="py-1">{{ name }}</span>
+                      <div
+                        v-if="Array.isArray(route)"
+                        class="
+                          absolute
+                          flex
+                          bg-discortics-quote
+                          text-sm
+                          p-2
+                          rounded-md
+                          flex-col
+                          invisible
+                          md:top-10
+                          transform
+                          transition
+                          duration-300
+                          ease-in-out
+                          group-focus:translate-y-10 group-focus:visible
+                        "
+                      >
+                        <a
+                          v-for="{ name2, route2, key2 } in route"
+                          :key="key2"
+                          class="
+                            p-2
+                            flex flex-nowrap
+                            text-gray-300
+                            hover:text-white
+                          "
+                          :href="route2"
+                          >{{ name2 }}</a
+                        >
+                      </div>
+                    </NuxtLink>
                     <a
-                      v-for="{ name2, route2, key2 } in route"
-                      :key="key2"
+                      v-else
+                      :href="typeof route == 'string' ? route : '#'"
+                      :class="
+                        (title === key ? 'bg-gray-900 ' : '') +
+                        (Array.isArray(route) ? 'group ' : '') +
+                        'tracking-wide px-3 flex flex-row space-x-4 md:uppercase py-4 rounded-md text-xs md:text-md font-medium text-gray-300 hover:text-white hover:bg-gray-900 block'
+                      "
+                    >
+                      <span><SVGWrapper :name="icon" /></span>
+                      <span class="py-1">{{ name }}</span>
+                      <div
+                        v-if="Array.isArray(route)"
+                        class="
+                          absolute
+                          flex
+                          bg-discortics-quote
+                          text-sm
+                          p-2
+                          rounded-md
+                          flex-col
+                          invisible
+                          md:top-10
+                          transform
+                          transition
+                          duration-300
+                          ease-in-out
+                          group-focus:translate-y-10 group-focus:visible
+                        "
+                      >
+                        <a
+                          v-for="{ name2, route2, key2 } in route"
+                          :key="key2"
+                          class="
+                            p-2
+                            flex flex-nowrap
+                            text-gray-300
+                            hover:text-white
+                          "
+                          :href="route2"
+                          >{{ name2 }}</a
+                        >
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="my-auto">
+                  <div
+                    v-if="$auth.loggedIn"
+                    class="mt-3 md:mt-0 md:ml-6 flex flex-grow text-center"
+                    key="user"
+                  >
+                    <div class="pr-1 w-6">
+                      <img
+                        :src="
+                          'https://cdn.discordapp.com/avatars/' +
+                          $auth.user.id +
+                          '/' +
+                          this.$auth.user.avatar +
+                          '.webp'
+                        "
+                        class="w-full rounded-full object-cover"
+                      />
+                    </div>
+                    <a
                       class="
-                        p-2
-                        flex flex-nowrap
-                        text-gray-300
+                        transition
+                        ease-in-out
+                        duration-200
+                        font-medium
+                        block
+                        text-gray-500
                         hover:text-white
                       "
-                      :href="route2"
-                      >{{ name2 }}</a
+                      @click="x => {$auth.logout(); $store.commit('dash/toggle')}"
                     >
+                      {{ $auth.user.username }}
+                    </a>
                   </div>
-                </a>
+
+                  <div
+                    v-else
+                    class="mt-3 md:mt-0 md:ml-6 flex flex-grow text-center"
+                    key="user"
+                  >
+                    <NuxtLink
+                      class="
+                        transition
+                        ease-in-out
+                        duration-200
+                        font-medium
+                        block
+                        text-gray-500
+                        hover:text-white
+                      "
+                      to="/login"
+                    >
+                      Login with Discord
+                    </NuxtLink>
+                  </div>
+                </div>
               </div>
             </div>
             <div

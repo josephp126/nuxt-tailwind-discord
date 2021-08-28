@@ -110,7 +110,6 @@
         z-40
         flex-1 flex
         fixed
-        md:absolute
         md:left-0
         group-hover:translate-x-0
         items-center
@@ -118,6 +117,7 @@
         transition
         duration-500
         ease-in-out
+        top-0
         bg-discortics-500 bg-opacity-100
         ${toggleNav
         ?
@@ -126,8 +126,8 @@
         '-translate-x-110'}
       `"
     >
-      <div class="block min-h-screen top-0 left-0 bg-discortics-600 fixed p-8">
-        <div class="flex md:space-y-1 flex-col md:pt-0 pt-10 mt-10">
+      <div class="block min-h-screen top-0 left-0 bg-discortics-600 fixed p-8 pt-0">
+        <div class="flex md:space-y-1 flex-col md:pt-0 pt-10 mt-14">
           <div v-for="{ heading, greyed, routes, icon } in Navigation" :key="heading">
             <p
               :class="`
@@ -149,10 +149,10 @@
               <span :class = "`text-yellow-500 my-auto stroke-1 ${toggleNav ? 'visible' : 'visible'}`"><SVGWrapper :name="icon" size = "14" /></span>
                   <span class="py-1">{{ heading }}</span>
             </p>
-            <a
+            <NuxtLink
               v-for="{ name, route, key, routeIcon } in routes"
               :key="key"
-              :href="route"
+              :to="route"
               :class="
                 `${title
                 ===
@@ -184,7 +184,7 @@
               "
               :disabled = "greyed"
               ><span><SVGWrapper :name="routeIcon" /></span>
-                  <span class="py-1">{{ name }}</span></a
+                  <span class="py-1">{{ name }}</span></NuxtLink
             >
           </div>
         </div>

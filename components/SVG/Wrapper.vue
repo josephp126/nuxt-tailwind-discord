@@ -5,16 +5,19 @@
     <SVGBars v-if="name.toLowerCase() == 'bars'" :size = "size" />
     <SVGBook v-if="name.toLowerCase() == 'book'" :size = "size" />
     <SVGCircle v-if="name.toLowerCase() == 'circle'" :size = "size" />
+    <SVGContact v-if="name.toLowerCase() == 'contact'" :size = "size" />
     <SVGCross v-if="name.toLowerCase() == 'cross'" :size = "size" />
     <SVGFile v-if="name.toLowerCase() == 'file'" :size = "size" />
     <SVGGrid v-if="name.toLowerCase() == 'grid'" :size = "size" />
     <SVGHelpCircle v-if="name.toLowerCase() == 'helpcircle'" :size = "size" />
     <SVGHome v-if="name.toLowerCase() == 'home'" :size = "size" />
+    <SVGMessage v-if="name.toLowerCase() == 'message'" :size = "size" />
     <SVGPaperclip v-if="name.toLowerCase() == 'paperclip'" :size = "size" />
     <SVGPlusCircle v-if="name.toLowerCase() == 'pluscircle'" :size = "size" />
     <SVGServer v-if="name.toLowerCase() == 'server'" :size = "size" />
     <SVGSettings v-if="name.toLowerCase() == 'settings'" :size = "size" />
     <SVGSliders v-if="name.toLowerCase() == 'sliders'" :size = "size" />
+    <SVGStopCircle v-if="name.toLowerCase() == 'stopcircle'" :size = "size" />
     <SVGTag v-if="name.toLowerCase() == 'tag'" :size = "size" />
   </div>
 </template>

@@ -1,5 +1,3 @@
-import Constants from './Constants'
-
 export default [
     {
         name: `Dashboard`,
@@ -9,13 +7,13 @@ export default [
     },
     {
         name: `Support`,
-        route: `${Constants.Discord}`,
+        route: `/support`,
         key: `support`,
         icon: `helpcircle`
     },
     {
         name: `Documentation`,
-        route: `${Constants.Documentation}`,
+        route: `/documentation`,
         key: `documentation`,
         icon: `book`
     },
