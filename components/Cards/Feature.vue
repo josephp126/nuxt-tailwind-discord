@@ -12,7 +12,7 @@
         rounded-md
       "
     >
-      <div class="flex flex-col justify-between">
+      <div class="grid grid-cols-1 justify-between">
         <div class="text-xl p-2 font-bold">
             <span>{{ name }}</span>
         </div>
