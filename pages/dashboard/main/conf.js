@@ -1,5 +1,6 @@
 export default {
     chart: {
+        background: 'transparent',
         sparkline: {
           enabled: true,
         },
@@ -7,6 +8,9 @@ export default {
     stroke: {
         curve: 'smooth',
         width: 2,
+    },
+    theme: {
+        mode: 'dark'
     },
     yaxis: {
         min: 0,

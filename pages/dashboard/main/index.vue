@@ -1,147 +1,212 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
-    <div id="members" class="flex flex-col p-4 space-y-4">
-      <div class="bg-discortics-dashboard rounded-md h-24">
-        <div class="p-2 flex flex-row justify-between">
-          <div class="p-2">
-            <div
-              class="rounded-full flex items-center p-2 bg-blue-500 text-white"
-            >
-              <SVGFriends size="20" />
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
+      <div id="members" class="flex flex-col p-4 space-y-4">
+        <div class="bg-discortics-dashboard rounded-md h-24">
+          <div class="p-2 flex flex-row justify-between">
+            <div class="p-2">
+              <div
+                class="
+                  rounded-full
+                  flex
+                  items-center
+                  p-2
+                  bg-blue-500
+                  text-white
+                "
+              >
+                <SVGFriends size="20" />
+              </div>
+            </div>
+            <div class="flex flex-col p-2">
+              <span class="font-semibold p-px text-md">{{
+                resp.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}</span>
+              <span class="text-gray-300 p-px text-sm">Total Members</span>
             </div>
           </div>
-          <div class="flex flex-col p-2">
-            <span class="font-semibold p-px text-md">{{
-              resp.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-            }}</span>
-            <span class="text-gray-300 p-px text-sm">Total Members</span>
+        </div>
+        <div class="bg-discortics-dashboard rounded-md h-48">
+          <div class="p-4">
+            <apexchart
+              height="160"
+              type="donut"
+              :series="[resp.offline, resp.idle, resp.dnd, resp.online]"
+              :options="confPresence"
+            />
           </div>
         </div>
       </div>
-      <div class="bg-discortics-dashboard rounded-md h-48">
-        <div class="p-4">
-          <apexchart
-            height="160"
-            type="donut"
-            :series="[resp.offline, resp.idle, resp.dnd, resp.online]"
-            :options="confPresence"
-          />
+
+      <div id="joins" class="flex flex-col p-4 space-y-4">
+        <div class="bg-discortics-dashboard rounded-md h-24">
+          <div class="p-2 flex flex-row justify-between">
+            <div class="p-2">
+              <div
+                class="
+                  rounded-full
+                  flex
+                  items-center
+                  p-2
+                  bg-green-500
+                  text-white
+                "
+              >
+                <SVGStonks size="20" />
+              </div>
+            </div>
+            <div class="flex flex-col p-2">
+              <span class="font-semibold p-px text-md">{{
+                Object.values(resp.countlist)[19]
+                  .join.toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}</span>
+              <span class="text-gray-300 p-px text-sm">Joins</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-discortics-dashboard rounded-md h-48">
+          <div class="p-4">
+            <apexchart
+              height="160"
+              type="area"
+              :series="[
+                {
+                  name: 'Joins',
+                  data: Object.values(resp.countlist).map((x) => x.join),
+                },
+              ]"
+              :options="confJoins"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="leaves" class="flex flex-col p-4 space-y-4">
+        <div class="bg-discortics-dashboard rounded-md h-24">
+          <div class="p-2 flex flex-row justify-between">
+            <div class="p-2">
+              <div
+                class="rounded-full flex items-center p-2 bg-red-500 text-white"
+              >
+                <SVGNotStonks size="20" />
+              </div>
+            </div>
+            <div class="flex flex-col p-2">
+              <span class="font-semibold p-px text-md">{{
+                Object.values(resp.countlist)[19]
+                  .leave.toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}</span>
+              <span class="text-gray-300 p-px text-sm">Leaves</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-discortics-dashboard rounded-md h-48">
+          <div class="p-4">
+            <apexchart
+              height="160"
+              type="area"
+              :series="[
+                {
+                  name: 'Leaves',
+                  data: Object.values(resp.countlist).map((x) => x.leave),
+                },
+              ]"
+              :options="confLeaves"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="messages" class="flex flex-col p-4 space-y-4">
+        <div class="bg-discortics-dashboard rounded-md h-24">
+          <div class="p-2 flex flex-row justify-between">
+            <div class="p-2">
+              <div
+                class="
+                  rounded-full
+                  flex
+                  items-center
+                  p-2
+                  bg-yellow-500
+                  text-white
+                "
+              >
+                <SVGMessageSquare size="20" />
+              </div>
+            </div>
+            <div class="flex flex-col p-2">
+              <span class="font-semibold p-px text-md">{{
+                resp.msgstotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}</span>
+              <span class="text-gray-300 p-px text-sm">Messages</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-discortics-dashboard rounded-md h-48">
+          <div class="p-4">
+            <apexchart
+              height="160"
+              type="bar"
+              :series="[
+                {
+                  name: 'Messages',
+                  data: resp.msgs.map((x) => x[1]),
+                },
+              ]"
+              :options="confMessages"
+            />
+          </div>
         </div>
       </div>
     </div>
-
-    <div id="joins" class="flex flex-col p-4 space-y-4">
-      <div class="bg-discortics-dashboard rounded-md h-24">
-        <div class="p-2 flex flex-row justify-between">
-          <div class="p-2">
-            <div
-              class="rounded-full flex items-center p-2 bg-green-500 text-white"
-            >
-              <SVGStonks size="20" />
-            </div>
-          </div>
-          <div class="flex flex-col p-2">
-            <span class="font-semibold p-px text-md">{{
-              Object.values(resp.countlist)[19]
-                .join.toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-            }}</span>
-            <span class="text-gray-300 p-px text-sm">Joins</span>
+    <div class="py-8 px-4">
+      <div class="mx-auto bg-discortics-dashboard rounded-md h-48">
+        <div class="border-b border-dashed border-gray-500">
+          <div class="p-4">
+            <p class="text-lg">Prefix</p>
           </div>
         </div>
-      </div>
-      <div class="bg-discortics-dashboard rounded-md h-48">
-        <div class="p-4">
-          <apexchart
-            height="160"
-            type="area"
-            :series="[
-              {
-                name: 'Joins',
-                data: Object.values(resp.countlist).map((x) => x.join),
-              },
-            ]"
-            :options="confJoins"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="leaves" class="flex flex-col p-4 space-y-4">
-      <div class="bg-discortics-dashboard rounded-md h-24">
-        <div class="p-2 flex flex-row justify-between">
-          <div class="p-2">
-            <div
-              class="rounded-full flex items-center p-2 bg-red-500 text-white"
-            >
-              <SVGNotStonks size="20" />
-            </div>
-          </div>
-          <div class="flex flex-col p-2">
-            <span class="font-semibold p-px text-md">{{
-              Object.values(resp.countlist)[19]
-                .leave.toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-            }}</span>
-            <span class="text-gray-300 p-px text-sm">Leaves</span>
-          </div>
-        </div>
-      </div>
-      <div class="bg-discortics-dashboard rounded-md h-48">
-        <div class="p-4">
-          <apexchart
-            height="160"
-            type="area"
-            :series="[
-              {
-                name: 'Leaves',
-                data: Object.values(resp.countlist).map((x) => x.leave),
-              },
-            ]"
-            :options="confLeaves"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="messages" class="flex flex-col p-4 space-y-4">
-      <div class="bg-discortics-dashboard rounded-md h-24">
-        <div class="p-2 flex flex-row justify-between">
-          <div class="p-2">
-            <div
+        <div class="p-4 flex flex-col md:flex-row items-center mx-auto">
+          <div class="p-4 group relative">
+            <input
+              v-model="prefix"
               class="
-                rounded-full
-                flex
-                items-center
+                bg-discortics-quote
+                border-gray-500
                 p-2
-                bg-yellow-500
-                text-white
+                border
+                rounded-md
+                w-72
+                h-12
+              "
+              maxlength="10"
+            />
+            <!--
+                <span class = "px-2 invisible group-focus:visible absolute bottom-0 left-10 top-20 mx-auto"><span class = "bg-discortics-link rounded-md p-2 shadow-md">{{prefix.length}}</span></span>
+                -->
+          </div>
+          <div class="p-4">
+            <button
+              class="
+                p-2
+                bg-discortics-link
+                rounded-md
+                block
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:translate-y-1
               "
             >
-              <SVGMessageSquare size="20" />
-            </div>
+              Update Prefix
+            </button>
           </div>
-          <div class="flex flex-col p-2">
-            <span class="font-semibold p-px text-md">{{
-              resp.msgstotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-            }}</span>
-            <span class="text-gray-300 p-px text-sm">Messages</span>
+          <div class="text-sm text-gray-300">
+            Prefix can be a maximum of 10 characters.
           </div>
-        </div>
-      </div>
-      <div class="bg-discortics-dashboard rounded-md h-48">
-        <div class="p-4">
-          <apexchart
-            height="160"
-            type="bar"
-            :series="[
-              {
-                name: 'Messages',
-                data: resp.msgs.map((x) => x[1]),
-              },
-            ]"
-            :options="confMessages"
-          />
         </div>
       </div>
     </div>
@@ -196,6 +261,7 @@ export default {
       offline: 451,
     }
     return {
+      prefix: '',
       resp,
       confPresence: {
         ...conf,
@@ -217,11 +283,16 @@ export default {
       },
       confMessages: {
         ...conf,
-        labels: resp.msgs.map((x) => x[0]),
-        colors: ['#ffc830'],
-        fill: {
-          opacity: 1,
+        xaxis: {
+          categories: resp.msgs.map((x) => x[0]),
         },
+        tooltip: {
+          x: {
+            show: true,
+          },
+          enabled: true,
+        },
+        colors: ['#ffc830'],
       },
     }
   },
