@@ -24,6 +24,9 @@ export default {
     '@sweetalert2/theme-dark/dark.css'
   ],
 
+  // SSR
+  ssr: false,
+
   // Loading Bar
   loading: {
     color: '#25d5e4',
@@ -34,7 +37,8 @@ export default {
   plugins: [
     '~/plugins/vue-tooltip.js',
     '~/plugins/api.js',
-    '~/plugins/swal.js'
+    '~/plugins/swal.js',
+    '~/plugins/chart.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
