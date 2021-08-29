@@ -1,31 +1,23 @@
 <template>
-  <div id="content" class="main-content pt-10">
-    <div class="layout-px-spacing">
-      <div class="layout-top-spacing">
-        <div class="layout-spacing">
-          <div class="bg-discortics-dashboard rounded-md">
-            <div class="border-b border-dashed border-gray-500">
-              <div class="p-4">
-                <p class="text-lg">
-                  Your Servers {{ typeof $auth.$storage.getState('connected') }}
-                </p>
-              </div>
-            </div>
+  <div class = "bg-discortics-dashboard rounded-md">
+    <div class="border-b border-dashed border-gray-500">
+      <div class="p-4">
+        <p class="text-lg">Your Servers</p>
+      </div>
+    </div>
 
-            <div id="servers" class="widget-content">
-              <div
-                class="spinner-grow text-secondary align-self-center loader-lg"
-              ></div>
-              <div class="flex flex-wrap justify-center">
-                <CardsServers
-                  v-for="stuff in servers"
-                  :key="stuff.name"
-                  :name="stuff.name"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div id="servers" class="widget-content">
+      <div
+        class="spinner-grow text-secondary align-self-center loader-lg"
+      ></div>
+      <div class="flex flex-wrap justify-center">
+        <CardsServers
+          v-for="stuff in servers"
+          :key="stuff.name"
+          :name="stuff.name"
+          :gID="stuff.gID"
+          :exists="(Math.random() > 0.9) ? true : false"
+        />
       </div>
     </div>
   </div>
@@ -60,7 +52,7 @@ if (context.$auth.loggedIn) {
   */
   data() {
     return {
-      servers: new Array(45).fill(1),
+      servers: new Array(45).fill({name: "Test", gID: "haa"}),
     }
   },
 }
