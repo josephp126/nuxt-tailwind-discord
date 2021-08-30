@@ -33,7 +33,7 @@ export default [
             {
                 name: `General`,
                 route: `/dashboard/main`,
-                key: `general`,
+                key: `main`,
                 routeIcon: "grid",
             },
             {
