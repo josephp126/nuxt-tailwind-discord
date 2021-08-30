@@ -77,7 +77,7 @@ export default {
   data() {
     return {
       toggleNav: false,
-      Navigation: this.NavList.filter((x) => typeof x.route === 'string'),
+      Navigation: this.NavList,
       Constants,
     }
   },
