@@ -184,7 +184,7 @@
               "
               :disabled = "greyed"
               ><span><SVGWrapper :name="routeIcon" /></span>
-                  <span class="py-1">{{ name }} a{{ $store.state.guild.guild }}</span></NuxtLink
+                  <span class="py-1">{{ name }} {{ $store.state.guild.guild }}</span></NuxtLink
             >
           </div>
         </div>
