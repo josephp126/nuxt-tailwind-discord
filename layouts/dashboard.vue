@@ -30,9 +30,10 @@ import Navigation from '@/data/SideBarNav'
 export default {
   auth: true,
   data() {
-    const currentRoute = this.$route.path.split('/').reverse()[0]
+//    const currentRoute = this.$route.path.split('/').reverse()[0]
     return {
-      Navigation: Navigation.find(x => x.routes.some(y => y.key === currentRoute)).routes.map(x => ({name: x.name, route: x.route, icon: x.routeIcon, key: x.key})),
+      //      Navigation: Navigation.find(x => x.routes.some(y => y.key === currentRoute)).routes.map(x => ({name: x.name, route: x.route, icon: x.routeIcon, key: x.key})),
+      Navigation,
     }
   },
 }
