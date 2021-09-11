@@ -123,6 +123,7 @@
             <CardsFeature
               :name="feature.name"
               :description="feature.description"
+              :svg="feature.icon"
             />
           </div>
         </div>

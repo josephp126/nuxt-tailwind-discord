@@ -4,6 +4,12 @@
       class="
         bg-discortics-500
         border-discortics-quote border
+        transform
+        transition
+        duration-200
+        ease-in-out
+        hover:translate-y-1
+        hover:scale-110
         block
         p-4
         w-full
@@ -12,9 +18,12 @@
         rounded-md
       "
     >
-      <div class="grid grid-cols-1 justify-between">
-        <div class="text-xl p-2 font-bold">
-            <span>{{ name }}</span>
+      <div class="flex flex-col justify-start w-full h-full">
+        <div class="text-xl p-2 font-bold flex flex-row items-stretch justify-between w-full">
+          <span class = "w-full">{{ name }}</span>
+          <span class="rounded-full pl-2 text-yellow-500">
+            <SVGWrapper :name="svg" />
+          </span>
         </div>
 
         <p class="text-sm p-2">
