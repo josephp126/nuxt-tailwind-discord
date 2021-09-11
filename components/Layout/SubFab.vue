@@ -1,33 +1,26 @@
 <template>
-  <div>
-    <div class="fixed p-4 bottom-0 right-0 flex flex-col items-center z-40">
+  <div class="p-2 w-full">
+    <div
+      :class="`inset-x-0 w-full mx-auto block p-2 flex flex-row items-center z-40`"
+    >
       <div
         id="fabItems"
-        :class="`transform transition duration-500 ease-in-out ${
-          toggleNav ? 'translate-y-0' : 'translate-y-120'
+        :class="`transform absolute right-10 p-2 transition duration-500 ease-in-out z-40 ${
+          toggleNav ? 'translate-x-0' : 'translate-x-120'
         }`"
       >
-        <ul class="p-4 flex-col items-center space-y-10 w-full mx-auto">
+        <ul :class="`p-4 flex flex-row justify-center space-x-1`">
           <div v-for="navItem in Navigation" :key="navItem.key">
-            <div v-if="Array.isArray(navItem.routes)" :title="navItem.heading">
-              <LayoutSubFab
-                :NavList="navItem.routes"
-                :CustomIcon="navItem.icon"
-                :ref="navItem.key"
-                FabType="sub"
-              />
-            </div>
             <a
-              v-else
               v-tooltip="{
-                placement: 'left',
+                placement: 'top',
                 content: navItem.name,
                 trigger: 'hover',
-                classes: 'text-white font-bold text-md',
+                classes: 'text-white font-bold text-md block z-100 bg-discortics-container p-1 rounded-md',
                 html: false,
               }"
               :href="navItem.route"
-              class="relative p-2 group flex items-center"
+              class="relative p-2 group flex items-center block z-50"
             >
               <li
                 class="
@@ -37,7 +30,7 @@
                   p-4
                   w-16
                   h-16
-                  bg-discortics-600
+                  bg-discortics-200
                 "
               >
                 <div class="px-auto flex items-center mx-auto">
@@ -52,6 +45,9 @@
       <div
         id="fabButton"
         class="
+          absolute
+          inset-x-0
+          mx-auto
           rounded-full
           bg-discortics-500
           flex
@@ -59,8 +55,6 @@
           w-16
           h-16
           z-50
-          bg-opacity-50
-          hover:bg-opacity-100
         "
       >
         <button
@@ -74,12 +68,6 @@
         </button>
       </div>
     </div>
-    <div
-      :class="`inset-0 w-full fixed h-full z-30 block bg-gray-800 bg-opacity-30 ${
-        toggleNav ? 'visible' : 'invisible'
-      }`"
-      @click="toggleAll"
-    ></div>
   </div>
 </template>
 
@@ -117,19 +105,13 @@ export default {
       this.toggleNav = false
     },
     toggleBoth() {
-      this.toggleNav = !this.toggleNav
+      const navto = this.toggleNav
+      this.$parent.toggleChild()
+      if(navto) this.toggleNav = false
+      else this.toggleNav = true 
     },
     toggleOn() {
       this.toggleNav = true
-    },
-    toggleChild() {
-      this.NavList.forEach((x) => {
-        this.$refs[x.key][0].toggleOff()
-      })
-    },
-    toggleAll() {
-      this.toggleChild()
-      this.toggleOff()
     },
   },
 }

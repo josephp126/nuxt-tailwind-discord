@@ -3,6 +3,7 @@ export default [
     {
         heading: "Main",
         greyed: false,
+        key: "main",
         icon: "circle",
         routes: [
             {
@@ -28,7 +29,8 @@ export default [
     {
         heading: "Basic",
         greyed: true,
-        icon: "circle",
+        key: "basic",
+        icon: "message",
         routes: [
             {
                 name: `General`,
@@ -53,7 +55,8 @@ export default [
     {
         heading: "Modules",
         greyed: true,
-        icon: "circle",
+        key: "modules",
+        icon: "grid",
         routes: [
             {
                 name: `Applications`,
@@ -72,7 +75,8 @@ export default [
     {
         heading: "More",
         greyed: false,
-        icon: "circle",
+        key: "more",
+        icon: "pluscircle",
         routes: [
             {
                 name: `Support`,
