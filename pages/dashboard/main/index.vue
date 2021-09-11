@@ -183,9 +183,7 @@
               "
               maxlength="10"
             />
-            <!--
-                <span class = "px-2 invisible group-focus:visible absolute bottom-0 left-10 top-20 mx-auto"><span class = "bg-discortics-link rounded-md p-2 shadow-md">{{prefix.length}}</span></span>
-                -->
+
           </div>
           <div class="p-4">
             <button
