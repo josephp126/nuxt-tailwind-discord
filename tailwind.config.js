@@ -76,6 +76,7 @@ module.exports = {
   variants: {
     extend: {
       backgroundImage: ['hover', 'focus'],
+      backgroundColor: ['checked'],
       translate: ['active', 'group-hover', 'group-focus', 'hover'],
       visibility: ['hover', 'focus', 'group-hover', 'group-focus'],
     },

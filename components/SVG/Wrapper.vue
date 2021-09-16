@@ -38,7 +38,7 @@
     <SVGSettings v-if="name.toLowerCase() == 'settings'" :size="size" />
     <SVGShield v-if="name.toLowerCase() == 'shield'" :size="size" />
     <SVGSliders v-if="name.toLowerCase() == 'sliders'" :size="size" />
-    <SVGSStonks v-if="name.toLowerCase() == 'sliders'" :size="size" />
+    <SVGStonks v-if="name.toLowerCase() == 'stonks'" :size="size" />
     <SVGStopCircle v-if="name.toLowerCase() == 'stopcircle'" :size="size" />
     <SVGTag v-if="name.toLowerCase() == 'tag'" :size="size" />
     <SVGZap v-if="name.toLowerCase() == 'zap'" :size="size" />

@@ -11,7 +11,7 @@
       >
         <ul :class="`p-4 flex flex-row justify-center space-x-1`">
           <div v-for="navItem in Navigation" :key="navItem.key">
-            <a
+            <NuxtLink
               v-tooltip="{
                 placement: 'top',
                 content: navItem.name,
@@ -19,7 +19,7 @@
                 classes: 'text-white font-bold text-md block z-100 bg-discortics-container p-1 rounded-md',
                 html: false,
               }"
-              :href="navItem.route"
+              :to="navItem.route"
               class="relative p-2 group flex items-center block z-50"
             >
               <li
@@ -37,7 +37,7 @@
                   <SVGWrapper :name="navItem.routeIcon" />
                 </div>
               </li>
-            </a>
+            </NuxtLink>
           </div>
         </ul>
       </div>

@@ -124,21 +124,21 @@ export default {
                 toggleNav ? 'translate-x-0' : '-translate-x-110 md:ml-6'
               }`"
             >
-              <div
-                class="
-                  flex-shrink-0 flex
-                  block
-                  md:hidden
-                  items-center
-                  bg-discortics-500
-                  top-0
-                  left-0
-                  absolute
-                  w-full
-                  h-16
-                "
-              >
-                <NuxtLink to="/">
+              <NuxtLink to="/">
+                <div
+                  class="
+                    flex-shrink-0 flex
+                    block
+                    md:hidden
+                    items-center
+                    bg-discortics-500
+                    top-0
+                    left-0
+                    absolute
+                    w-full
+                    h-16
+                  "
+                >
                   <img
                     class="h-12 w-auto p-2"
                     src="/img/90x90.png"
@@ -147,8 +147,9 @@ export default {
                   <p class="p-2 text-2xl block md:hidden font-bold">
                     {{ Constants.Name }}
                   </p>
-                </NuxtLink>
-              </div>
+                </div>
+              </NuxtLink>
+
               <div
                 class="
                   flex flex-col
@@ -283,7 +284,12 @@ export default {
                         text-gray-500
                         hover:text-white
                       "
-                      @click="x => {$auth.logout(); $store.commit('dash/toggle')}"
+                      @click="
+                        (x) => {
+                          $auth.logout()
+                          $store.commit('dash/toggle')
+                        }
+                      "
                     >
                       {{ $auth.user.username }}
                     </a>

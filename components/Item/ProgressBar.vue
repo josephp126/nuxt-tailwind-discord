@@ -25,7 +25,7 @@
       "
     >
       <span class="mx-auto">{{
-        `${((progress - min) * 100) / (max - min)}%`
+        `${Math.round((((progress - min) * 100) / (max - min)) * 100) / 100}%`
       }}</span>
     </div>
   </div>

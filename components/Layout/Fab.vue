@@ -118,6 +118,7 @@ export default {
     },
     toggleBoth() {
       this.toggleNav = !this.toggleNav
+      this.toggleChild()
     },
     toggleOn() {
       this.toggleNav = true

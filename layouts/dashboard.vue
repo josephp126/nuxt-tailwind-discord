@@ -21,7 +21,9 @@
           </div>
         </div>
       </div>
+      <div class = "hidden md:block">
       <LayoutFab :NavList="Navigation" />
+      </div>
     </main>
   </div>
 </template>

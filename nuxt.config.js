@@ -106,6 +106,15 @@ export default {
         }
       },
       {
+        name: 'embedLimit',
+        message: 'Total text must be less than 6000 characters.',
+        options: {
+          type: 'error',
+          duration: 5000,
+          class: "rounded-xl"
+        }
+      },
+      {
         name: 'error',
         message: 'An unknown error occured',
         options: {

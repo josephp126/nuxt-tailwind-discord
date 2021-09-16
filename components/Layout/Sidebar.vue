@@ -26,7 +26,7 @@
         <div class="relative flex items-center justify-between h-16">
           <div class="relative inset-y-0 left-0 flex items-center">
             <button
-              :class="`inline-flex items-center ${
+              :class="`inline-flex items-center md:hidden ${
                 toggleNav ? 'hidden' : 'block'
               } justify-center p-2 group rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`"
               aria-expanded="false"
