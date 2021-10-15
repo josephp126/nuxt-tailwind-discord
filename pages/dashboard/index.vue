@@ -1,5 +1,5 @@
 <template>
-  <div class = "bg-discortics-dashboard rounded-md">
+  <div class="bg-discortics-dashboard rounded-md">
     <div class="border-b border-dashed border-gray-500">
       <div class="p-4">
         <p class="text-lg">Your Servers</p>
@@ -15,8 +15,9 @@
           v-for="stuff in servers"
           :key="stuff.name"
           :name="stuff.name"
-          :gID="stuff.gID"
-          :exists="(Math.random() > 0.9) ? true : false"
+          :gID="stuff.id"
+          :icon="stuff.icon"
+          :exists="stuff.exists"
         />
       </div>
     </div>
@@ -24,6 +25,7 @@
 </template>
 
 <script>
+import MapperMap from '@/helper/mappermap'
 export default {
   layout: 'dashboard',
   /*
@@ -50,9 +52,43 @@ if (context.$auth.loggedIn) {
     
   },
   */
-  data() {
+  async asyncData({ $api }) {
+
+const token = localStorage.getItem('sessionToken')
+    const allServers = await $api.$request({
+      url: '/@me/guilds',
+      method: 'get',
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    console.log(allServers)
+    let botServers = await $api.$request(
+      {
+        url: `/botguilds?ts=${new Date().getTime()}`,
+        method: 'post',
+        headers: { Authorization: `Bearer ${token}` },
+        data: {guilds: allServers.map((x) => x.id)},
+      }
+    )
+    botServers = botServers.botguilds
+
+    const guilds = new MapperMap
+    console.log(allServers)
+    allServers.forEach((guild) => {
+      if (guild.permissions === 2147483647) {
+        guild.exists = false
+        if (botServers.includes(guild.id)) guild.exists = true
+        guilds.set(guild.id, guild)
+      }
+    })
+
     return {
-      servers: new Array(45).fill({name: "Test", gID: "haa"}),
+      servers: guilds.map((x) => ({
+        name: x.name,
+        icon: x.icon,
+        id: x.id,
+        exists: x.exists,
+      })),
+      serverList: guilds,
     }
   },
 }

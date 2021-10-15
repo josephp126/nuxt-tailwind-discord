@@ -1,10 +1,13 @@
 <template>
   <div class="p-4 relative">
-    <div>
+    <div class = "w-full md:w-72 h-full md:h-72 ">
       <div
         class="
           p-2
           bg-discortics-server
+          w-full
+          md:h-60
+          md:max-w-md
           rounded-md
           transform
           transition
@@ -18,10 +21,10 @@
         <div class="mx-auto p-8 flex-col">
           <img
             class="w-full md:w-24 object-cover mx-auto"
-            :src="icon"
+            :src="icon ? `https://cdn.discordapp.com/icons/${gID}/${icon}.png` : `/img/user_icon.png`"
             alt="server icon"
           />
-          <p class="font-semibold p-2 text-center">Server {{ name }}</p>
+          <p class="font-semibold p-2 text-center">{{ name }}</p>
           <div class="absolute text-center mx-auto -bottom-4 inset-x-8 p-2">
             <a
               v-if="exists"
@@ -82,9 +85,7 @@ export default {
         },
         icon: {
             type: String,
-            default() { 
-                return "/img/joshua.jpg"
-            }
+            default: null,
         },
         gID: {
             type: String,
@@ -102,8 +103,9 @@ export default {
     methods: {
         moveToDash() {
             console.log({gID: this.gID})
-            this.$store.commit("guild/set", this.gID)
-            console.log(this.$store.state.guild.guild)
+            localStorage.setItem("guildID", this.gID)
+            localStorage.setItem("guildName", this.name)
+            localStorage.setItem("guildIcon", this.icon ? `https://cdn.discordapp.com/icons/${this.gID}/${this.icon}.png` : `/img/user_icon.png`)
             this.$router.push('/dashboard/main')
 
         }

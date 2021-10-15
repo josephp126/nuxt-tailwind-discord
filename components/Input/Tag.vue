@@ -11,6 +11,9 @@
       w-full
     "
   >
+  <div class = "absolute top-50 left-50" v-bind:class = "{hidden: !editing}">
+<InputTagEditor />
+  </div>
     <div
       class="
         p-4
@@ -40,6 +43,7 @@
       <div class="p-2 flex flex-row items-center">
         <div class="p-px">
           <button
+          @click="x => editing = true"
             class="
               p-2
               bg-yellow-500
@@ -52,7 +56,7 @@
               hover:translate-y-1
             "
           >
-            <SVGEdit size="20" />
+            <SVGEdit size="20"/>
           </button>
         </div>
         <div class="p-px">
@@ -86,7 +90,8 @@ export default {
     },
     data() {
         return {
-            tagName: this.name
+            tagName: this.name,
+            editing: false
         }
     }
 }

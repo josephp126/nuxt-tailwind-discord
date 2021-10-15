@@ -21,7 +21,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@sweetalert2/theme-dark/dark.css'
+    '@sweetalert2/theme-dark/dark.css',
+    './assets/transition.css'
   ],
 
   // SSR
@@ -126,12 +127,17 @@ export default {
 
   // Auth module configuration
   auth: {
+    token: {
+      global: false,
+    },
+//    plugins: [ '~/plugins/auth.js' ],
     redirect: {
       login: '/login',
       logout: '/',
-      callback: '/dashboard',
-      home: '/dashboard'
+      callback: '/callback',
+      home: '/refresh'
     },
+    resetOnError: true,
     rewriteRedirects: true,
     strategies: {
       discordapp: {
@@ -142,7 +148,6 @@ export default {
           userInfo: 'https://discord.com/api/users/@me'
         },
         clientId: Secret.clientID,
-        clientSecret: Secret.clientSecret,
         codeChallengeMethod: "",
         responseType: 'token',
         scope: "identify guilds",

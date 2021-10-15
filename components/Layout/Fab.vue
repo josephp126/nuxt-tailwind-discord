@@ -54,6 +54,7 @@
         class="
           rounded-full
           bg-discortics-500
+          border-maid-border border-opacity-50 border
           flex
           items-center
           w-16

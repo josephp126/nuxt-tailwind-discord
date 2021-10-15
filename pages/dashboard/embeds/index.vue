@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8">
+  <div class="p-8 w-full">
     <div
       class="
         p-8
@@ -30,8 +30,7 @@
         to="/dashboard/embeds/new"
         class="
           p-4
-          bg-green-600
-          block
+bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border           block
           rounded-md
           w-full
           md:max-w-md
@@ -52,8 +51,7 @@
         to="/dashboard/embeds/edit"
         class="
           p-4
-          bg-yellow-700
-          block
+bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border           block
           rounded-md
           w-full
           md:max-w-md

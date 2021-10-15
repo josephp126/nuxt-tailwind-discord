@@ -2,7 +2,7 @@
   <div>
     <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
       <div id="members" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -39,7 +39,7 @@
       </div>
 
       <div id="joins" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -83,7 +83,7 @@
       </div>
 
       <div id="leaves" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -120,7 +120,7 @@
       </div>
 
       <div id="messages" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -144,7 +144,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -162,7 +162,7 @@
       </div>
     </div>
     <div class="py-8 px-4">
-      <div class="mx-auto bg-discortics-dashboard rounded-md md:h-48">
+      <div class="mx-auto bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
         <div class="border-b border-dashed border-gray-500">
           <div class="p-4">
             <p class="text-lg">Prefix</p>
@@ -183,10 +183,10 @@
               "
               maxlength="10"
             />
-
           </div>
           <div class="p-4">
             <button
+              @click="updatePrefix"
               class="
                 p-2
                 bg-discortics-link
@@ -198,11 +198,18 @@
                 transform
                 hover:translate-y-1
               "
+              :disabled="prefix.length >= 10"
             >
               Update Prefix
             </button>
           </div>
-          <div :class="`text-sm ${prefix.length < 10 ? 'text-gray-300' : 'text-red-300 animate-pulse'}`">
+          <div
+            :class="`text-sm ${
+              prefix.length < 10
+                ? 'text-gray-300'
+                : 'text-red-300 animate-pulse'
+            }`"
+          >
             Prefix can be a maximum of 10 characters.
           </div>
         </div>
@@ -219,47 +226,51 @@ console.log({
 })
 export default {
   layout: 'dashboard',
-  data() {
-    const resp = {
-      msgstotal: 286512,
-      msgs: [
-        ['「💬」general', 111009],
-        ['「🤖」commands', 39405],
-        ['〚👮〛chat', 36904],
-        ['「✋」bot-support¹', 33500],
-        ['〚🤖〛commands', 10148],
-        ['〉chat', 5109],
-      ],
-      countlist: {
-        '7th Aug': { join: 70, leave: 49 },
-        '8th Aug': { join: 71, leave: 46 },
-        '9th Aug': { join: 79, leave: 56 },
-        '10th Aug': { join: 98, leave: 39 },
-        '11th Aug': { join: 106, leave: 65 },
-        '12th Aug': { join: 66, leave: 0 },
-        '13th Aug': { join: 67, leave: 31 },
-        '14th Aug': { join: 64, leave: 26 },
-        '15th Aug': { join: 57, leave: 27 },
-        '16th Aug': { join: 79, leave: 40 },
-        '17th Aug': { join: 78, leave: 38 },
-        '18th Aug': { join: 108, leave: 33 },
-        '19th Aug': { join: 83, leave: 43 },
-        '20th Aug': { join: 146, leave: 109 },
-        '21st Aug': { join: 89, leave: 53 },
-        '22nd Aug': { join: 99, leave: 42 },
-        '23rd Aug': { join: 86, leave: 66 },
-        '24th Aug': { join: 171, leave: 59 },
-        '25th Aug': { join: 142, leave: 78 },
-        '26th Aug': { join: 0, leave: 13 },
+  methods: {
+    async updatePrefix() {
+      const prefix = this.prefix
+      const response = await this.$api.request({
+        url: `/prefix?id=${localStorage.getItem(
+          'guildID'
+        )}`,
+        method: 'post',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('sessionToken')}`,
+        },
+        data: {
+          prefix,
+        },
+      })
+      if (response.status === 200)
+        this.$toast.success('Successfully updated prefix!', {duration: 10000})
+    },
+  },
+  async asyncData(ctx) {
+const token = localStorage.getItem('sessionToken')
+    const response = await ctx.$api.request({
+      url: `/prefix?id=${localStorage.getItem(
+        'guildID'
+      )}`,
+      method: 'get',
+      headers: {
+        Authorization: `Bearer ${token}`,
       },
-      total: 8551,
-      online: 7000,
-      dnd: 550,
-      idle: 540,
-      offline: 451,
-    }
+    })
+    let prefix = ''
+    if (response.status === 200) prefix = response.data.prefix
+    let resp = await ctx.$api.request({
+      url: `/membercount?id=${localStorage.getItem(
+        'guildID'
+      )}`,
+      method: 'get',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+    resp = resp.data
+
     return {
-      prefix: '',
+      prefix,
       resp,
       confPresence: {
         ...conf,

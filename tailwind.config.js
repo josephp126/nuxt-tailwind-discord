@@ -51,6 +51,10 @@ module.exports = {
           'server': '#1c283c',
           'dashboard': '#0e1726'
         },
+        maid: {
+          'border': '#4ef0fc',
+          'bg': '#030005'
+        }
       },
       translate: {
         '110': '30rem',

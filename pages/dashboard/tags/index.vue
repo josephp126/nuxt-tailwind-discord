@@ -19,9 +19,10 @@
                 p-4
                 mx-auto
               "
+              @click = "$auth.logout"
             >
               <SVGPlus size="20" />
-              <span class="pl-2"> Add Tag </span>
+              <span class="pl-2"> Add Tag {{$store.state.dash.token}} </span>
             </button>
           </div>
         </div>
@@ -79,20 +80,12 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 py-8 gap-2">
       <InputTag name="Never" />
-      <InputTag name="Never" />
-      <InputTag name="Gonna" />
-      <InputTag name="Gonna" />
-      <InputTag name="Give" />
-      <InputTag name="Let" />
-      <InputTag name="You" />
-      <InputTag name="You" />
-      <InputTag name="Up" />
-      <InputTag name="Down" />
     </div>
   </div>
 </template>
 <script>
 export default {
   layout: 'dashboard',
+  middleware: 'server_exists',
 }
 </script>

@@ -18,7 +18,8 @@
         md:top-0
         md:left-0
         md:rounded-t-md
-        bg-discortics-500
+        bg-discortics-500 bg-opacity-80
+        border-maid-border border-opacity-70 border-b
         z-50
       "
     >
@@ -26,7 +27,7 @@
         <div class="relative flex items-center justify-between h-16">
           <div class="relative inset-y-0 left-0 flex items-center">
             <button
-              :class="`inline-flex items-center md:hidden ${
+              :class="`inline-flex items-center md:pointer-events-none ${
                 toggleNav ? 'hidden' : 'block'
               } justify-center p-2 group rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`"
               aria-expanded="false"
@@ -34,10 +35,14 @@
             >
               <span class="sr-only">Open menu</span>
 
-              <div class = "block h-6 w-6">
-                <SVGWrapper name = "bars" />
+              <div class="block h-8 w-8">
+                <img
+                  v-if="typeof icon == 'string'"
+                  :src="icon"
+                  :title="guildName"
+                />
+                <SVGWrapper v-else name="helpcircle" />
               </div>
-                
             </button>
             <a href="/" :class="toggleNav ? 'block' : 'hidden'">
               <div
@@ -57,7 +62,7 @@
                   src="/img/90x90.png"
                   alt="Discortics"
                 />
-                <p class="p-2 text-2xl block font-bold">{{Constants.Name}}</p>
+                <p class="p-2 text-2xl block font-bold">{{ Constants.Name }}</p>
               </div>
             </a>
           </div>
@@ -72,8 +77,7 @@
                 aria-expanded="false"
                 @click="settingsBoth"
               >
-
-<SVGWrapper name = "settings" />
+                <SVGWrapper name="settings" />
               </button>
               <div
                 :class="`
@@ -90,11 +94,7 @@
                   duration-500
                   ease-in-out
                   absolute
-                  ${tSettings
-                  ?
-                  'translate-y-10'
-                  :
-                  '-translate-y-120 md:ml-6'}
+                  ${tSettings ? 'translate-y-10' : '-translate-y-120 md:ml-6'}
                 `"
               >
                 <CardsSettings />
@@ -119,16 +119,17 @@
         ease-in-out
         top-0
         bg-discortics-500 bg-opacity-100
-        ${toggleNav
-        ?
-        'translate-x-0'
-        :
-        '-translate-x-110'}
+        ${toggleNav ? 'translate-x-0' : '-translate-x-110'}
       `"
     >
-      <div class="block min-h-screen top-0 left-0 bg-discortics-600 fixed p-8 pt-0">
+      <div
+        class="block min-h-screen top-0 left-0 bg-discortics-600 fixed p-8 pt-0"
+      >
         <div class="flex md:space-y-1 flex-col md:pt-0 pt-10 mt-14">
-          <div v-for="{ heading, greyed, routes, icon } in Navigation" :key="heading">
+          <div
+            v-for="{ heading, greyed, routes, icon } in Navigation"
+            :key="heading"
+          >
             <p
               :class="`
                 tracking-wide
@@ -144,23 +145,21 @@
                 block
                 rounded-md
               ${greyed ? ' cursor-not-allowed' : ''}`"
-              :disabled = "greyed"
+              :disabled="greyed"
             >
-              <span :class = "`text-yellow-500 my-auto stroke-1 ${toggleNav ? 'visible' : 'visible'}`"><SVGWrapper :name="icon" size = "14" /></span>
-                  <span class="py-1">{{ heading }}</span>
+              <span
+                :class="`text-yellow-500 my-auto stroke-1 ${
+                  toggleNav ? 'visible' : 'visible'
+                }`"
+                ><SVGWrapper :name="icon" size="14"
+              /></span>
+              <span class="py-1">{{ heading }}</span>
             </p>
             <NuxtLink
               v-for="{ name, route, key, routeIcon } in routes"
               :key="key"
               :to="route"
-              :class="
-                `${title
-                ===
-                key
-                ?
-                'text-discortics-link'
-                :
-                ''}
+              :class="`${title === key ? 'text-discortics-link' : ''}
                 
                 tracking-wide
                 px-3
@@ -176,15 +175,17 @@
                 block
                 rounded-md
                 flex flex-row space-x-4
-                ${greyed
-                ?
-                'pointer-events-none text-gray-500'
-                :
-                'text-gray-300'}`
-              "
-              :disabled = "greyed"
+                ${
+                  greyed
+                    ? //                'pointer-events-none text-gray-500'
+                      'text-gray-300'
+                    : 'text-gray-300'
+                }`"
+              :disabled="greyed"
               ><span><SVGWrapper :name="routeIcon" /></span>
-                  <span class="py-1">{{ name }} {{ $store.state.guild.guild }}</span></NuxtLink
+              <span class="py-1"
+                >{{ name }} {{ $store.state.guild.guild }}</span
+              ></NuxtLink
             >
           </div>
         </div>
@@ -198,13 +199,15 @@ import Navigation from '@/data/SideBarNav'
 import Constants from '@/data/Constants'
 export default {
   props: {
-      title: {
-          type: String,
-          default: null
-      }
+    title: {
+      type: String,
+      default: null,
+    },
   },
   data() {
     return {
+      icon: localStorage.getItem('guildIcon'),
+      guildName: localStorage.getItem('guildName'),
       toggleNav: false,
       tSettings: false,
       Navigation,

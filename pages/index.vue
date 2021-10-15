@@ -21,7 +21,7 @@
           <div class="text-center text-5xl typewrite">
             <p class="p-1">Why Discortics™?</p>
             <span class="text-4xl text-white font-semibold wrap p-1"
-              >{toWrite}</span
+              >{{reasons[Math.floor(Math.random() * reasons.length)]}}</span
             >
             <span class="invisible">.</span>
           </div>
@@ -117,8 +117,8 @@
       </div>
     </div>
     <div class="p-2 pt-30x">
-      <div class="max-w-6xl mx-auto" data-aos="fade-up">
-        <div class="mx-auto flex flex-wrap justify-center">
+      <div class="max-w-md sm:max-w-6xl mx-auto w-full" data-aos="fade-up">
+        <div class="mx-auto flex flex-col md:flex-row md:flex-wrap justify-center w-full">
           <div v-for="feature in features" :key="feature.name">
             <CardsFeature
               :name="feature.name"
@@ -248,6 +248,7 @@
 
 <script>
 import Features from '@/data/Features'
+import Reasons from '@/data/Reasons'
 const SwalOptions = {
   title: '<u>Invite Bot</u>',
   html: 'Here are different ways to invite Discortics',
@@ -275,6 +276,7 @@ export default {
       const result = await $axios.$get('/api/ping')
       return {
         features: Features,
+        reasons: Reasons,
         pingResult: {
           users: result.members
             .toString()
@@ -289,6 +291,7 @@ export default {
       console.error(e)
       return {
         features: Features,
+        reasons: Reasons,
         pingResult: {
           users: e,
           servers: null,

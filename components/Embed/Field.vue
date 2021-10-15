@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center w-full">
     <div
-      class="
+      class="border-maid-border border-opacity-50 border 
         flex flex-col
         md:flex-row
         justify-between
