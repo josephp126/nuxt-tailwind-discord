@@ -22,7 +22,9 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@sweetalert2/theme-dark/dark.css',
-    './assets/transition.css'
+    './assets/transition.css',
+    './static/css/main.css',
+    './static/css/cards.css'
   ],
 
   // SSR

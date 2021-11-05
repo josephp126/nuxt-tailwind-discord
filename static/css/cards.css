@@ -1,0 +1,33 @@
+.form-card {
+  background-color: linear-gradient(
+    102.94deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 232.2%
+  );
+ 
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+
+}
+.form-card .input {
+  border: 2px solid #434343;
+  box-sizing: border-box;
+  box-shadow: 0px 3.06027px 5.35547px -1.53013px rgba(0, 0, 0, 0.25);
+  border-radius: 7.65067px;
+}
+
+.form-card .gradient-circle {
+  background: linear-gradient(
+    233.52deg,
+    rgba(79, 164, 249, 0.82) 45.01%,
+    rgba(122, 118, 251, 0) 111.17%
+  );
+  filter: blur(180.71px);
+}
+
+.exampleText {
+  background: rgba(79, 164, 249, 0.1);
+  box-shadow: 0px 6px 36px -1.53013px rgba(0, 0, 0, 0.11);
+  border-radius: 7.65067px;
+}

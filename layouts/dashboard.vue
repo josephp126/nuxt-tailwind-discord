@@ -6,21 +6,19 @@
       min-h-screen
       font-quicksand
       tracking-wide
-      coolbg
+      bg-discortics-100
       text-white
     "
   >
     <LayoutSidebar :title="$nuxt.$route.path.split('/').reverse()[0]" />
+    <LayoutTopbar :title="$nuxt.$route.path.split('/').reverse()[0]" />
     <main class="flex-1 w-full p-4 mx-auto md:px-8 md:py-16 mt-5">
       <div id="content" class="pt-10">
-        <div class="px-2">
+        <div class="md:ml-20 mx-auto px-2">
           <div class="p-px">
             <Nuxt />
           </div>
         </div>
-      </div>
-      <div class="hidden md:block">
-        <LayoutFab :NavList="Navigation" />
       </div>
     </main>
   </div>

@@ -10,7 +10,7 @@
       <div
         class="spinner-grow text-secondary align-self-center loader-lg"
       ></div>
-      <div class="flex flex-wrap justify-center">
+      <div class="flex flex-wrap justify-center mx-auto">
         <CardsServers
           v-for="stuff in servers"
           :key="stuff.name"

@@ -37,19 +37,17 @@ module.exports = {
         '10xl': '110rem',
       },
       colors: {
+        button: {
+          initial: "#7875FC",
+          through: "#F586C4",
+          final: "#F9AE83",
+        },
         discortics: {
-          '100': '#060818',
-          '200': '#1b55e2',
-          '300': '#5c1ac3',
-          '400': '#888ea8',
-          '500': '#191e3a',
-          '600': '#1f2547',
-          'container': '#111f346b',
+          '100': '#101014',
+
           'quote': '#1b2e4b',
-          'link': '#25d5e4',
-          'header': '#1b2e4b',
-          'server': '#1c283c',
-          'dashboard': '#0e1726'
+          'header': '#232327',
+          'line': '#272727',
         },
         maid: {
           'border': '#4ef0fc',
@@ -73,8 +71,11 @@ module.exports = {
       zIndex: {
         '-10': '-10',
         '-20': '-20',
+      },
+      backdropBlur: {
+        super: '100px',
+        gigant: '180px',
       }
-
     }
   },
   variants: {

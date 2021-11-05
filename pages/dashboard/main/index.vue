@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class = "max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
       <div id="members" class="flex flex-col p-4 space-y-4">
         <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
@@ -246,6 +246,7 @@ export default {
     },
   },
   async asyncData(ctx) {
+    localStorage.setItem('guildID', "708944530413453393")
 const token = localStorage.getItem('sessionToken')
     const response = await ctx.$api.request({
       url: `/prefix?id=${localStorage.getItem(
