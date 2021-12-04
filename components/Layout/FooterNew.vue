@@ -4,13 +4,23 @@
         <!-- Start Server Section -->
         <div class="bg-content bg-no-repeat bg-center bg-black24 py-24" :style="ServerImage">
             <div class="container">
-                <div class="grid grid-cols-12 gap-6">
-                    <div class="col-span-6 lg:pr-56">
-                        <h2 class="text-green4f text-5xl font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span>  of your <span class="font-bold">dreams.</span> </h2>
+                <div class="lg:grid grid-cols-12 gap-6 items-center">
+                    <div class="col-span-6 2xl:pr-56 mb-8 lg:mb-0">
+                        <h2 class="text-green4f text-4xl sm:text-5xl font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span>  of your <span class="font-bold">dreams.</span> </h2>
                         <p class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.</p>
                     </div>
                     <div class="col-span-6">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit rem quisquam illo aliquam molestiae commodi, cupiditate quos voluptatum quia ut tempora laudantium quam vero perspiciatis ea, vitae mollitia. Quia, dolore?
+                        <div class="sm:flex flex-wrap justify-center sm:space-x-5">
+                            <nuxt-link to="/" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-4 px-8 tracking-wider	text-center mb-4 sm:mb-0">
+                                DASHBOARD
+                                <img class="ml-3" src="/svg/dashedboard.svg" alt="">
+                            </nuxt-link>
+                            <nuxt-link to="/" class=" border border-grayb5 border-opacity-80 text-gray9d font-bold rounded-full flex items-center text-body15 font-quicksand uppercase py-4 px-8 tracking-wider justify-center">
+                                INVITE BOT
+                                <img class="ml-3" src="/svg/plane.svg" alt="">
+                            </nuxt-link>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

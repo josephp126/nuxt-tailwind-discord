@@ -52,13 +52,17 @@ module.exports = {
       },
       backgroundImage: {
         'navCurrent': 'linear-gradient(90deg, #7875FC 0%, #4FA4F9 0.03%, #F586C4 114.81%, rgba(249, 174, 131, 0) 317.33%)',
+        'buttonBg': ' linear-gradient(83.08deg, #4FEBF9 7.34%, #3FC1CD 92.07%)',
       },
       fontSize:{
         body17: ["17px","140%"],
+        body15: ["15px","120%"],
       },
       colors: {
         green4f: "#4FEBF9",
         black24: "#242424",
+        gray9d: "#9D9D9D",
+        grayb5: "#B5B5B5",
         button: {
           initial: "#7875FC",
           through: "#F586C4",
