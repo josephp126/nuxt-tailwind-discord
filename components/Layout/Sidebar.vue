@@ -1,35 +1,58 @@
 <template>
+  <div class="p-4 fixed h-full font-montserrat">
     <div
       :class="`
-        z-40
+        z-40 h-full
+        rounded-xl
         hidden md:block
-        flex-1 flex
-        fixed
+        flex-none flex
         md:left-0
         items-center
+        overflow-hidden
         transform
-        transition
+        group flex flex-col
+        relative
+        transition-all
         duration-500
         ease-in-out
-        top-0
+        ${toggleNav ? 'w-64' : 'w-24'}
+        hover:w-64
+        top-0           overflow-y-scroll
+
         bg-discortics-header
       `"
     >
       <div
-        class="block min-h-screen top-0 left-0 bg-discortics-header fixed p-8 pt-0"
+        class="
+          block
+          top-0
+          left-0
+          bg-gradient-to-b
+          from-discortics-header
+          via-discortics-headervia
+          to-discortics-headerto
+          sticky
+          flex-1
+          p-4
+          pt-0
+          overflow-hidden
+        "
       >
-        <div class="flex md:space-y-1 flex-col md:pt-0 pt-10 mt-14">
-            <div> 
-                <img
-                  class="h-12 w-auto p-2"
-                  src="/img/90x90.png"
-                  alt="Discortics"
-                />
-            </div>
+        <div :class="`flex md:space-y-1 flex-col ${toggleNav ? 'items-start' : 'items-center'} group-hover:items-start md:pt-0 pt-10 mt-14`">
+          <div class="flex flex-row justify-start items-center" @click="toggleBoth">
+            <img
+              class="h-12 w-auto p-2"
+              src="/img/90x90.png"
+              alt="Discortics"
+            />
+            <span :class="`text-lg font-bold ${toggleNav ? 'block' : 'hidden'} group-hover:block`"
+              >Discortics</span
+            >
+          </div>
           <div
             v-for="{ heading, greyed, routes } in Navigation"
             :key="heading"
-            class = "flex flex-col items-center"
+            :class="`flex flex-col items-center ${toggleNav ? 'w-full' : ''} group-hover:w-full`"
           >
             <p
               :class="`
@@ -49,51 +72,71 @@
                 block
                 tooltip
                 rounded-md
-              ${greyed ? ' cursor-not-allowed' : ''}`"
+              `"
               :disabled="greyed"
             >
               <span
                 :class="`text-yellow-500 my-auto mx-auto text-center stroke-1`"
-                ><hr class = "border border-discortics-line" /></span>
+                ><hr class="border border-discortics-line"
+              /></span>
               <span class="py-1 tooltiptext">{{ heading }}</span>
             </p>
-            <NuxtLink
+            <div
               v-for="{ name, route, key, routeIcon } in routes"
               :key="key"
-              :to="route"
-              :class="`${title === key ? 'text-discortics-link' : ''}
-                
+              :class="`${
+                title === key ? '' : ''
+              } w-full p-px py-1 flex flex-row items-center justify-start`"
+            >
+              <div
+                :class="`${
+                  title === key ? 'block' : 'hidden'
+                } absolute -left-2 flex flex-row items-center`"
+              >
+                <SVGNewPointer :size="24" />
+              </div>
+              <NuxtLink
+                :to="route"
+                :class="`${
+                  title === key ? 'bg-discortics-button' : 'text-gray-300'
+                }
                 tracking-wide
-                px-3
+                p-2
                 transition
-                tooltip
                 duration-300
                 ease-in-out
                 capitalize
-                py-2
-                rounded-md
+                h-12
+                ${toggleNav ? 'w-full rounded-md justify-start' : 'w-12 rounded-full justify-center'} group-hover:w-full
+                group-hover:rounded-md
                 text-sm
                 font-medium
+                hover:bg-discortics-button
+                hover:bg-opacity-100
                 hover:text-discortics-link
                 block
-                rounded-md
-                flex flex-row space-x-4
-                ${
-                  greyed
-                    ? //                'pointer-events-none text-gray-500'
-                      'text-gray-300'
-                    : 'text-gray-300'
-                }`"
-              :disabled="greyed"
-              ><span><SVGWrapper :name="routeIcon" /></span>
-              <span class="py-1 tooltiptext"
-                >{{ name }}</span
-              ></NuxtLink
-            >
+                rounded-md space-x-4 items-center
+                flex flex-row group-hover:justify-start
+`"
+                :disabled="greyed"
+                ><span
+                  ><SVGNewWrapper :name="routeIcon"
+                /></span>
+                <span
+                  :class="`${
+                    title === key
+                      ? 'bg-navCurrent text-transparent bg-clip-text'
+                      : 'text-gray-300'
+                  } py-2 ${toggleNav ? 'block' : 'hidden'} group-hover:block`"
+                  >{{ name }}</span
+                ></NuxtLink
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>

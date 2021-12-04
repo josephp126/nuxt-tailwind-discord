@@ -1,8 +1,9 @@
 <template>
   <div class="bg-discortics-dashboard rounded-md">
-    <div class="border-b border-dashed border-gray-500">
-      <div class="p-4">
-        <p class="text-lg">Your Servers</p>
+    <div class="py-2">
+      <div class="p-4 flex flex-col items-start space-y-1">
+        <span class="text-2xl bg-navCurrent text-transparent bg-clip-text font-bold font-montserrat">Your Servers</span>
+        <span class = "text-sm">Manage your servers here!</span>
       </div>
     </div>
 
@@ -14,10 +15,7 @@
         <CardsServers
           v-for="stuff in servers"
           :key="stuff.name"
-          :name="stuff.name"
-          :gID="stuff.id"
-          :icon="stuff.icon"
-          :exists="stuff.exists"
+          :guild="stuff"
         />
       </div>
     </div>
@@ -52,31 +50,19 @@ if (context.$auth.loggedIn) {
     
   },
   */
-  async asyncData({ $api }) {
+  async asyncData({ $api, $_ }) {
 
 const token = localStorage.getItem('sessionToken')
     const allServers = await $api.$request({
-      url: '/@me/guilds',
+      url: 'v2/@me/guilds',
       method: 'get',
       headers: { Authorization: `Bearer ${token}` },
     })
-    console.log(allServers)
-    let botServers = await $api.$request(
-      {
-        url: `/botguilds?ts=${new Date().getTime()}`,
-        method: 'post',
-        headers: { Authorization: `Bearer ${token}` },
-        data: {guilds: allServers.map((x) => x.id)},
-      }
-    )
-    botServers = botServers.botguilds
-
-    const guilds = new MapperMap
-    console.log(allServers)
-    allServers.forEach((guild) => {
+    const guilds = new MapperMap()
+    allServers.servers.forEach((guild) => {
       if (guild.permissions === 2147483647) {
         guild.exists = false
-        if (botServers.includes(guild.id)) guild.exists = true
+        if (guild.botPresent) guild.exists = true
         guilds.set(guild.id, guild)
       }
     })
@@ -87,7 +73,8 @@ const token = localStorage.getItem('sessionToken')
         icon: x.icon,
         id: x.id,
         exists: x.exists,
-      })),
+        userType: $_.capitalize(x.userType)
+      })).sort((a, b) => a.exists === b.exists ? 0 : a.exists ? -1 : 1),
       serverList: guilds,
     }
   },

@@ -2,8 +2,8 @@ export default function ({ store, $axios }, inject) {
     // Create a custom axios instance
     const api = $axios.create({
         headers: {
+            "Authorization": localStorage.getItem('sessionToken'),
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${store.state.dash.token}`,
             common: {
                 Accept: 'text/plain, */*'
             }

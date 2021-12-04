@@ -1,5 +1,5 @@
 <template>
-  <header class="p-0 md:p-4 md:hidden">
+  <header class="p-0 md:p-4 md:hidden top-0 fixed z-50 font-montserrat">
     <div
       :class="`inset-0 w-full fixed h-full z-30 block ${
         toggleNav || tSettings ? 'visible' : 'invisible'

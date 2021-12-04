@@ -3,8 +3,8 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      :width="size"
-      :height="size"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       stroke="currentColor"
       aria-hidden="true"
@@ -18,15 +18,3 @@
     </svg>
   </div>
 </template>
-<script>
-export default {
-  props: {
-    size: {
-      type: String,
-      default() {
-        return '24'
-      },
-    },
-  },
-}
-</script>

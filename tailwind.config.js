@@ -2,6 +2,10 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    stroke: {
+      'nav': 'linear-gradient(to right, rgb(147, 197, 253), rgb(191, 219, 254), rgb(196, 181, 253))',
+      'none': 'transparent'
+    },
     zIndex: {
       '0': 0,
       '10': 10,
@@ -17,7 +21,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'quicksand': ['Quicksand', 'sans-serif']
+        'quicksand': ['Quicksand', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif']
       },
       padding: {
         '30x': "30%"
@@ -36,6 +41,15 @@ module.exports = {
         '9xl': '100rem',
         '10xl': '110rem',
       },
+      spacing: {
+        '100': '30rem',
+        '106': '36rem',
+        '112': '42rem',
+
+      },
+      backgroundImage: {
+        'navCurrent': 'linear-gradient(90deg, #7875FC 0%, #4FA4F9 0.03%, #F586C4 114.81%, rgba(249, 174, 131, 0) 317.33%)',
+      },
       colors: {
         button: {
           initial: "#7875FC",
@@ -44,10 +58,12 @@ module.exports = {
         },
         discortics: {
           '100': '#101014',
-
           'quote': '#1b2e4b',
           'header': '#232327',
           'line': '#272727',
+          'headervia': '#212121',
+          'headerto': '#181818',
+          'button': '#333334',
         },
         maid: {
           'border': '#4ef0fc',
@@ -82,8 +98,12 @@ module.exports = {
     extend: {
       backgroundImage: ['hover', 'focus'],
       backgroundColor: ['checked'],
+      width: ['hover', 'focus', 'group-hover'],
+      display: ['group-hover'],
+      justifyContent: ['group-hover'],
       translate: ['active', 'group-hover', 'group-focus', 'hover'],
       visibility: ['hover', 'focus', 'group-hover', 'group-focus'],
+      alignItems: ['group-hover'],
     },
   },
   plugins: [],

@@ -41,7 +41,8 @@ export default {
     '~/plugins/vue-tooltip.js',
     '~/plugins/api.js',
     '~/plugins/swal.js',
-    '~/plugins/chart.js'
+    '~/plugins/chart.js',
+    '~/plugins/lodash.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

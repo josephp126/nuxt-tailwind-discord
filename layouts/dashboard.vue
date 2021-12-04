@@ -1,5 +1,5 @@
 
-<template>
+<template>  
   <div
     class="
       flex flex-col
@@ -10,17 +10,26 @@
       text-white
     "
   >
-    <LayoutSidebar :title="$nuxt.$route.path.split('/').reverse()[0]" />
-    <LayoutTopbar :title="$nuxt.$route.path.split('/').reverse()[0]" />
-    <main class="flex-1 w-full p-4 mx-auto md:px-8 md:py-16 mt-5">
-      <div id="content" class="pt-10">
-        <div class="md:ml-20 mx-auto px-2">
+  <div class = "md:flex md:flex-row w-full min-h-screen">
+    <div
+      :class="`inset-0 w-full fixed h-full z-30 block bg-gray-800 bg-opacity-30 ${
+        toggleNav ? 'visible' : 'invisible'
+      }`"
+      @click="toggleChild"
+    />
+    <LayoutSidebar :title="$nuxt.$route.path.split('/').reverse()[0]" ref = "mobilemenu" />
+    <LayoutTopbar :title="$nuxt.$route.path.split('/').reverse()[0]" ref = "desktopmenu" />
+    <main class="flex-1 w-full p-2 mx-auto md:px-8 mt-5 md:mt-0 md:ml-48">
+      <div id="content" class="p-2 flex flex-col justify-start">
+        <LayoutTopstuff ref = "topbar"/>
+        <div class="md:ml-20 md:mt-20 mx-auto px-2">
           <div class="p-px">
             <Nuxt />
           </div>
         </div>
       </div>
     </main>
+  </div>
   </div>
 </template>
 <style>
@@ -42,5 +51,11 @@ export default {
       Navigation,
     }
   },
+  methods: {
+toggleChild() {
+        this.$refs.topbar[0].toggleOff ?? this.$refs.topbar[0].toggleOff()
+        this.$refs.desktopmenu[0].toggleOff ?? this.$refs.desktopmenu[0].toggleOff()
+    }
+  }
 }
 </script>

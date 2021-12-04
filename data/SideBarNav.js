@@ -10,19 +10,19 @@ export default [
                 name: `Home`,
                 route: `/`,
                 key: `home`,
-                routeIcon: "home",
+                routeIcon: "prehome",
             },
             {
                 name: `Servers`,
                 route: `/dashboard`,
                 key: `dashboard`,
-                routeIcon: "server",
+                routeIcon: "preservers",
             },
             {
-                name: `Leaderboards`,
-                route: `/leaderboards`,
-                key: `leaderboards`,
-                routeIcon: "bar",
+                name: `Premium`,
+                route: `/premium`,
+                key: `premium`,
+                routeIcon: "prepremium",
             },
         ]
     },
@@ -36,19 +36,31 @@ export default [
                 name: `General`,
                 route: `/dashboard/main`,
                 key: `main`,
-                routeIcon: "grid",
+                routeIcon: "pregeneral",
+            },
+            {
+                name: `Statistics`,
+                route: `/stats`,
+                key: `stats`,
+                routeIcon: "prestats",
+            },
+            {
+                name: `Commands`,
+                route: `/dashboard/commands`,
+                key: `commands`,
+                routeIcon: "precommands",
             },
             {
                 name: `Embeds`,
                 route: `/dashboard/embeds`,
                 key: `embeds`,
-                routeIcon: "paperclip",
+                routeIcon: "preembed",
             },
             {
-                name: `Tags`,
-                route: `/dashboard/tags`,
-                key: `tags`,
-                routeIcon: "tag",
+                name: `Leaderboards`,
+                route: `/leaderboards`,
+                key: `leaderboards`,
+                routeIcon: "preleaderboard",
             },
         ]
     },
@@ -59,17 +71,30 @@ export default [
         icon: "grid",
         routes: [
             {
+                name: `Welcome`,
+                route: `/dashboard/welcome`,
+                key: `welcome`,
+                routeIcon: "prewelcome",
+            },
+            {
                 name: `Applications`,
                 route: `/dashboard/applications`,
                 key: `applications`,
-                routeIcon: "file",
+                routeIcon: "preapps",
             },
             {
-                name: `Level`,
+                name: `Levels`,
                 route: `/dashboard/level`,
                 key: `level`,
-                routeIcon: "award",
+                routeIcon: "prelevels",
             },
+            {
+                name: `Tags`,
+                route: `/dashboard/tags`,
+                key: `tags`,
+                routeIcon: "pretags",
+            },
+            
         ]
     },
     {
@@ -79,16 +104,10 @@ export default [
         icon: "pluscircle",
         routes: [
             {
-                name: `Support`,
-                route: `/support`,
-                key: `support`,
-                routeIcon: "helpcircle",
-            },
-            {
-                name: `Documentation`,
+                name: `Docs`,
                 route: `/documentation`,
                 key: `documentation`,
-                routeIcon: "book",
+                routeIcon: "predocs",
             },
         ]
     },
