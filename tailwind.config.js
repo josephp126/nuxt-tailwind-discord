@@ -2,6 +2,10 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container:{
+      padding: '0 12px',
+      margin: '0 auto'
+    },
     stroke: {
       'nav': 'linear-gradient(to right, rgb(147, 197, 253), rgb(191, 219, 254), rgb(196, 181, 253))',
       'none': 'transparent'
@@ -45,16 +49,21 @@ module.exports = {
         '100': '30rem',
         '106': '36rem',
         '112': '42rem',
-
       },
       backgroundImage: {
         'navCurrent': 'linear-gradient(90deg, #7875FC 0%, #4FA4F9 0.03%, #F586C4 114.81%, rgba(249, 174, 131, 0) 317.33%)',
       },
+      fontSize:{
+        body17: ["17px","140%"],
+      },
       colors: {
+        green4f: "#4FEBF9",
+        black24: "#242424",
         button: {
           initial: "#7875FC",
           through: "#F586C4",
           final: "#F9AE83",
+          
         },
         discortics: {
           '100': '#101014',
