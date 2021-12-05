@@ -30,6 +30,7 @@
     "vue-apexcharts": "^1.6.2",
     "vue-awesome-swiper": "^4.1.1",
     "vue-lodash": "^2.1.2",
+    "vue-scroll-fixed-navbar": "^0.2.2",
     "vue-sweetalert2": "^5.0.2"
   },
   "devDependencies": {
