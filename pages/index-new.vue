@@ -568,30 +568,32 @@ import VueJsCounter from "vue-js-counter";
                 bgLayer: {
                     backgroundImage: `url(https://i.imgur.com/XbYc0CR.png)`,
                 },
+                ServerBg: {
+                    backgroundImage: `url(https://i.imgur.com/lHu8gSV.png)`,
+                },
                 
-                        //   swiper One
-        swiperOptionOne: {
-          slidesPerView: 2,
-          spaceBetween: 90,
-          breakpoints: {
-              1199: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 1,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-            320: {
-              slidesPerView: 1,
-            }
-          }
-        },
-      
+                //   swiper One
+                swiperOptionOne: {
+                slidesPerView: 2,
+                spaceBetween: 90,
+                breakpoints: {
+                    1199: {
+                    slidesPerView: 2,
+                    },
+                    1024: {
+                    slidesPerView: 1,
+                    },
+                    768: {
+                    slidesPerView: 1,
+                    },
+                    640: {
+                    slidesPerView: 2,
+                    },
+                    320: {
+                    slidesPerView: 1,
+                    }
+                }
+                },
                 //   swiper two
                 swiperOptionTwo: {
                     slidesPerView: 3,
@@ -665,30 +667,29 @@ import VueJsCounter from "vue-js-counter";
                         },
                     },
                 },
+                //   swiper Five
+                swiperOptionFive: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                breakpoints: {
+                    1199: {
+                    slidesPerView: 3,
+                    },
+                    1024: {
+                    slidesPerView: 2,
+                    },
+                    768: {
+                    slidesPerView: 2,
+                    },
+                    640: {
+                    slidesPerView: 1,
+                    },
+                    320: {
+                    slidesPerView: 1,
+                    }
+                }
+                },
 
-
-        //   swiper Five
-        swiperOptionFive: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-          breakpoints: {
-            1199: {
-              slidesPerView: 3,
-            },
-            1024: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            640: {
-              slidesPerView: 1,
-            },
-            320: {
-              slidesPerView: 1,
-            }
-          }
-        },
             };
 
 
