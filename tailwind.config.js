@@ -60,8 +60,10 @@ module.exports = {
         'buttonBg': ' linear-gradient(83.08deg, #4FEBF9 7.34%, #3FC1CD 92.07%)',
       },
       fontSize:{
+        
+        body15: ["15px", "120%"],
+        body16: ["15px", "26px"],
         body17: ["17px","28px"],
-        body15: ["15px","120%"],
         body55: ["55px","110%"],
         body22: ["22px","27px"],
         body42: ["42px","52px"],
