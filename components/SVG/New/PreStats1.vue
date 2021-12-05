@@ -1,5 +1,5 @@
 <template>
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 10C0 4.47715 4.47715 0 10 0H38C43.5229 0 48 4.47715 48 10V38C48 43.5229 43.5228 48 38 48H10C4.47715 48 0 43.5228 0 38V10Z" fill="#8BADFF" fill-opacity="0.18"/>
 <g filter="url(#filter0_di_118_78)">
 <path d="M19.7143 29.102V31.1429C19.7143 32.6735 18.4898 34 16.8571 34C15.2245 34 14 32.6735 14 31.1429V29.102C14 27.5714 15.2245 26.2449 16.8571 26.2449C18.4898 26.2449 19.7143 27.5714 19.7143 29.102Z" fill="#8BADFF"/>
@@ -25,4 +25,14 @@
 </filter>
 </defs>
 </svg></template>
+<script>
+export default {
+props: {
+size: {
+type: String,
+default() {return "24"}
+}
+},
+}
+</script>
 

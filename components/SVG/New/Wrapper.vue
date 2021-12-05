@@ -96,7 +96,6 @@
     <SVGNewPreWelcome v-if="name.toLowerCase() == 'prewelcome'" :size="size" />
   </div>
 </template>
-
 <script>
 export default {
   props: {

@@ -15,3 +15,13 @@
 </defs>
 </svg>
 </template>
+<script>
+export default {
+props: {
+size: {
+type: String,
+default() {return "24"}
+}
+},
+}
+</script>

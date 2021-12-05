@@ -1,5 +1,6 @@
+
 <template> 
-            <label class = "w-full relative">
+            <label class = "w-full max-w-md relative">
                 <div class = "absolute left-2 inset-y-0 flex flex-col justify-center text-gray-500">
                     <button @click = "resetQuery">
                     <SVGSearch v-if = "!isitFocused()" size = "24" />
@@ -28,4 +29,4 @@ export default {
         }
     }
 }
-</script>
+</script> 

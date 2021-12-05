@@ -1,5 +1,6 @@
+
 <template>
-  <div id="dropdown" class="rounded-xl bg-discortics-100 border-gray-700 border-2 w-full">
+  <div id="dropdown" class="rounded-xl bg-discortics-100 border-gray-700 border-2">
           <div
       :class="`inset-0 w-full fixed h-full z-10 block ${
         dropOpen ? 'visible' : 'invisible'
@@ -7,7 +8,7 @@
       @click="toggleOff"
      />
     <div id="dropdown-stuff" class="h-16 w-full p-2 relative flex flex-col items-center">
-      <div id = "default-stuff" class="flex flex-row items-center p-2 cursor-pointer" @click = "toggleDrop">
+      <div id = "default-stuff" class="w-full flex flex-row items-center p-2 cursor-pointer" @click = "toggleDrop">
         <div class="flex flex-row h-full items-center justify-center">
           <img
             class="object-cover w-9 h-9"

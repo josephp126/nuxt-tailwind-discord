@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row items-start justify-between ml-28 hidden lg: block">
+  <div class="hidden md:flex flex-row items-start justify-between ml-28">
     <div class="flex flex-row items-center">
       <TopbarSearch ref = "search" />
     </div>
