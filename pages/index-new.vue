@@ -158,28 +158,50 @@
                 <div class="mb-16">
                     <swiper class="swiper slider-giveaways" :options="swiperOptionOne">
                     <swiper-slide>
-                        <div  class="flex items-center">
-                            <div class="order-2">
-                                <img src="/img/slider-thumb1.png" alt="">
-                            </div>
-                            <div class="mr-10">
+                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
+                            <div>
                                 <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
                                 <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
                             </div>
-                            
+                            <div class="row-start-1 lg:row-start-auto">
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
+                            </div>
                         </div>
-                        
                     </swiper-slide>
-        
                     <swiper-slide>
-                        <div>
-                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Levels</h2>
-                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
+                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
+                            <div>
+                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
+                            <div class="row-start-1 lg:row-start-auto">
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
+                            </div>
                         </div>
                     </swiper-slide>
-       
-         
-             
+                    <swiper-slide>
+                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
+                            <div>
+                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
+                            <div class="row-start-1 lg:row-start-auto">
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
+                            <div>
+                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
+                            <div class="row-start-1 lg:row-start-auto">
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
+                            </div>
+                        </div>
+                    </swiper-slide>
+
                 </swiper>
                  <!-- end -->
                 </div>
@@ -574,8 +596,9 @@ import VueJsCounter from "vue-js-counter";
                 
                 //   swiper One
                 swiperOptionOne: {
-                slidesPerView: 2,
-                spaceBetween: 90,
+                slidesPerView: 1,
+                spaceBetween: 80,
+               centeredSlides: true,
                 breakpoints: {
                     1199: {
                     slidesPerView: 2,
@@ -671,6 +694,10 @@ import VueJsCounter from "vue-js-counter";
                 swiperOptionFive: {
                 slidesPerView: 3,
                 spaceBetween: 50,
+                autoplay: { 
+                    delay: 300,
+                    
+                },
                 breakpoints: {
                     1199: {
                     slidesPerView: 3,
@@ -714,10 +741,9 @@ import VueJsCounter from "vue-js-counter";
     }
 
   .swiper-slide.swiper-slide-active h2.title-hedding{
-        background: Linear#C51C75 100%#C937FB 100%#FFA88E 100%;
-        -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent;
-        /* color: blue; */
+        background: linear-gradient(270deg, #C51C75 0%, #C937FB 34.65%, #FFA88E 100%);
+        -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
   }
 
     /* Animation Text roate  */
