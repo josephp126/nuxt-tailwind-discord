@@ -63,6 +63,9 @@ module.exports = {
         black24: "#242424",
         gray9d: "#9D9D9D",
         grayb5: "#B5B5B5",
+        grayd5: "#D5D5D55",
+        gray8e: "#8E8E93",
+        gray26: "#262626",
         button: {
           initial: "#7875FC",
           through: "#F586C4",
