@@ -64,9 +64,9 @@ export default {
                 {footerMenuData: "Support"},
                 {footerMenuData: "F.A.Q"},
             ],
-            ServerImage: {
-                backgroundImage: "url(https://i.imgur.com/5yDGYYX.png)",
-            },
+            // ServerImage: {
+            //     backgroundImage: "url(https://i.imgur.com/5yDGYYX.png)",
+            // },
         }
     },
 }

@@ -28,6 +28,7 @@
     "v-tooltip": "^2.1.3",
     "vue-apexcharts": "^1.6.2",
     "vue-lodash": "^2.1.2",
+    "vue-scroll-fixed-navbar": "^0.2.2",
     "vue-sweetalert2": "^5.0.2"
   },
   "devDependencies": {
