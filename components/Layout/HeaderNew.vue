@@ -1,9 +1,9 @@
 <template>
 <div class="relative">
-        <header class="absolute top-7 lg:top-14  w-full py-3 lg:py-0 z-2">
-            <div class="container grid grid-cols-2 lg:grid-cols-3 justify-item lg:justify-items-center  items-center ">
+        <header class="absolute top-7 lg:top-14  w-full py-3 lg:py-0 z-20">
+            <div class="container grid grid-cols-2 lg:grid-cols-3  lg:justify-items-center  items-center ">
                 <!-- left Menu  -->
-                <div class="hidden lg:block">
+                <div class="hidden lg:block justify-self-start ">
                     <ul class="flex items-center space-x-4 xl:space-x-12 ">
                         <li>
                             <nuxt-link to="/index-new" class="text-base capitalize text-graye1 hover:text-blue4f transition-all ">Home</nuxt-link>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <!-- Right Menu -->
-                <div class="hidden lg:block">
+                <div class="hidden lg:block justify-self-end">
                     <ul class="flex items-center space-x-4 xl:space-x-12">
                         <li>
                             <nuxt-link to="#" class="text-base capitalize font-quicksand font-medium  text-graye1 hover:text-blue4f transition-all"> Support</nuxt-link>

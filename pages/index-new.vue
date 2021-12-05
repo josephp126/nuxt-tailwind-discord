@@ -1,6 +1,34 @@
 <template lang="">
     <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maxime quos repellat explicabo quam doloremque doloribus voluptates quis magnam! Dolor ducimus odio non dolorum, dicta reprehenderit fugiat aperiam cum delectus?
+      
+
+        <!-- banner section start  -->
+        <section  :style="bgLayer" class=" relative bg-center bg-cover bg-no-repeat pt-16" >
+            <div class="container grid grid-cols-1 xl:grid-cols-3 items-center">
+                <!-- Information  -->
+                    <div class=" ">
+                        <h2 class="font-montserrat text-4xl lg:text-body55  text-blue4f font-bold mb-4 lg:mb-8 ">Welcome to  Discoritics</h2>
+                        <p class="text-body17 capitalize font-quicksand font-normal mb-8 ">Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?</p>
+                        <div class="flex flex-col  sm:flex-row  items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                             <nuxt-link to="#" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-5 px-8 tracking-wider	text-center w-full   sm:w-auto ">
+                                DASHBOARD
+                                <img class="ml-3" src="/svg/dashboard-btn.svg" alt="">
+                            </nuxt-link>
+                            <nuxt-link to="#" class=" border border-grayb5 border-opacity-80 text-gray9d font-bold rounded-full flex items-center text-body15 font-quicksand uppercase py-5 px-8 tracking-wider justify-center w-full   sm:w-auto ">
+                                INVITE BOT
+                                <img class="ml-3" src="/svg/plane.svg" alt="">
+                            </nuxt-link>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-2 row-start-1 xl:row-start-auto ">
+                        <div>
+                            <img src="/img/bg-dashboard.png" alt="background-layer" class=" max-w-full " >
+                        </div>
+                    </div>
+            </div>  
+        </section>
+        <!-- banner section end  -->
+
         <!-- Don't Cross this Border  -->
         <!-- Slider Start -->
         <div class="container">
@@ -48,6 +76,19 @@
 <script>
 export default {
     name: 'IndexNew',
+    data() { 
+        return { 
+            bgLayer: { 
+                backgroundImage: `url(https://i.imgur.com/XbYc0CR.png)`
+            },
+            bannerInformation: [
+                {
+                    title: 'Welcome to Discoritics',
+                    description: `Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?`
+                }
+            ]
+        }
+    }
 }
 </script>
 <style lang="">

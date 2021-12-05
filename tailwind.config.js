@@ -57,6 +57,7 @@ module.exports = {
       fontSize:{
         body17: ["17px","140%"],
         body15: ["15px","120%"],
+        body55: ["55px","110%"]
       },
       colors: {
         green4f: "#4FEBF9",
