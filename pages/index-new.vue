@@ -28,34 +28,34 @@
             </div>
 
             <!-- counter start   -->
-            <div class=" pt-36 lg:pt-14 pb-8 lg:pb-96">
-                <div class="container grid sm:grid-cols-2  lg:grid-cols-4 gap-10 justify-center ">
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left ">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start  uppercase" >
-                             <VueJsCounter start="0" end="20" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e"  />
+            <div class="py-36 lg:pt-0 xl:pb-72">
+                <div class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
+                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="20" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
                             K
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e ">Dependent Servers</p>
+                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Dependent Servers</p>
                     </div>
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left ">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start  uppercase" >
-                             <VueJsCounter start="0" end="8" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e"  />
+                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="8" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
                             M+
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e ">Discortics Users</p>
+                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Discortics Users</p>
                     </div>
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left ">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start  uppercase" >
-                             <VueJsCounter start="0" end="50" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e"  />
+                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="50" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
                             +
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e ">Available Commands</p>
+                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Available Commands</p>
                     </div>
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left ">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start  uppercase" >
-                             <VueJsCounter start="0" end="20" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e"  />
+                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="20" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e ">Average Ping</p>
+                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Average Ping</p>
                     </div>
                 </div>
             </div>
@@ -63,62 +63,62 @@
         </section>
         <!-- banner section end  -->
 
-
-
         <!-- why-discortics  start   -->
-        <section>
-            <div class="container grid xl:grid-cols-2  gap-16 ">
+        <section class="relative overflow-hidden">
+            <div class="container grid xl:grid-cols-2 gap-16">
                 <div class="text-center xl:text-left">
-                    <h2 class="font-montserrat font-extrabold mb-4 sm:mb-8 text-3xl md:text-body42 " style="background: linear-gradient(83.08deg, #4FEBF9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-" >Why Dicortics ? </h2> 
-                    <p class="text-body17 capitalize font-quicksand  tracking-wide ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit corrupti atque animi ratione temporibus, laborum, nostrum magnam fuga vitae unde praesentium dignissimos dolore quo totam eaque laudantium, eligendi adipisci! Dolor!</p>
+                    <h2
+                        class="font-montserrat font-extrabold mb-4 sm:mb-8 text-3xl md:text-body42"
+                        style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                    >
+                        Why Dicortics ?
+                    </h2>
+                    <p class="text-body17 capitalize font-quicksand tracking-wide">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit corrupti atque animi ratione temporibus, laborum, nostrum magnam fuga vitae unde praesentium dignissimos dolore quo totam eaque laudantium, eligendi
+                        adipisci! Dolor!
+                    </p>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 ">
-                    <div class=" justify-center  sm:justify-self-start">
-                        <span class="mb-4 inline-block" >
-                            <img src="/svg/clock.svg" alt="icon">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
+                    <div class="justify-center sm:justify-self-start">
+                        <span class="mb-4 inline-block">
+                            <img src="/svg/clock.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap" >Fast & efficient</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Fast & efficient</h2>
                     </div>
-                    <div class=" justify-center  sm:justify-self-start">
-                        <span class="mb-4 inline-block" >
-                            <img src="/svg/chain.svg" alt="icon">
+                    <div class="justify-center sm:justify-self-start">
+                        <span class="mb-4 inline-block">
+                            <img src="/svg/chain.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap" >Easy to Modify</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Easy to Modify</h2>
                     </div>
-                    <div class=" justify-center  sm:justify-self-start">
-                        <span class="mb-4 inline-block" >
-                            <img src="/svg/free.svg" alt="icon">
+                    <div class="justify-center sm:justify-self-start">
+                        <span class="mb-4 inline-block">
+                            <img src="/svg/free.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap" >Completely Free!</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Completely Free!</h2>
                     </div>
-                    <div class=" justify-center  sm:justify-self-start">
-                        <span class="mb-4 inline-block" >
-                            <img src="/svg/ok.svg" alt="icon">
+                    <div class="justify-center sm:justify-self-start">
+                        <span class="mb-4 inline-block">
+                            <img src="/svg/ok.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap" >Better UI</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Better UI</h2>
                     </div>
-                    <div class=" justify-center  sm:justify-self-start">
-                        <span class="mb-4 inline-block" >
-                            <img src="/svg/diamond.svg" alt="icon">
+                    <div class="justify-center sm:justify-self-start">
+                        <span class="mb-4 inline-block">
+                            <img src="/svg/diamond.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap" >Premium Features</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Premium Features</h2>
                     </div>
-                    <div class=" justify-center  sm:justify-self-start">
-                        <span class="mb-4 inline-block" >
-                            <img src="/svg/verify.svg" alt="icon">
+                    <div class="justify-center sm:justify-self-start">
+                        <span class="mb-4 inline-block">
+                            <img src="/svg/verify.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap" >Highly Compactable</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Highly Compactable</h2>
                     </div>
                 </div>
             </div>
         </section>
         <!-- why-discortics  end  -->
-
-
-
-
 
         <!-- Don't Cross this Border  -->
 
@@ -412,14 +412,14 @@
 <script>
     import { Swiper, SwiperSlide } from "vue-awesome-swiper";
     import "swiper/swiper-bundle.css";
-    import VueJsCounter from 'vue-js-counter'
+    import VueJsCounter from "vue-js-counter";
 
     export default {
         name: "IndexNew",
         components: {
             Swiper,
             SwiperSlide,
-            VueJsCounter
+            VueJsCounter,
         },
         data() {
             return {
