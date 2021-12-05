@@ -33,6 +33,7 @@ module.exports = {
       },
       minHeight: {
         '100': '100px',
+        '80': '80px',
         '200': '200px',
         '400': '400px',
       },
@@ -45,6 +46,10 @@ module.exports = {
         '9xl': '100rem',
         '10xl': '110rem',
       },
+      height: {
+        315: '315px',
+      
+      },
       spacing: {
         '100': '30rem',
         '106': '36rem',
@@ -55,20 +60,23 @@ module.exports = {
         'buttonBg': ' linear-gradient(83.08deg, #4FEBF9 7.34%, #3FC1CD 92.07%)',
       },
       fontSize:{
-        body17: ["17px","140%"],
+        body17: ["17px","28px"],
         body15: ["15px","120%"],
-        body55: ["55px","110%"]
+        body55: ["55px","110%"],
+        body22: ["22px","27px"],
+        body47: ["47px","57px"],
       },
       colors: {
         green4f: "#4FEBF9",
         black24: "#242424",
         gray9d: "#9D9D9D",
         grayb5: "#B5B5B5",
-        grayd5: "#D5D5D55",
+        grayd5: "#D5D5D5",
         gray8e: "#8E8E93",
         gray26: "#262626",
         graye1: "#E1EBFF",
         blue4f: "#4FEBF9",
+        gray22: "#C4C4C4",
         button: {
           initial: "#7875FC",
           through: "#F586C4",

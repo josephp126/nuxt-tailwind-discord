@@ -169,7 +169,7 @@ import {VueScrollFixedNavbar} from 'vue-scroll-fixed-navbar'
 
     /* Sticky Header */
     #myHeader.sticky  header { 
-        @apply bg-black24 top-0
+        @apply bg-black24 top-0 py-4
     }
     #myHeader.sticky .sidebar {
         @apply bg-opacity-95
