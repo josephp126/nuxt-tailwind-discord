@@ -2,9 +2,68 @@
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maxime quos repellat explicabo quam doloremque doloribus voluptates quis magnam! Dolor ducimus odio non dolorum, dicta reprehenderit fugiat aperiam cum delectus?
         <!-- Don't Cross this Border  -->
+        <div class="py-16 lg:py-24">
+            <div cla>
+                <swiper class="swiper slider-giveaways" :options="swiperOptionTwo">
+                   <swiper-slide>
+                        <div>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb3.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb4.png" alt="">
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb3.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb4.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    
+                     
+                    <!-- <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb4.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb3.png" alt="">
+                        </div>
+                    </swiper-slide> -->
+                </swiper>
+            </div>
+                
+        </div>
+        <!-- slider end -->
 
         <!-- Meet Section Start -->
-        <div class="pt-20 lg:pt-32">
+        <div class="pt-16 lg:pt-24">
             <div class="container">
                 <div class="mb-20 text-center max-w-screen-md m-auto">
                     <h2 class="text-green4f text-4xl  md:text-body47 font-montserrat font-bold mb-4">Meet our Partners</h2>
@@ -51,9 +110,9 @@
         </div>
         
         <!-- Slider Start -->
-        <div class="py-20 lg:py-32">
+        <div class="py-16 lg:py-24">
             <div class="mb-6">
-            <swiper class="swiper" :options="swiperOptionOne">
+            <swiper class="swiper" :options="swiperOptionThree">
             <swiper-slide>
                 <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
                     <div class="flex items-center">
@@ -155,7 +214,7 @@
         <!-- End Slider One -->
 
         <div>
-            <swiper class="swiper" :options="swiperOptionTwo">
+            <swiper class="swiper" :options="swiperOptionFour">
             <swiper-slide>
                 <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
                     <div class="flex items-center">
@@ -257,10 +316,6 @@
 
         </div>
         
-        
-        
-         
-
         <!-- Slider End -->
 
         <!-- Start Server Section -->
@@ -304,15 +359,48 @@
     },
     data() {
       return {
-           //   swiper two
-        swiperOptionOne: {
-          slidesPerView: 5,
-          spaceBetween: 25,
+
+             //   swiper two
+        swiperOptionTwo: {
+          slidesPerView: 3,
+          spaceBetween: 100,
+          centeredSlides: true,
           loop: true,
             autoplay: {
                 delay: 300,
                 disableOnInteraction: false
             },
+    
+          breakpoints: {
+            1400: {
+              slidesPerView: 3,
+            },
+            1199: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            320: {
+              slidesPerView: 1,
+            }
+          }
+        },
+           //   swiper three
+        swiperOptionThree: {
+          slidesPerView: 5,
+          spaceBetween: 25,
+          loop: true,
+           autoplay: {
+            delay: 2500,
+            disableOnInteraction: true
+          },
           pagination: {
             el: '.swiper-pagination',
             clickable: true
@@ -338,15 +426,11 @@
             }
           }
         },
-        //   swiper two
-        swiperOptionTwo: {
+        //   swiper Four
+        swiperOptionFour: {
           slidesPerView: 5,
           spaceBetween: 25,
           autoplay: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
           breakpoints: {
             1400: {
               slidesPerView: 5,
@@ -373,6 +457,23 @@
   }
 
 </script>
-<style lang="">
-    
+<style>
+.slider-giveaways .swiper-wrapper{
+    align-items: center;
+}
+   .slider-giveaways .swiper-slide {
+    width: 60%;
+  }
+   .slider-giveaways .swiper-slide img{
+      width: 100%;
+      height: 100%;
+  } 
+  
+  .slider-giveaways .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+  .slider-giveaways .swiper-slide:nth-child(3n) {
+    width: 20%;
+  }
+  
 </style>
