@@ -31,60 +31,82 @@
 
         <!-- Don't Cross this Border  -->
         <div class="py-16 lg:py-24">
-            <div cla>
-                <swiper class="swiper slider-giveaways" :options="swiperOptionTwo">
-                   <swiper-slide>
+            <div class="xl:ml-80">
+                <div class="mb-16">
+                    <swiper class="swiper slider-giveaways" :options="swiperOptionOne">
+                    <swiper-slide>
                         <div>
-                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
-                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div>
-                            <img src="/img/slider-thumb3.png" alt="">
+                            <img src="/img/slider-thumb1.png" alt="">
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div>
-                            <img src="/img/slider-thumb4.png" alt="">
-                        </div>
-                    </swiper-slide>
-
-                    <swiper-slide>
-                        <div>
-                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
-                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Levels</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div>
-                            <img src="/img/slider-thumb3.png" alt="">
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Applications</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div>
-                            <img src="/img/slider-thumb4.png" alt="">
-                        </div>
-                    </swiper-slide>
-                    
-                     
-                    <!-- <swiper-slide>
-                        <div>
-                            <img src="/img/slider-thumb4.png" alt="">
+                            <img src="/img/slider-thumb1.png" alt="">
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div>
-                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
-                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Levels</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <img src="/img/slider-thumb3.png" alt="">
-                        </div>
-                    </swiper-slide> -->
                 </swiper>
+                 <!-- end -->
+                </div>
+                <!-- start -->
+                <swiper class="swiper slider-giveaways" :options="swiperOptionTwo">
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb4.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb3.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb4.png" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <img src="/img/slider-thumb3.png" alt="">
+                        </div>
+                    </swiper-slide>
+                </swiper>
+                 <!-- end -->
             </div>
                 
         </div>
@@ -376,6 +398,8 @@
 <script>
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
   import 'swiper/swiper-bundle.css'
+    // import 'swiper/css/swiper.css'
+
 
 //   import 'swiper/css/swiper.css'
 
@@ -399,24 +423,9 @@ export default {
 
         //   swiper One
         swiperOptionOne: {
-          slidesPerView: 5,
-          spaceBetween: 25,
-          loop: true,
-            autoplay: {
-                delay: 300,
-                disableOnInteraction: false
-            },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
+          slidesPerView: 3,
+          spaceBetween: 90,
           breakpoints: {
-            1400: {
-              slidesPerView: 5,
-            },
-            1199: {
-              slidesPerView: 4,
-            },
             1024: {
               slidesPerView: 3,
             },
@@ -431,22 +440,12 @@ export default {
             }
           }
         },
+      
         //   swiper two
         swiperOptionTwo: {
-          slidesPerView: 5,
-          spaceBetween: 25,
-          autoplay: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
+          slidesPerView: 3,
+          spaceBetween: 90,
           breakpoints: {
-            1400: {
-              slidesPerView: 5,
-            },
-            1199: {
-              slidesPerView: 4,
-            },
             1024: {
               slidesPerView: 3,
             },
@@ -470,10 +469,6 @@ export default {
                 delay: 300,
                 duration: 300
             },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
           breakpoints: {
             1400: {
               slidesPerView: 5,
@@ -499,7 +494,10 @@ export default {
         swiperOptionFour: {
           slidesPerView: 5,
           spaceBetween: 25,
-          autoplay: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
           breakpoints: {
             1400: {
               slidesPerView: 5,
@@ -545,5 +543,11 @@ export default {
   .slider-giveaways .swiper-slide:nth-child(3n) {
     width: 20%;
   }
+
+  .swiper-slide.swiper-slide-active h2.title-hedding{
+        color: #C51C75;
+  }
+     
+  
   
 </style>
