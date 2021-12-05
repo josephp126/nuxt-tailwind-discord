@@ -18,12 +18,12 @@
     <div
       class="
         flex flex-col
-        md:flex-row
+        lg:flex-row
         justify-center
         items-center
         space-y-4
         mx-auto
-        md:space-x-4 md:space-y-0
+        lg:space-x-4 lg:space-y-0
       "
     >
       <NuxtLink
@@ -33,7 +33,7 @@
 bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border           block
           rounded-md
           w-full
-          md:max-w-md
+          lg:max-w-md
           transition
           duration-500
           ease-in-out
@@ -54,7 +54,7 @@ bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 borde
 bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border           block
           rounded-md
           w-full
-          md:max-w-md
+          lg:max-w-md
           transition
           duration-500
           ease-in-out

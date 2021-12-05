@@ -4,9 +4,9 @@
       :class="`
         z-40 h-full
         rounded-xl
-        hidden md:block
+        hidden lg:block
         flex-none flex
-        md:left-0
+        lg:left-0
         items-center
         overflow-hidden
         transform
@@ -38,7 +38,7 @@
           overflow-hidden
         "
       >
-        <div :class="`flex md:space-y-1 flex-col ${toggleNav ? 'items-start' : 'items-center'} group-hover:items-start md:pt-0 pt-10 mt-14`">
+        <div :class="`flex lg:space-y-1 flex-col ${toggleNav ? 'items-start' : 'items-center'} group-hover:items-start lg:pt-0 pt-10 mt-14`">
           <div class="flex flex-row justify-start items-center" @click="toggleBoth">
             <img
               class="h-12 w-auto p-2"

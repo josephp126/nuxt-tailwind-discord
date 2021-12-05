@@ -48,6 +48,9 @@ module.exports = {
 
       },
       backgroundImage: {
+        'featureHover': 'linear-gradient(114deg, rgba(79,164,249,1) -73%, rgba(242,118,250,1) 240%)',
+        'featureHover1': 'linear-gradient(113.57deg, #4FA4F9 -74.59%, rgba(242, 118, 250, 0) 249.06%)',
+        'button': 'linear-gradient(90deg, #1E1A56 -0.59%, rgba(45, 43, 120, 0.0734855) 284.31%, rgba(46, 44, 122, 0) 335.77%)',
         'navCurrent': 'linear-gradient(90deg, #7875FC 0%, #4FA4F9 0.03%, #F586C4 114.81%, rgba(249, 174, 131, 0) 317.33%)',
       },
       colors: {
@@ -96,7 +99,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundImage: ['hover', 'focus'],
+      backgroundImage: ['hover', 'focus', 'group-hover'],
       backgroundColor: ['checked'],
       width: ['hover', 'focus', 'group-hover'],
       display: ['group-hover'],

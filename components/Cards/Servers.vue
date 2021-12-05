@@ -1,15 +1,15 @@
 <template>
-  <div class="p-2 relative w-full md:max-w-sm">
-    <div class="w-full h-full md:h-40">
+  <div class="p-2 relative w-full lg:max-w-sm">
+    <div class="w-full h-full lg:h-40">
       <div
         class="
           relative
           overflow-hidden
           form-card
           w-full
-          md:w-80
+          lg:w-80
           h-52
-          md:h-36
+          lg:h-36
           rounded-md
           bg-blend-overlay
           block
@@ -24,7 +24,7 @@
             bg-cover bg-center
             w-full
             h-40
-            md:h-36
+            lg:h-36
             rounded-md
             transform
             filter
@@ -70,13 +70,13 @@
             class="
               mx-auto
               flex flex-col
-              md:flex-row
+              lg:flex-row
               justify-start
               w-full
               h-full
             "
           >
-            <div class="flex items-center p-2 w-full md:w-36">
+            <div class="flex items-center p-2 w-full lg:w-36">
               <img
                 class="w-20 h-20 mx-auto z-30"
                 :src="
@@ -98,27 +98,20 @@
                 items-center
                 text-center
                 relative
-                md:text-left md:items-start
+                lg:text-left lg:items-start
               "
             >
-              <div class="absolute mx-auto -bottom-2 md:-bottom-6 md:right-2">
+              <div class="absolute mx-auto -bottom-2 lg:-bottom-6 lg:right-2">
                 <div class="text-center p-2 w-24">
                   <a
                     v-if="guild.exists"
                     @click="moveToDash"
-                    style="
-                      background: linear-gradient(
-                        90deg,
-                        #7875fc 0%,
-                        rgba(245, 134, 196, 0.688692) 192.87%,
-                        rgba(249, 174, 131, 0) 619.55%
-                      );
-                    "
+                    style="background: linear-gradient(90deg, #7875fc 0%, rgba(245, 134, 196, 0.688692) 192.87%, rgba(249, 174, 131, 0) 619.55%);"
                     class="
                       block
                       w-full
                       transition
-                      duration-300
+                      duration-300 cursor-pointer
                       p-2
                       hover:translate-y-1
                       ease-in-out

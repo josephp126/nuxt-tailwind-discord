@@ -18,7 +18,7 @@
       class="
         p-4
         flex flex-col
-        md:flex-row
+        lg:flex-row
         items-center
         justify-between
         mx-auto

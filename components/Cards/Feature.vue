@@ -14,7 +14,7 @@
         p-4
         w-full
         h-48
-        md:w-52
+        lg:w-52
         rounded-md
       "
     >

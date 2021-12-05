@@ -10,20 +10,14 @@
       text-white
     "
   >
-  <div class = "md:flex md:flex-row w-full min-h-screen">
-    <div
-      :class="`inset-0 w-full fixed h-full z-30 block bg-gray-800 bg-opacity-30 ${
-        toggleNav ? 'visible' : 'invisible'
-      }`"
-      @click="toggleChild"
-    />
+  <div class = "lg:flex lg:flex-row w-full min-h-screen">
     <LayoutSidebar :title="$nuxt.$route.path.split('/').reverse()[0]" ref = "mobilemenu" />
     <LayoutTopbar :title="$nuxt.$route.path.split('/').reverse()[0]" ref = "desktopmenu" />
-    <main class="flex-1 w-full p-2 mx-auto md:px-8 mt-5 md:mt-0 md:ml-48">
+    <main class="flex-1 w-full p-2 mx-auto lg:px-8 mt-5 lg:mt-0 lg:ml-48">
       <div id="content" class="p-2 flex flex-col justify-start">
         <LayoutTopstuff ref = "topbar"/>
-        <div class="md:ml-20 md:mt-20 mx-auto px-2">
-          <div class="p-px">
+        <div class="lg:ml-20 mt-5 lg:mt-20 mx-auto px-2">
+          <div class="p-px w-full">
             <Nuxt />
           </div>
         </div>

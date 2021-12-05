@@ -1,7 +1,7 @@
 <template>
-  <div class="md:px-8">
+  <div class="lg:px-8">
     <div class="flex flex-col justify-between pt-10">
-      <div class="md:p-8 py-8 w-full h-full max-h-48">
+      <div class="lg:p-8 py-8 w-full h-full max-h-48">
         <div class="card bg-discortics-dashboard w-full rounded-lg h-full">
           <div class="flex flex-row justify-between items-center">
             <div class="flex flex-row justify-left items-center">
@@ -33,11 +33,11 @@
           </div>
         </div>
       </div>
-      <div class="md:p-8 py-8 w-full h-full">
+      <div class="lg:p-8 py-8 w-full h-full">
         <div
           class="
             flex flex-col
-            md:flex-row
+            lg:flex-row
             bg-discortics-dashboard
             w-full
             rounded-lg

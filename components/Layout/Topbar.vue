@@ -1,5 +1,5 @@
 <template>
-  <header class="p-0 md:p-4 md:hidden top-0 fixed z-50 font-montserrat">
+  <header class="p-0 lg:p-4 lg:hidden top-0 fixed z-50 font-montserrat">
     <div
       :class="`inset-0 w-full fixed h-full z-30 block ${
         toggleNav || tSettings ? 'visible' : 'invisible'
@@ -14,20 +14,17 @@
         block
         w-full
         fixed
-        md:absolute
-        md:top-0
-        md:left-0
-        md:rounded-t-md
+        lg:absolute lg:top-0 lg:left-0 lg:rounded-t-md
         bg-discortics-header
         border-maid-border border-opacity-70 border-b
         z-50
       "
     >
-      <div class="mx-auto px-2 md:px-6 lg:px-8">
+      <div class="mx-auto px-2 lg:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="relative inset-y-0 left-0 flex items-center">
             <button
-              :class="`inline-flex items-center md:pointer-events-none ${
+              :class="`inline-flex items-center lg:pointer-events-none ${
                 toggleNav ? 'hidden' : 'block'
               } justify-center p-2 group rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`"
               aria-expanded="false"
@@ -94,7 +91,7 @@
                   duration-500
                   ease-in-out
                   absolute
-                  ${tSettings ? 'translate-y-10' : '-translate-y-120 md:ml-6'}
+                  ${tSettings ? 'translate-y-10' : '-translate-y-120 lg:ml-6'}
                 `"
               >
                 <CardsSettings />
@@ -110,7 +107,7 @@
         z-40
         flex-1 flex
         fixed
-        md:left-0
+        lg:left-0
         group-hover:translate-x-0
         items-center
         transform
@@ -123,70 +120,70 @@
       `"
     >
       <div
-        class="block min-h-screen top-0 left-0 bg-discortics-header fixed p-8 pt-0"
+        class="
+          block
+          min-h-screen
+          top-0
+          left-0
+          bg-discortics-header
+          fixed
+          p-8
+          pt-0
+        "
       >
-        <div class="flex md:space-y-1 flex-col md:pt-0 pt-10 mt-14">
-          <div
-            v-for="{ heading, greyed, routes, icon } in Navigation"
-            :key="heading"
-          >
-            <p
-              :class="`
-                tracking-wide
-                px-3
-                uppercase
-                py-4
-                pl-2
-                rounded-md
-                text-md
-                font-semibold
-                flex flex-row space-x-4
-                text-gray-300 text-md
-                block
-                rounded-md
-              ${greyed ? ' cursor-not-allowed' : ''}`"
-              :disabled="greyed"
-            >
-              <span
-                :class="`text-yellow-500 my-auto stroke-1 ${
-                  toggleNav ? 'visible' : 'visible'
-                }`"
-                ><SVGWrapper :name="icon" size="14"
-              /></span>
-              <span class="py-1">{{ heading }}</span>
-            </p>
-            <NuxtLink
+        <div class="flex lg:space-y-1 flex-col lg:pt-0 pt-10 mt-14">
+          <div v-for="{ heading, greyed, routes } in Navigation" :key="heading">
+            <div
               v-for="{ name, route, key, routeIcon } in routes"
               :key="key"
-              :to="route"
-              :class="`${title === key ? 'text-discortics-link' : ''}
-                
+              :class="`${
+                title === key ? '' : ''
+              } w-full p-px py-1 flex flex-row items-center justify-start`"
+            >
+              <div
+                :class="`${
+                  title === key ? 'block' : 'hidden'
+                } absolute -left-2 flex flex-row items-center`"
+              >
+                <SVGNewPointer :size="24" />
+              </div>
+              <NuxtLink
+                :to="route"
+                :class="`${
+                  title === key ? 'bg-discortics-button' : 'text-gray-300'
+                }
                 tracking-wide
-                px-3
+                p-2
                 transition
                 duration-300
                 ease-in-out
                 capitalize
-                py-2
-                rounded-md
+                h-12
+                ${toggleNav ? 'w-full rounded-md justify-start' : 'w-12 rounded-full justify-center'} group-hover:w-full
+                group-hover:rounded-md
                 text-sm
                 font-medium
+                hover:bg-discortics-button
+                hover:bg-opacity-100
                 hover:text-discortics-link
                 block
-                rounded-md
-                flex flex-row space-x-4
-                ${
-                  greyed
-                    ? //                'pointer-events-none text-gray-500'
-                      'text-gray-300'
-                    : 'text-gray-300'
-                }`"
-              :disabled="greyed"
-              ><span><SVGWrapper :name="routeIcon" /></span>
-              <span class="py-1"
-                >{{ name }} {{ $store.state.guild.guild }}</span
-              ></NuxtLink
-            >
+                rounded-md space-x-4 items-center
+                flex flex-row group-hover:justify-start
+`"
+                :disabled="greyed"
+                ><span
+                  ><SVGNewWrapper :name="routeIcon"
+                /></span>
+                <span
+                  :class="`${
+                    title === key
+                      ? 'bg-navCurrent text-transparent bg-clip-text'
+                      : 'text-gray-300'
+                  } py-2 ${toggleNav ? 'block' : 'hidden'} group-hover:block`"
+                  >{{ name }}</span
+                ></NuxtLink
+              >
+            </div>
           </div>
         </div>
       </div>

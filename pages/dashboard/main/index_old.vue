@@ -1,8 +1,8 @@
 <template>
   <div class = "max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
+    <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-cols-2">
       <div id="members" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -39,7 +39,7 @@
       </div>
 
       <div id="joins" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -83,7 +83,7 @@
       </div>
 
       <div id="leaves" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -120,7 +120,7 @@
       </div>
 
       <div id="messages" class="flex flex-col p-4 space-y-4">
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-24">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-24">
           <div class="p-2 flex flex-row justify-between">
             <div class="p-2">
               <div
@@ -144,7 +144,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
+        <div class="bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-48">
           <div class="p-4">
             <apexchart
               height="160"
@@ -162,13 +162,13 @@
       </div>
     </div>
     <div class="py-8 px-4">
-      <div class="mx-auto bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md md:h-48">
+      <div class="mx-auto bg-discortics-dashboard bg-opacity-70 border-maid-border border-opacity-50 border rounded-md lg:h-48">
         <div class="border-b border-dashed border-gray-500">
           <div class="p-4">
             <p class="text-lg">Prefix</p>
           </div>
         </div>
-        <div class="p-4 flex flex-col md:flex-row items-center mx-auto">
+        <div class="p-4 flex flex-col lg:flex-row items-center mx-auto">
           <div class="p-4 group relative">
             <input
               v-model="prefix"

@@ -5,10 +5,10 @@
         <div
           class="
             flex flex-col
-            md:flex-row
+            lg:flex-row
             justify-between
             space-y-4
-            md:space-x-4 md:space-y-0
+            lg:space-x-4 lg:space-y-0
           "
         >
           <div class="flex flex-col items-center w-full">
@@ -179,12 +179,12 @@
               <div
                 class="
                   flex flex-col
-                  md:flex-row
+                  lg:flex-row
                   justify-between
                   items-center
                   space-y-4
                   w-full
-                  md:space-x-4 md:space-y-0
+                  lg:space-x-4 lg:space-y-0
                 "
               >
                 <div class="flex flex-col items-center w-full">
@@ -258,10 +258,10 @@
         <div
           class="
             flex flex-col
-            md:flex-row
+            lg:flex-row
             justify-between
             space-y-4
-            md:space-x-4 md:space-y-0
+            lg:space-x-4 lg:space-y-0
           "
         >
           <div class="flex flex-col items-center w-full">

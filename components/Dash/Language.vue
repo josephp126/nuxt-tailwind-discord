@@ -1,6 +1,6 @@
 <template>
-    <div class="py-8 px-4">
-      <div class="mx-auto max-w-xl form-card w-112 relative md:h-64 overflow-hidden">
+    <div class="py-1 lg:py-8 px-4">
+      <div class="mx-auto max-w-xl form-card w-full lg:w-112 relative lg:h-64 overflow-hidden">
         <div class="px-8">
           <div class="gradient-circle w-24 h-24 absolute right-2 top-2" />
           <div class="pt-2">
@@ -11,7 +11,7 @@
               </p>
             </div>
           </div>
-          <div class="py-2 flex flex-col md:flex-row items-center mx-auto">
+          <div class="py-2 flex flex-col lg:flex-row items-center mx-auto">
             <div class="group relative">
               <select
                 class="
@@ -39,14 +39,14 @@
               pointer-events-none
             "
           >
-            <div class="exampleText h-8 px-2 flex flex-row items-center">
-              <span class="text-xs p-3">This is an example</span>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <span class="exampleText text-xs p-2">This is an example</span>
             </div>
-            <div class="exampleText h-8 px-2 flex flex-row items-center">
-              <span class="text-xs p-3">Successful</span>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <span class="exampleText text-xs p-2">Successful</span>
             </div>
-            <div class="exampleText h-8 px-2 flex flex-row items-center">
-              <span class="text-xs p-3">Or not?</span>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <span class="exampleText text-xs p-2">Or not?</span>
             </div>
           </div>
         </div>

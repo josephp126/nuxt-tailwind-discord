@@ -3,12 +3,12 @@
     <div
       class="border-maid-border border-opacity-50 border 
         flex flex-col
-        md:flex-row
+        lg:flex-row
         justify-between
         items-center
         space-y-4
         w-full
-        md:space-x-4 md:space-y-0
+        lg:space-x-4 lg:space-y-0
       "
     >
       <div class="flex flex-col items-center w-full">
