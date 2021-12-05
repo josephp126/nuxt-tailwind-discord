@@ -2,21 +2,221 @@
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maxime quos repellat explicabo quam doloremque doloribus voluptates quis magnam! Dolor ducimus odio non dolorum, dicta reprehenderit fugiat aperiam cum delectus?
         <!-- Don't Cross this Border  -->
+
+
         <!-- Slider Start -->
-        <div class="container">
-            <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+        <div class="py-32">
+            <div class="mb-6">
+            <swiper class="swiper" :options="swiperOptionOne">
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon5.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Rythm</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon6.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Dank Memer</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon7.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Tatsu</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
                 <div class="flex items-center">
-                    <img class="mr-4" src="/svg/slider-icon1.svg" alt="">
-                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Fred Boat</h4>
+                    <img class="mr-4" src="/svg/slider-icon8.svg" alt="">
+                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Astroz Music</h4>
                 </div>
                 <div class="flex items-center">
                     <img class="mr-2" src="/svg/user.svg" alt="">
                     <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
                 </div>
             </div>
-            
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon5.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Rythm</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon6.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Dank Memer</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon7.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Tatsu</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon8.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Astroz Music</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper>
         </div>
+        <!-- End Slider One -->
+
+        <div>
+            <swiper class="swiper" :options="swiperOptionTwo">
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon1.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Fred Boat</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon2.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Dyno</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon3.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">MEE6</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                <div class="flex items-center">
+                    <img class="mr-4" src="/svg/slider-icon4.svg" alt="">
+                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Toasty</h4>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-2" src="/svg/user.svg" alt="">
+                    <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                </div>
+            </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon1.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Fred Boat</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon2.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Dyno</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class="mr-4" src="/svg/slider-icon3.svg" alt="">
+                        <h4 class="text-body17 text-grayd5 font-montserrat font-bold">MEE6</h4>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="mr-2" src="/svg/user.svg" alt="">
+                        <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center">
+                <div class="flex items-center">
+                    <img class="mr-4" src="/svg/slider-icon4.svg" alt="">
+                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">Toasty</h4>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-2" src="/svg/user.svg" alt="">
+                    <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                </div>
+            </div>
+            </swiper-slide>
+        </swiper>
+        </div>
+
+        </div>
+        
+        
+        
+         
+
         <!-- Slider End -->
+
         <!-- Start Server Section -->
         <div class="bg-content bg-no-repeat bg-center bg-black24 py-24" :style="ServerImage">
             <div class="container">
@@ -40,15 +240,92 @@
                     </div>
                 </div>
             </div>
-            
         </div>
         <!-- End Sever -->
     </div>
 </template>
 <script>
-export default {
+  import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+  import 'swiper/swiper-bundle.css'
+
+//   import 'swiper/css/swiper.css'
+
+  export default {
     name: 'IndexNew',
-}
+    components: {
+      Swiper,
+      SwiperSlide
+    },
+    data() {
+      return {
+           //   swiper two
+        swiperOptionOne: {
+          slidesPerView: 5,
+          spaceBetween: 25,
+          loop: true,
+            autoplay: {
+                delay: 300,
+                disableOnInteraction: false
+            },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          breakpoints: {
+            1400: {
+              slidesPerView: 5,
+            },
+            1199: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            320: {
+              slidesPerView: 1,
+            }
+          }
+        },
+        //   swiper two
+        swiperOptionTwo: {
+          slidesPerView: 5,
+          spaceBetween: 25,
+          autoplay: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          breakpoints: {
+            1400: {
+              slidesPerView: 5,
+            },
+            1199: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            320: {
+              slidesPerView: 1,
+            }
+          }
+        }
+      }
+    }
+  }
+
 </script>
 <style lang="">
     
