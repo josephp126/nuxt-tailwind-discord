@@ -124,7 +124,7 @@
 
         <!-- Text Animation  start  -->
         <section class=" text-animation relative overflow-hidden">
-            <div class=" relative max-w-full  py-80 ">
+            <div class=" relative max-w-full  py-40 lg:py-80 ">
               <div class="bg-black24 flex items-center transform text-animation--one ">
                 <marquee width="100%" direction="right" scrollamount="20" >
                     <div class="flex items-center py-3">
