@@ -65,6 +65,7 @@ module.exports = {
         body55: ["55px","110%"],
         body22: ["22px","27px"],
         body47: ["47px","57px"],
+        body48: ["48px", "64px"]
       },
       colors: {
         green4f: "#4FEBF9",
@@ -77,6 +78,7 @@ module.exports = {
         graye1: "#E1EBFF",
         blue4f: "#4FEBF9",
         gray22: "#C4C4C4",
+        gray7e: "#7E7E7E",
         button: {
           initial: "#7875FC",
           through: "#F586C4",
