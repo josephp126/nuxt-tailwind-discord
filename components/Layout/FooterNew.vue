@@ -18,7 +18,7 @@
                             </ul>
                         </div>
                         <div class="xl:col-span-6 col-span-12 flex sm:justify-center">
-                            <ul class="flex flex-wrap space-x-6  justify-center">
+                            <ul class="flex flex-wrap space-x-2 sm:space-x-6  justify-center">
                                 <li v-for="(item, itemIndex) in items" :key="itemIndex">
                                     <nuxt-link  class="text-white text-opacity-90 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest duration-300 hover:text-green4f" to="/">{{item.footerMenuData}}</nuxt-link> 
                                 </li>
@@ -35,12 +35,12 @@
                         <p class="text-white text-opacity-50 text-sm font-quicksand mb-4 lg:mb-0 ">Copyright &copy; 2021 Discortics™, All rights reserved</p>
                     </div>
                     <div class="col-span-6">
-                        <ul class="flex justify-center lg:justify-end items-center space-x-1">
-                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center"><nuxt-link to="/">Privacy Policy</nuxt-link></li>
-                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center">|</li>
-                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center"><nuxt-link to="/">Terms & Conditions</nuxt-link></li>
-                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center">| </li>
-                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center"><nuxt-link to="/">refund policy</nuxt-link></li>
+                        <ul class="flex flex-wrap justify-center lg:justify-end items-center space-x-1">
+                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center sm:mb-0 mb-2"><nuxt-link to="#">Privacy Policy</nuxt-link></li>
+                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center sm:mb-0 mb-2">|</li>
+                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center sm:mb-0 mb-2"><nuxt-link to="#">Terms & Conditions</nuxt-link></li>
+                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center sm:mb-0 mb-2">| </li>
+                            <li class="text-white text-opacity-50 text-xs sm:text-sm font-quicksand uppercase font-bold tracking-widest text-center sm:mb-0 mb-2"><nuxt-link to="#">refund policy</nuxt-link></li>
                         </ul>
                     </div>
                 </div>
