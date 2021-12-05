@@ -43,7 +43,7 @@ export default {
     '~/plugins/swal.js',
     '~/plugins/chart.js',
     '~/plugins/lodash.js',
-    '~/plugins/vue-awesome-swiper.js'
+    '~/plugins/vue-awesome-swiper.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

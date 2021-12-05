@@ -5,7 +5,8 @@
             <div class="container grid grid-cols-1 xl:grid-cols-3 items-center">
                 <!-- Information  -->
                 <div>
-                    <h2 class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
+
+                        <h2 class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
                     <p class="text-body17 capitalize font-quicksand font-normal mb-8">
                         Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?
                     </p>
@@ -120,7 +121,37 @@
         </section>
         <!-- why-discortics  end  -->
 
+
+        <!-- Text Animation  start  -->
+        <section class=" text-animation relative overflow-hidden">
+            <div class=" relative max-w-full  py-80 ">
+              <div class="bg-black24 flex items-center transform text-animation--one ">
+                <marquee width="100%" direction="right" scrollamount="20" >
+                    <div class="flex items-center py-3">
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
+                    </div>
+                </marquee>
+              </div>
+              <div class="bg-black24 flex items-center transform text-animation--two ">
+                <marquee width="100%" direction="left" scrollamount="15" >
+                    <div class="flex items-center py-3">
+
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
+                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
+                      <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
+                    </div>
+                </marquee>
+              </div>
+            </div>
+        </section>
+        <!-- Text Animation  end  -->
+
         <!-- Don't Cross this Border  -->
+
 
         <div class="py-16 lg:py-24">
             <div class="xl:ml-80">
@@ -493,6 +524,7 @@
 </template>
 <script>
     import VueJsCounter from "vue-js-counter";
+
     export default {
         name: "IndexNew",
         components: {
@@ -629,5 +661,24 @@
 
     .swiper-slide.swiper-slide-active h2.title-hedding {
         color: #c51c75;
+    }
+
+    /* Animation Text roate  */
+    .text-animation .text-animation--one,
+    .text-animation .text-animation--two { 
+        position: absolute;
+        top: 50%;
+       
+        
+    }
+    .text-animation .text-animation--one { 
+        width: 100%;
+        left: 50%;
+        transform:  translateX(-50%) rotate(12deg);
+    }
+    .text-animation .text-animation--two { 
+        width: 100%;
+        right: 50%;
+        transform:  translateX(50%) rotate(-12deg);
     }
 </style>

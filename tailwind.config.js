@@ -69,6 +69,7 @@ module.exports = {
         body42: ["42px","52px"],
         body47: ["47px","57px"],
         body48: ["48px", "64px"],
+        body61: ["61px", "74px"],
       },
       colors: {
         green4f: "#4FEBF9",
