@@ -3,9 +3,55 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maxime quos repellat explicabo quam doloremque doloribus voluptates quis magnam! Dolor ducimus odio non dolorum, dicta reprehenderit fugiat aperiam cum delectus?
         <!-- Don't Cross this Border  -->
 
-
+        <!-- Meet Section Start -->
+        <div class="pt-20 lg:pt-32">
+            <div class="container">
+                <div class="mb-20 text-center max-w-screen-md m-auto">
+                    <h2 class="text-green4f text-4xl  md:text-body47 font-montserrat font-bold mb-4">Meet our Partners</h2>
+                    <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc. Porttitor sed tellus massa adipiscing egestas placerat.</p>
+                </div>
+                <div class="lg:grid grid-cols-12 gap-10">
+                    <div class="col-span-4">
+                        <div class="sm:h-315 h-full mb-12">
+                            <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
+                            <div class="min-h-80 mb-5">
+                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.</p>
+                            </div>
+                            
+                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+                        </div>
+                    </div>
+                     <div class="col-span-4 my-6 lg:my-0">
+                        <div class="sm:h-315 h-full mb-12">
+                            <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
+                            <div class="min-h-80 mb-5">
+                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
+                            </div>
+                            
+                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+                        </div>
+                    </div>
+                     <div class="col-span-4">
+                        <div class="text-center px-14 sm:px-28 lg:mt-28">
+                            <div class="min-h-80 mb-5">
+                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
+                            </div>
+                            
+                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!-- Slider Start -->
-        <div class="py-32">
+        <div class="py-20 lg:py-32">
             <div class="mb-6">
             <swiper class="swiper" :options="swiperOptionOne">
             <swiper-slide>
