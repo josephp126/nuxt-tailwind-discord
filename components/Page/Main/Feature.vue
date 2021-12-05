@@ -4,10 +4,10 @@
       class="
         font-montserrat cursor-default
         hover:bg-featureHover
-        hover:bg-purple-400
+        hover:bg-purple-900
         border-discortics-header border
         transform
-        transition group
+        transition-all group
         duration-500
         ease-in-out
         hover:translate-y-1
@@ -25,7 +25,7 @@
             <SVGNewWrapper :name="svg" />
           </span>
           <span class = "w-full">{{ name }}</span>
-          <NuxtLink :to = "route" class = "p-3 cursor-pointer rounded-xl text-sm font-medium group-hover:bg-button bg-none bg-gray-600 transition duration-500 ease-in-out">Go</NuxtLink>
+          <NuxtLink :to = "route" :class = "`p-3 cursor-pointer rounded-xl text-sm font-medium group-hover:bg-button group-hover:text-white bg-none ${name == 'Premium' ? 'bg-yellow-300 text-black' : 'bg-gray-600'} group-hover:bg-transparent transition duration-500 ease-in-out`">Go</NuxtLink>
         </div>
 
         <p class="text-sm p-2 font-quicksand">
