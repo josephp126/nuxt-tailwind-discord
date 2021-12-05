@@ -5,8 +5,7 @@
             <div class="container grid grid-cols-1 xl:grid-cols-3 items-center">
                 <!-- Information  -->
                 <div>
-
-                        <h2 class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
+                    <h2 class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
                     <p class="text-body17 capitalize font-quicksand font-normal mb-8">
                         Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?
                     </p>
@@ -121,122 +120,150 @@
         </section>
         <!-- why-discortics  end  -->
 
-
         <!-- Text Animation  start  -->
-        <section class=" text-animation relative overflow-hidden">
-            <div class=" relative max-w-full  py-40 lg:py-80 ">
-              <div class="bg-black24 flex items-center transform text-animation--one ">
-                <marquee width="100%" direction="right" scrollamount="20" >
-                    <div class="flex items-center py-3">
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
-                    </div>
-                </marquee>
-              </div>
-              <div class="bg-black24 flex items-center transform text-animation--two ">
-                <marquee width="100%" direction="left" scrollamount="15" >
-                    <div class="flex items-center py-3">
-
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
-                    <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style=" -webkit-background-clip: text; -webkit-text-fill-color: transparent;-webkit-text-stroke: 1px #4FEBF9;"> Fantastic Features. </p>
-                      <p class=" text-4xl md:text-body61 font-montserrat font-extrabold"  style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Fantastic Features. </p>
-                    </div>
-                </marquee>
-              </div>
+        <section class="text-animation relative overflow-hidden">
+            <div class="relative max-w-full py-40 lg:py-80">
+                <div class="bg-black24 flex items-center transform text-animation--one">
+                    <marquee width="100%" direction="right" scrollamount="20">
+                        <div class="flex items-center py-3">
+                            <p
+                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
+                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                            >
+                                Fantastic Features.
+                            </p>
+                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
+                            <p
+                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
+                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                            >
+                                Fantastic Features.
+                            </p>
+                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
+                        </div>
+                    </marquee>
+                </div>
+                <div class="bg-black24 flex items-center transform text-animation--two">
+                    <marquee width="100%" direction="left" scrollamount="15">
+                        <div class="flex items-center py-3">
+                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
+                            <p
+                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
+                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                            >
+                                Fantastic Features.
+                            </p>
+                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
+                            <p
+                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
+                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                            >
+                                Fantastic Features.
+                            </p>
+                        </div>
+                    </marquee>
+                </div>
             </div>
         </section>
         <!-- Text Animation  end  -->
 
         <!-- Don't Cross this Border  -->
 
-
         <div class="py-16 lg:py-24">
-            <div class="xl:ml-80">
+            <div>
                 <div class="mb-16">
                     <swiper class="swiper slider-giveaways" :options="swiperOptionOne">
-                    <swiper-slide>
-                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
-                            <div>
-                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
-                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                        <swiper-slide>
+                            <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                                <div>
+                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                    <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                                </div>
+                                <div class="row-start-1 lg:row-start-auto">
+                                    <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                                </div>
                             </div>
-                            <div class="row-start-1 lg:row-start-auto">
-                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                                <div>
+                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                    <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                                </div>
+                                <div class="row-start-1 lg:row-start-auto">
+                                    <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                                </div>
                             </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
-                            <div>
-                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
-                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                                <div>
+                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                    <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                                </div>
+                                <div class="row-start-1 lg:row-start-auto">
+                                    <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                                </div>
                             </div>
-                            <div class="row-start-1 lg:row-start-auto">
-                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                                <div>
+                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                    <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                                </div>
+                                <div class="row-start-1 lg:row-start-auto">
+                                    <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                                </div>
                             </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
-                            <div>
-                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
-                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
-                            </div>
-                            <div class="row-start-1 lg:row-start-auto">
-                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div  class="grid  lg:grid-cols-2 gap-4 items-center justify-center ">
-                            <div>
-                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
-                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
-                            </div>
-                            <div class="row-start-1 lg:row-start-auto">
-                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto">
-                            </div>
-                        </div>
-                    </swiper-slide>
-
-                </swiper>
-                 <!-- end -->
+                        </swiper-slide>
+                    </swiper>
+                    <!-- end -->
                 </div>
                 <!-- start -->
                 <swiper class="swiper slider-giveaways" :options="swiperOptionTwo">
                     <swiper-slide>
-                        <div>
-                            <img src="/img/slider-thumb4.png" alt="" />
+                        <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                            <div>
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                            </div>
+                            <div>
+                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div>
-                            <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
-                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
+                        <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                            <div>
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                            </div>
+                            <div>
+                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div>
-                            <img src="/img/slider-thumb3.png" alt="" />
+                        <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                            <div>
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                            </div>
+                            <div>
+                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div>
-                            <img src="/img/slider-thumb4.png" alt="" />
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4">Giveaways</h2>
-                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <img src="/img/slider-thumb3.png" alt="" />
+                        <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
+                            <div>
+                                <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
+                            </div>
+                            <div>
+                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
+                            </div>
                         </div>
                     </swiper-slide>
                 </swiper>
@@ -254,95 +281,99 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc. Porttitor sed tellus massa adipiscing egestas placerat.
                     </p>
                 </div>
-                
-               <div>
-                   <swiper class="swiper" :options="swiperOptionFive">
-                    <swiper-slide>
-                        <div>
-                            <div class="sm:h-315 h-full mb-12">
-                                <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
-                                <div class="min-h-80 mb-5">
-                                    <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.</p>
+
+                <div>
+                    <swiper class="swiper" :options="swiperOptionFive">
+                        <swiper-slide>
+                            <div>
+                                <div class="sm:h-315 h-full mb-12">
+                                    <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="" />
                                 </div>
-                                
-                                <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <div class="sm:h-315 h-full mb-12">
-	                            <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="">
-	                        </div>
-	                        <div class="text-center">
-	                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
-	                            <div class="min-h-80 mb-5">
-	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
-	                            </div>
-	                            
-	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
-	                        </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <div class="text-center px-14 sm:px-28 lg:mt-28">
-	                            <div class="min-h-80 mb-5">
-	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
-	                            </div>
-	                            
-	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
-	                        </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <div class="sm:h-315 h-full mb-12">
-                                <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
-                                <div class="min-h-80 mb-5">
-                                    <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.</p>
+                                <div class="text-center">
+                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
+                                    <div class="min-h-80 mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
+                                            With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.
+                                        </p>
+                                    </div>
+
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
                                 </div>
-                                
-                                <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
                             </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <div class="sm:h-315 h-full mb-12">
-	                            <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="">
-	                        </div>
-	                        <div class="text-center">
-	                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
-	                            <div class="min-h-80 mb-5">
-	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
-	                            </div>
-	                            
-	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
-	                        </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div>
-                            <div class="text-center px-14 sm:px-28 lg:mt-28">
-	                            <div class="min-h-80 mb-5">
-	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
-	                            </div>
-	                            
-	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
-	                        </div>
-                        </div>
-                    </swiper-slide>
-                </swiper>
-               </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div>
+                                <div class="sm:h-315 h-full mb-12">
+                                    <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="" />
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
+                                    <div class="min-h-80 mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
+                                    </div>
+
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div>
+                                <div class="text-center px-14 sm:px-28 lg:mt-28">
+                                    <div class="min-h-80 mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
+                                    </div>
+
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div>
+                                <div class="sm:h-315 h-full mb-12">
+                                    <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="" />
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
+                                    <div class="min-h-80 mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
+                                            With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.
+                                        </p>
+                                    </div>
+
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div>
+                                <div class="sm:h-315 h-full mb-12">
+                                    <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="" />
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
+                                    <div class="min-h-80 mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
+                                    </div>
+
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div>
+                                <div class="text-center px-14 sm:px-28 lg:mt-28">
+                                    <div class="min-h-80 mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
+                                    </div>
+
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+                </div>
             </div>
-        </div>        
+        </div>
         <!-- Slider Start -->
         <div class="py-16 lg:py-24">
             <div class="mb-6">
@@ -556,8 +587,10 @@
             <div class="container">
                 <div class="lg:grid grid-cols-12 gap-6 items-center">
                     <div class="col-span-6 2xl:pr-56 mb-8 lg:mb-0 lg:text-left text-center">
-                        <h2 class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span>  of your <span class="font-bold">dreams.</span> </h2>
-                        <p class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.</p>
+                        <h2 class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span> of your <span class="font-bold">dreams.</span></h2>
+                        <p class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.
+                        </p>
                     </div>
                     <div class="col-span-6">
                         <div class="sm:flex flex-wrap justify-center sm:space-x-5">
@@ -578,7 +611,7 @@
     </div>
 </template>
 <script>
-import VueJsCounter from "vue-js-counter";
+    import VueJsCounter from "vue-js-counter";
 
     export default {
         name: "IndexNew",
@@ -593,40 +626,44 @@ import VueJsCounter from "vue-js-counter";
                 ServerBg: {
                     backgroundImage: `url(https://i.imgur.com/lHu8gSV.png)`,
                 },
-                
+
                 //   swiper One
                 swiperOptionOne: {
-                slidesPerView: 1,
-                spaceBetween: 80,
-               centeredSlides: true,
-                breakpoints: {
-                    1199: {
-                    slidesPerView: 2,
-                    },
-                    1024: {
                     slidesPerView: 1,
+                    spaceBetween: 80,
+                    centeredSlides: true,
+                    breakpoints: {
+                        1199: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 1,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        320: {
+                            slidesPerView: 1,
+                        },
                     },
-                    768: {
-                    slidesPerView: 1,
-                    },
-                    640: {
-                    slidesPerView: 2,
-                    },
-                    320: {
-                    slidesPerView: 1,
-                    }
-                }
                 },
                 //   swiper two
                 swiperOptionTwo: {
-                    slidesPerView: 3,
-                    spaceBetween: 90,
+                    slidesPerView: 1,
+                    spaceBetween: 80,
+                    centeredSlides: true,
                     breakpoints: {
+                        1199: {
+                            slidesPerView: 2,
+                        },
                         1024: {
-                            slidesPerView: 3,
+                            slidesPerView: 1,
                         },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                         },
                         640: {
                             slidesPerView: 2,
@@ -692,41 +729,32 @@ import VueJsCounter from "vue-js-counter";
                 },
                 //   swiper Five
                 swiperOptionFive: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-                autoplay: { 
-                    delay: 300,
-                    
-                },
-                breakpoints: {
-                    1199: {
                     slidesPerView: 3,
+                    spaceBetween: 50,
+                    autoplay: {
+                        delay: 300,
                     },
-                    1024: {
-                    slidesPerView: 2,
+                    breakpoints: {
+                        1199: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        320: {
+                            slidesPerView: 1,
+                        },
                     },
-                    768: {
-                    slidesPerView: 2,
-                    },
-                    640: {
-                    slidesPerView: 1,
-                    },
-                    320: {
-                    slidesPerView: 1,
-                    }
-                }
                 },
-
             };
-
-
-
-
-                },
-
-      }
-    
-
+        },
+    };
 </script>
 <style>
     .slider-giveaways .swiper-slide:nth-child(2n) {
@@ -740,31 +768,26 @@ import VueJsCounter from "vue-js-counter";
         color: #c51c75;
     }
 
-  .swiper-slide.swiper-slide-active h2.title-hedding{
-        background: linear-gradient(270deg, #C51C75 0%, #C937FB 34.65%, #FFA88E 100%);
+    .swiper-slide.swiper-slide-active h2.title-hedding {
+        background: linear-gradient(270deg, #c51c75 0%, #c937fb 34.65%, #ffa88e 100%);
         -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-  }
+        -webkit-text-fill-color: transparent;
+    }
 
     /* Animation Text roate  */
     .text-animation .text-animation--one,
-    .text-animation .text-animation--two { 
+    .text-animation .text-animation--two {
         position: absolute;
         top: 50%;
-       
-        
     }
-    .text-animation .text-animation--one { 
+    .text-animation .text-animation--one {
         width: 100%;
         left: 50%;
-        transform:  translateX(-50%) rotate(12deg);
+        transform: translateX(-50%) rotate(12deg);
     }
-    .text-animation .text-animation--two { 
+    .text-animation .text-animation--two {
         width: 100%;
         right: 50%;
-        transform:  translateX(50%) rotate(-12deg);
+        transform: translateX(50%) rotate(-12deg);
     }
-     
-
-  
 </style>
