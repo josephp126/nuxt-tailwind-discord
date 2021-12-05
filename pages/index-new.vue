@@ -157,43 +157,31 @@
             <div class="xl:ml-80">
                 <div class="mb-16">
                     <swiper class="swiper slider-giveaways" :options="swiperOptionOne">
-                        <swiper-slide>
-                            <div class="flex items-center space-x-4">
-                                <div>
-                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
-                                    <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
-                                </div>
-                                <div>
-                                    <img src="/img/slider-thumb1.png" alt="" />
-                                </div>
+                    <swiper-slide>
+                        <div  class="flex items-center">
+                            <div class="order-2">
+                                <img src="/img/slider-thumb1.png" alt="">
                             </div>
-                        </swiper-slide>
-
-                        <swiper-slide>
-                            <div>
-                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Levels</h2>
-                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4">Applications</h2>
+                            <div class="mr-10">
+                                <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
                                 <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
                             </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <img src="/img/slider-thumb1.png" alt="" />
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4">Levels</h2>
-                                <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
-                            </div>
-                        </swiper-slide>
-                    </swiper>
-                    <!-- end -->
+                            
+                        </div>
+                        
+                    </swiper-slide>
+        
+                    <swiper-slide>
+                        <div>
+                            <h2 class="text-white text-4xl  md:text-body47 font-montserrat font-bold mb-4 title-hedding">Levels</h2>
+                            <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
+                        </div>
+                    </swiper-slide>
+       
+         
+             
+                </swiper>
+                 <!-- end -->
                 </div>
                 <!-- start -->
                 <swiper class="swiper slider-giveaways" :options="swiperOptionTwo">
@@ -244,48 +232,95 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc. Porttitor sed tellus massa adipiscing egestas placerat.
                     </p>
                 </div>
-                <div class="lg:grid grid-cols-12 gap-10">
-                    <div class="col-span-4">
-                        <div class="sm:h-315 h-full mb-12">
-                            <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="" />
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
-                            <div class="min-h-80 mb-5">
-                                <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
-                                    With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.
-                                </p>
+                
+               <div>
+                   <swiper class="swiper" :options="swiperOptionFive">
+                    <swiper-slide>
+                        <div>
+                            <div class="sm:h-315 h-full mb-12">
+                                <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="">
                             </div>
-
-                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
-                        </div>
-                    </div>
-                    <div class="col-span-4 my-6 lg:my-0">
-                        <div class="sm:h-315 h-full mb-12">
-                            <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="" />
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
-                            <div class="min-h-80 mb-5">
-                                <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
+                            <div class="text-center">
+                                <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
+                                <div class="min-h-80 mb-5">
+                                    <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.</p>
+                                </div>
+                                
+                                <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
                             </div>
-
-                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
                         </div>
-                    </div>
-                    <div class="col-span-4">
-                        <div class="text-center px-14 sm:px-28 lg:mt-28">
-                            <div class="min-h-80 mb-5">
-                                <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <div class="sm:h-315 h-full mb-12">
+	                            <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="">
+	                        </div>
+	                        <div class="text-center">
+	                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
+	                            <div class="min-h-80 mb-5">
+	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
+	                            </div>
+	                            
+	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+	                        </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <div class="text-center px-14 sm:px-28 lg:mt-28">
+	                            <div class="min-h-80 mb-5">
+	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
+	                            </div>
+	                            
+	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+	                        </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <div class="sm:h-315 h-full mb-12">
+                                <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="">
                             </div>
-
-                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                            <div class="text-center">
+                                <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
+                                <div class="min-h-80 mb-5">
+                                    <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.</p>
+                                </div>
+                                
+                                <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <div class="sm:h-315 h-full mb-12">
+	                            <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="">
+	                        </div>
+	                        <div class="text-center">
+	                            <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
+	                            <div class="min-h-80 mb-5">
+	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
+	                            </div>
+	                            
+	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+	                        </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>
+                            <div class="text-center px-14 sm:px-28 lg:mt-28">
+	                            <div class="min-h-80 mb-5">
+	                                <p class="tracking-wide	text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
+	                            </div>
+	                            
+	                            <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt=""></nuxt-link>
+	                        </div>
+                        </div>
+                    </swiper-slide>
+                </swiper>
+               </div>
             </div>
-        </div>
-
+        </div>        
         <!-- Slider Start -->
         <div class="py-16 lg:py-24">
             <div class="mb-6">
@@ -498,11 +533,9 @@
         <div class="bg-content bg-no-repeat bg-center bg-black24 py-16 lg:py-24" :style="ServerBg">
             <div class="container">
                 <div class="lg:grid grid-cols-12 gap-6 items-center">
-                    <div class="col-span-6 2xl:pr-56 mb-8 lg:mb-0">
-                        <h2 class="text-green4f text-4xl sm:text-5xl font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span> of your <span class="font-bold">dreams.</span></h2>
-                        <p class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.
-                        </p>
+                    <div class="col-span-6 2xl:pr-56 mb-8 lg:mb-0 lg:text-left text-center">
+                        <h2 class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span>  of your <span class="font-bold">dreams.</span> </h2>
+                        <p class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.</p>
                     </div>
                     <div class="col-span-6">
                         <div class="sm:flex flex-wrap justify-center sm:space-x-5">
@@ -523,7 +556,7 @@
     </div>
 </template>
 <script>
-    import VueJsCounter from "vue-js-counter";
+import VueJsCounter from "vue-js-counter";
 
     export default {
         name: "IndexNew",
@@ -535,32 +568,32 @@
                 bgLayer: {
                     backgroundImage: `url(https://i.imgur.com/XbYc0CR.png)`,
                 },
-
-                // server bg
                 ServerBg: {
-                    backgroundImage: `url(https://i.imgur.com/DmCWJOc.png)`,
+                    backgroundImage: `url(https://i.imgur.com/lHu8gSV.png)`,
                 },
-
+                
                 //   swiper One
                 swiperOptionOne: {
-                    slidesPerView: 3,
-                    spaceBetween: 90,
-                    breakpoints: {
-                        1024: {
-                            slidesPerView: 3,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        640: {
-                            slidesPerView: 2,
-                        },
-                        320: {
-                            slidesPerView: 1,
-                        },
+                slidesPerView: 2,
+                spaceBetween: 90,
+                breakpoints: {
+                    1199: {
+                    slidesPerView: 2,
                     },
+                    1024: {
+                    slidesPerView: 1,
+                    },
+                    768: {
+                    slidesPerView: 1,
+                    },
+                    640: {
+                    slidesPerView: 2,
+                    },
+                    320: {
+                    slidesPerView: 1,
+                    }
+                }
                 },
-
                 //   swiper two
                 swiperOptionTwo: {
                     slidesPerView: 3,
@@ -634,24 +667,41 @@
                         },
                     },
                 },
+                //   swiper Five
+                swiperOptionFive: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                breakpoints: {
+                    1199: {
+                    slidesPerView: 3,
+                    },
+                    1024: {
+                    slidesPerView: 2,
+                    },
+                    768: {
+                    slidesPerView: 2,
+                    },
+                    640: {
+                    slidesPerView: 1,
+                    },
+                    320: {
+                    slidesPerView: 1,
+                    }
+                }
+                },
+
             };
-        },
 
-}
+
+
+
+                },
+
+      }
+    
+
 </script>
-
 <style>
-    .slider-giveaways .swiper-wrapper {
-        align-items: center;
-    }
-    .slider-giveaways .swiper-slide {
-        width: 60%;
-    }
-    .slider-giveaways .swiper-slide img {
-        width: 100%;
-        height: 100%;
-    }
-
     .slider-giveaways .swiper-slide:nth-child(2n) {
         width: 40%;
     }
@@ -662,6 +712,13 @@
     .swiper-slide.swiper-slide-active h2.title-hedding {
         color: #c51c75;
     }
+
+  .swiper-slide.swiper-slide-active h2.title-hedding{
+        background: Linear#C51C75 100%#C937FB 100%#FFA88E 100%;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        /* color: blue; */
+  }
 
     /* Animation Text roate  */
     .text-animation .text-animation--one,
@@ -681,4 +738,7 @@
         right: 50%;
         transform:  translateX(50%) rotate(-12deg);
     }
+     
+
+  
 </style>

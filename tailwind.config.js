@@ -64,6 +64,7 @@ module.exports = {
         body15: ["15px", "120%"],
         body16: ["15px", "26px"],
         body17: ["17px","28px"],
+        body53: ["53px","110%"],
         body55: ["55px","110%"],
         body22: ["22px","27px"],
         body42: ["42px","52px"],
