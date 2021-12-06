@@ -335,7 +335,7 @@
                         </swiper-slide>
                         <swiper-slide>
                             <div>
-                                <div class="text-center px-14 sm:px-28 lg:mt-28">
+                                <div class="text-center  lg:mt-28">
                                     <div class="min-h-80 mb-5">
                                         <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
                                     </div>
@@ -378,7 +378,7 @@
                         </swiper-slide>
                         <swiper-slide>
                             <div>
-                                <div class="text-center px-14 sm:px-28 lg:mt-28">
+                                <div class="text-center lg:mt-28">
                                     <div class="min-h-80 mb-5">
                                         <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
                                     </div>
