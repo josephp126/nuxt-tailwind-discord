@@ -1,5 +1,5 @@
 import Constants from './data/Constants'
-import Secret from './data/Secret'
+// import Secret from './data/Secret'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -24,7 +24,8 @@ export default {
     '@sweetalert2/theme-dark/dark.css',
     './assets/transition.css',
     './static/css/main.css',
-    './static/css/cards.css'
+    './static/css/cards.css',
+    'aos/dist/aos.css',
   ],
 
   // SSR
@@ -42,7 +43,12 @@ export default {
     '~/plugins/api.js',
     '~/plugins/swal.js',
     '~/plugins/chart.js',
-    '~/plugins/lodash.js'
+    '~/plugins/lodash.js',
+    '~/plugins/vue-awesome-swiper.js',
+    {
+      src: '~/plugins/aos.js',
+      mode: 'client'
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -150,7 +156,7 @@ export default {
           token: 'https://discord.com/api/oauth2/token',
           userInfo: 'https://discord.com/api/users/@me'
         },
-        clientId: Secret.clientID,
+        // clientId: Secret.clientID,
         codeChallengeMethod: "",
         responseType: 'token',
         scope: "identify guilds",
