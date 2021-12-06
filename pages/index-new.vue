@@ -878,13 +878,13 @@
     .circle-layout--two { 
         width: 340px;
         height: 340px;
-        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation: pulsate 2s ease-out;
 
     }
     .circle-layout--three { 
         width: 540px;
         height: 540px;
-          -webkit-animation: pulsate 4s ease-out;
+          -webkit-animation: pulsate 3s ease-out;
 
     }
     .circle-layout--four { 
@@ -901,7 +901,7 @@
         top: 50%;
         left: 50%;
         border-radius: 50%;
-        border: 2px solid rgba(1, 2, 2, 0.4);
+        border: 2px solid rgba(79, 235, 249,.2);
         -webkit-animation-iteration-count: infinite;
 
     }
