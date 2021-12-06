@@ -835,13 +835,12 @@
 
     /* Circle pulse  */
     .circle-layout { 
-        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-        /* background: red; */
+        position: absolute;
         background-color: #242424;
     }
 
@@ -872,7 +871,7 @@
         top: 50%;
         left: 50%;
         border-radius: 50%;
-        border: 2px solid #4FEBF9;
+        border: 2px solid rgba(79, 235, 249, 0.4);
         -webkit-animation: pulsate 1s ease-out;
         -webkit-animation-iteration-count: infinite;
     }
