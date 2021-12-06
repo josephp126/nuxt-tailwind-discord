@@ -847,21 +847,27 @@
     .circle-layout--one { 
         width: 160px;
         height: 160px;
-         -webkit-animation: pulsate 1s ease-out;
-        -webkit-animation-iteration-count: infinite;
+          -webkit-animation: pulsate 1s ease-out;
+        /* animation-delay: 2s */
 
     }
     .circle-layout--two { 
         width: 340px;
         height: 340px;
+        -webkit-animation: pulsate 3s ease-out;
+
     }
     .circle-layout--three { 
         width: 540px;
         height: 540px;
+          -webkit-animation: pulsate 4s ease-out;
+
     }
     .circle-layout--four { 
         width: 750px;
         height: 750px;
+        -webkit-animation: pulsate 6s ease-out;
+
     }
     .circle-layout--one,
     .circle-layout--two,
@@ -872,8 +878,8 @@
         left: 50%;
         border-radius: 50%;
         border: 2px solid rgba(79, 235, 249, 0.4);
-        -webkit-animation: pulsate 1s ease-out;
         -webkit-animation-iteration-count: infinite;
+
     }
 
     @-webkit-keyframes pulsate {
