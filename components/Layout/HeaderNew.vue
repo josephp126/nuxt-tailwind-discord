@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <VueScrollFixedNavbar>
-                <header class="absolute top-7 lg:top-14 w-full py-3 lg:py-0 z-20">
+                <header class="absolute top-7 lg:top-14 w-full py-3 lg:py-0 z-20 transition-all duration-300 ">
                     <div class="container grid grid-cols-2 lg:grid-cols-3 lg:justify-items-center items-center">
                         <!-- left Menu  -->
                         <div class="hidden lg:block justify-self-start">
@@ -57,7 +57,7 @@
                     </div>
 
                     <!-- Mobile Navigation Menu  -->
-                    <div v-if="sideBar" :class="` sidebar max-w-full md:max-w-3xl mx-auto absolute left-0 md:left-1/2 transform md:-translate-x-1/2  top-full w-full bg-black24 bg-opacity-80  shadow-lg lg:hidden z-10  rounded-b-md ` ">
+                    <div v-if="sideBar" :class="`sidebar max-w-full md:max-w-3xl mx-auto absolute left-0 md:left-1/2 transform md:-translate-x-1/2  top-full w-full bg-black24 bg-opacity-80  shadow-lg lg:hidden z-10  rounded-b-md transition-all duration-700 ${sideBar ? ' translate-y-0' : '-translate-y-0.5'}  `">
                         <ul class="flex flex-col items-center space-y-4 py-5">
                             <li>
                                 <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="/index-new">Home</router-link>
@@ -126,6 +126,7 @@ import {VueScrollFixedNavbar} from 'vue-scroll-fixed-navbar'
         justify-content: center;
         background: transparent;
         transition: all 0.1s linear;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
     .toggle span {
         width: 40px;
@@ -147,7 +148,7 @@ import {VueScrollFixedNavbar} from 'vue-scroll-fixed-navbar'
     }
     .toggle.active {
         transform: translateY(3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+       
     }
     .toggle.active span:nth-child(1) {
         width: 40px;
