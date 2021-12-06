@@ -824,12 +824,12 @@
         top: 50%;
     }
     .text-animation .text-animation--one {
-        width: 100%;
+        width: 120%;
         left: 50%;
         transform: translateX(-50%) rotate(12deg);
     }
     .text-animation .text-animation--two {
-        width: 100%;
+        width: 120%;
         right: 50%;
         transform: translateX(50%) rotate(-12deg);
     }
