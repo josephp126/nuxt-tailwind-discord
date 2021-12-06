@@ -24,7 +24,8 @@ export default {
     '@sweetalert2/theme-dark/dark.css',
     './assets/transition.css',
     './static/css/main.css',
-    './static/css/cards.css'
+    './static/css/cards.css',
+    'aos/dist/aos.css',
   ],
 
   // SSR
@@ -44,6 +45,10 @@ export default {
     '~/plugins/chart.js',
     '~/plugins/lodash.js',
     '~/plugins/vue-awesome-swiper.js',
+    {
+      src: '~/plugins/aos.js',
+      mode: 'client'
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

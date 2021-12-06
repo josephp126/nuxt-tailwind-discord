@@ -5,8 +5,19 @@
             <div class="container grid grid-cols-1 xl:grid-cols-3 items-center">
                 <!-- Information  -->
                 <div>
-                    <h2 class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
-                    <p class="text-body17 capitalize font-quicksand font-normal mb-8">
+                   
+                    <h2 
+                     data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="450"
+                    data-aos-easing="ease-in-out"
+                     class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
+                    <p
+                    data-aos="fade-left"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="160"
+                    data-aos-duration="1000"
+                     class="text-body17 capitalize font-quicksand font-normal mb-8">
                         Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?
                     </p>
                     <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -68,17 +79,31 @@
             <div class="container grid xl:grid-cols-2 gap-16">
                 <div class="text-center xl:text-left">
                     <h2
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="450"
+                        data-aos-easing="ease-in-out"
                         class="font-montserrat font-extrabold mb-4 sm:mb-8 text-3xl md:text-body42"
                         style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                     >
                         Why Dicortics ?
                     </h2>
-                    <p class="text-body17 capitalize font-quicksand tracking-wide">
+                    <p 
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="120"
+                        data-aos-duration="300"
+                     class="text-body17 capitalize font-quicksand tracking-wide">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit corrupti atque animi ratione temporibus, laborum, nostrum magnam fuga vitae unde praesentium dignissimos dolore quo totam eaque laudantium, eligendi
                         adipisci! Dolor!
                     </p>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
+                <div 
+                 data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-delay="100"
+                data-aos-duration="260"
+                class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
                     <div class="justify-center sm:justify-self-start">
                         <span class="mb-4 inline-block">
                             <img src="/svg/clock.svg" alt="icon" />
@@ -256,8 +281,17 @@
         <div class="pt-16 lg:pt-24">
             <div class="container">
                 <div class="mb-20 text-center max-w-screen-md m-auto">
-                    <h2 class="text-green4f text-4xl md:text-body47 font-montserrat font-bold mb-4">Meet our Partners</h2>
-                    <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="450"
+                    data-aos-easing="ease-in-out"
+                     class="text-green4f text-4xl md:text-body47 font-montserrat font-bold mb-4">Meet our Partners</h2>
+                    <p
+                         data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="120"
+                        data-aos-duration="300"
+                     class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc. Porttitor sed tellus massa adipiscing egestas placerat.
                     </p>
                 </div>
@@ -563,12 +597,22 @@
         <!-- Slider End -->
 
         <!-- Start Server Section -->
-        <div class="bg-content bg-no-repeat bg-center bg-black24 py-16 lg:py-24" :style="ServerBg">
+        <div class="bg-content bg-no-repeat bg-center bg-black24 py-16 lg:py-24 relative z-10 overflow-hidden">
             <div class="container">
                 <div class="lg:grid grid-cols-12 gap-6 items-center">
                     <div class="col-span-6 2xl:pr-56 mb-8 lg:mb-0 lg:text-left text-center">
-                        <h2 class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span> of your <span class="font-bold">dreams.</span></h2>
-                        <p class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">
+                        <h2 
+                         data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="450"
+                        data-aos-easing="ease-in-out"
+                        class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span> of your <span class="font-bold">dreams.</span></h2>
+                        <p 
+                          data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="120"
+                        data-aos-duration="300"
+                        class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.
                         </p>
                     </div>
@@ -584,6 +628,13 @@
                             </nuxt-link>
                         </div>
                     </div>
+                </div>
+                <div class="circle-layout" >
+                    <div class="circle-layout--one">
+                    </div>
+                    <div class="circle-layout--two"></div>
+                    <div class="circle-layout--three"></div>
+                    <div class="circle-layout--four"></div>
                 </div>
             </div>
         </div>
@@ -603,9 +654,9 @@
                 bgLayer: {
                     backgroundImage: `url(https://i.imgur.com/XbYc0CR.png)`,
                 },
-                ServerBg: {
-                    backgroundImage: `url(https://i.imgur.com/lHu8gSV.png)`,
-                },
+                // ServerBg: {
+                //     backgroundImage: `url(https://i.imgur.com/lHu8gSV.png)`,
+                // },
 
                 //   swiper One
                 swiperOptionOne: {
@@ -782,4 +833,63 @@
         right: 50%;
         transform: translateX(50%) rotate(-12deg);
     }
+
+    /* Circle pulse  */
+    .circle-layout { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* background: red; */
+        background-color: #242424;
+    }
+
+    .circle-layout--one { 
+        width: 160px;
+        height: 160px;
+         -webkit-animation: pulsate 1s ease-out;
+        -webkit-animation-iteration-count: infinite;
+
+    }
+    .circle-layout--two { 
+        width: 340px;
+        height: 340px;
+    }
+    .circle-layout--three { 
+        width: 540px;
+        height: 540px;
+    }
+    .circle-layout--four { 
+        width: 750px;
+        height: 750px;
+    }
+    .circle-layout--one,
+    .circle-layout--two,
+    .circle-layout--three,
+    .circle-layout--four { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        border: 2px solid #4FEBF9;
+        -webkit-animation: pulsate 1s ease-out;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes pulsate {
+  0% {
+    transform: translate(-50%, -50%)  scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.3, 1.3);
+    opacity: 0;
+  }
+}
+
 </style>
