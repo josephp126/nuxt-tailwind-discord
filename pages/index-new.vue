@@ -1,16 +1,16 @@
 <template lang="">
     <div>
         <!-- banner section start  -->
-        <section :style="bgLayer" class="relative bg-top bg-cover bg-no-repeat pt-16">
-            <div class="container grid grid-cols-1 xl:grid-cols-3 items-center">
+        <section :style="bgLayer" class="relative bg-top bg-cover bg-no-repeat pt-56 ">
+            <div class="container grid grid-cols-1 xl:grid-cols-4  items-center">
                 <!-- Information  -->
-                <div>
+                <div class="xl:col-span-2 xl:max-w-xl text-center xl:text-left ">
                     <h2 
                      data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-duration="450"
                     data-aos-easing="ease-in-out"
-                     class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
+                    class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
                     <p
                     data-aos="fade-left"
                     data-aos-easing="ease-in-back"
@@ -19,7 +19,7 @@
                      class="text-body17 capitalize font-quicksand font-normal mb-8">
                         Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?
                     </p>
-                    <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <div class="flex flex-col sm:flex-row items-center justify-center xl:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                         <nuxt-link to="#" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-5 px-8 tracking-wider text-center w-full sm:w-auto">
                             DASHBOARD
                             <img class="ml-3" src="/svg/dashboard-btn.svg" alt="" />
@@ -30,15 +30,19 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class="xl:col-span-2 row-start-1 xl:row-start-auto">
-                    <div class="w-full h-full">
-                        <img src="/img/bg-dashboard.png" alt="background-layer" class="w-full h-full" />
+                <div class=" xl:col-start-3  row-start-1 xl:row-start-auto">
+                    <div class="relative banner-img z-10  mb-12 xl:mb-0">
+                        <kinesis-container>
+                            <kinesis-element :strength="10" type="depth">
+                                  <img src="/img/bg-dashboard-two.png" alt="background-layer" class=" max-w-lg xl:max-w-2xl xl:max-h-2xl mx-auto"/>
+                            </kinesis-element>
+                        </kinesis-container>
                     </div>
                 </div>
             </div>
 
             <!-- counter start   -->
-            <div class="py-36 lg:pt-0 xl:pb-72">
+            <div class="py-36 lg:pt-24 xl:pb-72">
                 <div class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
                     <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
                         <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
@@ -642,11 +646,14 @@
 </template>
 <script>
     import VueJsCounter from "vue-js-counter";
+    import {KinesisContainer, KinesisElement} from "vue-kinesis";
 
     export default {
         name: "IndexNew",
         components: {
             VueJsCounter,
+            KinesisContainer,
+            KinesisElement
         },
         data() {
             return {
@@ -799,6 +806,23 @@
     };
 </script>
 <style>
+
+    /* Banner img Shaddow  */
+    .banner-img::after {
+        top:0;
+        left:0;
+        opacity: 1;
+        content: ''; 
+        width: 100%;
+        height: 100%;
+        opacity: 0.26;
+        position:absolute;
+        background: linear-gradient(83.08deg, #4FEBF9 7.34%, rgba(79, 235, 249, 0.48) 92.07%);
+        filter: blur(250px);
+        z-index: -1;
+        transform: rotate(-80.78deg);
+    }
+
     .slider-giveaways .swiper-slide:nth-child(2n) {
         width: 40%;
     }
@@ -877,7 +901,7 @@
         top: 50%;
         left: 50%;
         border-radius: 50%;
-        border: 2px solid rgba(79, 235, 249, 0.4);
+        border: 2px solid rgba(1, 2, 2, 0.4);
         -webkit-animation-iteration-count: infinite;
 
     }
