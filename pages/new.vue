@@ -813,14 +813,14 @@
         left:0;
         opacity: 1;
         content: ''; 
+        z-index: -1;
         width: 100%;
         height: 100%;
         opacity: 0.26;
         position:absolute;
-        background: linear-gradient(83.08deg, #4FEBF9 7.34%, rgba(79, 235, 249, 0.48) 92.07%);
         filter: blur(250px);
-        z-index: -1;
         transform: rotate(-80.78deg);
+        background: linear-gradient(83.08deg, #4FEBF9 7.34%, rgba(79, 235, 249, 0.48) 92.07%);
     }
 
     .slider-giveaways .swiper-slide:nth-child(2n) {
@@ -871,26 +871,25 @@
     .circle-layout--one { 
         width: 160px;
         height: 160px;
-          -webkit-animation: pulsate 1s ease-out;
-        /* animation-delay: 2s */
+          -webkit-animation: pulsate 2s ease-out;
 
     }
     .circle-layout--two { 
         width: 340px;
         height: 340px;
-        -webkit-animation: pulsate 2s ease-out;
+        -webkit-animation: pulsate 4s  ease-out;
 
     }
     .circle-layout--three { 
         width: 540px;
         height: 540px;
-          -webkit-animation: pulsate 3s ease-out;
+          -webkit-animation: pulsate 8s ease-out;
 
     }
     .circle-layout--four { 
         width: 750px;
         height: 750px;
-        -webkit-animation: pulsate 6s ease-out;
+        -webkit-animation: pulsate 16s ease-out;
 
     }
     .circle-layout--one,
