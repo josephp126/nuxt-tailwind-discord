@@ -34,7 +34,7 @@
                     <div class="relative banner-img z-10  mb-12 xl:mb-0">
                         <kinesis-container class="" >
                             <kinesis-element :strength="12" type="depth">
-                                  <img src="/img/bg-dashboard.png" alt="background-layer" class=" max-w-lg  xl:max-w-4xl mx-auto "/>
+                                  <img src="/img/bg-dashboard.png" alt="background-layer" class=" max-w-full  md:max-w-lg  xl:max-w-4xl mx-auto "/>
                             </kinesis-element>
                         </kinesis-container>
                     </div>
@@ -107,37 +107,37 @@
                 data-aos-delay="100"
                 data-aos-duration="260"
                 class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
-                    <div class="justify-center sm:justify-self-start">
+                    <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/clock.svg" alt="icon" />
                         </span>
                         <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Fast & efficient</h2>
                     </div>
-                    <div class="justify-center sm:justify-self-start">
+                    <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/chain.svg" alt="icon" />
                         </span>
                         <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Easy to Modify</h2>
                     </div>
-                    <div class="justify-center sm:justify-self-start">
+                    <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/free.svg" alt="icon" />
                         </span>
                         <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Completely Free!</h2>
                     </div>
-                    <div class="justify-center sm:justify-self-start">
+                    <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/ok.svg" alt="icon" />
                         </span>
                         <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Better UI</h2>
                     </div>
-                    <div class="justify-center sm:justify-self-start">
+                    <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/diamond.svg" alt="icon" />
                         </span>
                         <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Premium Features</h2>
                     </div>
-                    <div class="justify-center sm:justify-self-start">
+                    <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/verify.svg" alt="icon" />
                         </span>
