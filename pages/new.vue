@@ -877,13 +877,13 @@
     .circle-layout--two { 
         width: 340px;
         height: 340px;
-        -webkit-animation: pulsate 4s  ease-out;
+        -webkit-animation: pulsate 5s  ease-out;
 
     }
     .circle-layout--three { 
         width: 540px;
         height: 540px;
-          -webkit-animation: pulsate 8s ease-out;
+          -webkit-animation: pulsate 12s ease-out;
 
     }
     .circle-layout--four { 
