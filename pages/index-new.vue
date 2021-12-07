@@ -1,10 +1,10 @@
 <template lang="">
     <div>
         <!-- banner section start  -->
-        <section :style="bgLayer" class="relative bg-top bg-cover bg-no-repeat pt-56 ">
+        <section :style="bgLayer" class="relative bg-top bg-cover bg-no-repeat pt-56 overflow-hidden ">
             <div class="container grid grid-cols-1 xl:grid-cols-4  items-center">
                 <!-- Information  -->
-                <div class="xl:col-span-2 xl:max-w-xl text-center xl:text-left ">
+                <div class="xl:col-span-2 xl:max-w-xl text-center xl:text-left overflow-hidden ">
                     <h2 
                      data-aos="fade-up"
                     data-aos-delay="100"
@@ -32,9 +32,9 @@
                 </div>
                 <div class=" xl:col-start-3  row-start-1 xl:row-start-auto">
                     <div class="relative banner-img z-10  mb-12 xl:mb-0">
-                        <kinesis-container>
-                            <kinesis-element :strength="10" type="depth">
-                                  <img src="/img/bg-dashboard-two.png" alt="background-layer" class=" max-w-lg xl:max-w-2xl xl:max-h-2xl mx-auto"/>
+                        <kinesis-container class="" >
+                            <kinesis-element :strength="12" type="depth">
+                                  <img src="/img/bg-dashboard.png" alt="background-layer" class=" max-w-lg  xl:max-w-4xl mx-auto "/>
                             </kinesis-element>
                         </kinesis-container>
                     </div>
@@ -42,7 +42,7 @@
             </div>
 
             <!-- counter start   -->
-            <div class="py-36 lg:pt-24 xl:pb-72">
+            <div class=" py-16 sm:py-36 lg:pt-24 xl:pb-72">
                 <div class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
                     <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
                         <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
