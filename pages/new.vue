@@ -299,95 +299,44 @@
                     </p>
                 </div>
 
-                <div>
-                    <swiper class="swiper" :options="swiperOptionFive">
-                        <swiper-slide>
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12">
                             <div>
-                                <div class="sm:h-315 h-full mb-12">
-                                    <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="" />
+                                <div class="h-315  mb-6 md:mb-12">
+                                    <img class="w-full h-full object-cover rounded-3xl" src="/img/meet1.png" alt="our-products" />
                                 </div>
                                 <div class="text-center">
                                     <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
-                                    <div class="min-h-80 mb-5">
+                                    <div class="mb-5">
                                         <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
                                             With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.
                                         </p>
                                     </div>
 
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="our-products" /></nuxt-link>
                                 </div>
                             </div>
-                        </swiper-slide>
-                        <swiper-slide>
                             <div>
-                                <div class="sm:h-315 h-full mb-12">
-                                    <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="" />
+                                <div class="h-315  mb-6 md:mb-12">
+                                    <img class="w-full h-full object-cover rounded-3xl" src="/img/meet2.png" alt="our-products" />
                                 </div>
                                 <div class="text-center">
                                     <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
-                                    <div class="min-h-80 mb-5">
+                                    <div class="mb-5">
                                         <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
                                     </div>
 
                                     <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
                                 </div>
                             </div>
-                        </swiper-slide>
-                        <swiper-slide>
                             <div>
                                 <div class="text-center  lg:mt-28">
-                                    <div class="min-h-80 mb-5">
+                                    <div class="mb-5">
                                         <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
                                     </div>
 
                                     <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
                                 </div>
                             </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <div class="sm:h-315 h-full mb-12">
-                                    <img class="w-full h-full rounded-3xl" src="/img/meet1.png" alt="" />
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
-                                    <div class="min-h-80 mb-5">
-                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
-                                            With more than 1 Million YT subscribers, you'll find him streaming PUBG mobile & Valorant everyday! He is known for his ace and style in gaming.
-                                        </p>
-                                    </div>
-
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <div class="sm:h-315 h-full mb-12">
-                                    <img class="w-full h-full rounded-3xl" src="/img/meet2.png" alt="" />
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">DiscordGift.site</h4>
-                                    <div class="min-h-80 mb-5">
-                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
-                                    </div>
-
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <div class="text-center lg:mt-28">
-                                    <div class="min-h-80 mb-5">
-                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
-                                    </div>
-
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                    </swiper>
                 </div>
             </div>
         </div>
@@ -774,33 +723,6 @@
                         },
                     },
                 },
-                //   swiper Five
-                swiperOptionFive: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                    loop:true,
-                    autoplay: {
-                        delay: 2000,
-                        disableOnInteraction: true,
-                    },
-                    breakpoints: {
-                        1199: {
-                            slidesPerView: 3,
-                        },
-                        1024: {
-                            slidesPerView: 2,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        640: {
-                            slidesPerView: 1,
-                        },
-                        320: {
-                            slidesPerView: 1,
-                        },
-                    },
-                },
             };
         },
     };
@@ -823,13 +745,13 @@
         background: linear-gradient(83.08deg, #4FEBF9 7.34%, rgba(79, 235, 249, 0.48) 92.07%);
     }
 
+    /* Customization Slider  */
     .slider-giveaways .swiper-slide:nth-child(2n) {
         width: 40%;
     }
     .slider-giveaways .swiper-slide:nth-child(3n) {
         width: 20%;
     }
-
     .swiper-slide.swiper-slide-active h2.title-hedding {
         color: #c51c75;
     }
@@ -892,6 +814,7 @@
         -webkit-animation: pulsate 16s ease-out;
 
     }
+
     .circle-layout--one,
     .circle-layout--two,
     .circle-layout--three,
@@ -905,7 +828,7 @@
 
     }
 
-    @-webkit-keyframes pulsate {
+@-webkit-keyframes pulsate {
   0% {
     transform: translate(-50%, -50%)  scale(0.1, 0.1);
     opacity: 0;
