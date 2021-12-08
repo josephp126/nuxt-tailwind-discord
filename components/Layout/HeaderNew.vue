@@ -57,7 +57,7 @@
                     </div>
 
                     <!-- Mobile Navigation Menu  -->
-                    <div v-if="sideBar" :class="`sidebar max-w-full md:max-w-3xl mx-auto absolute left-0 md:left-1/2 transform md:-translate-x-1/2  top-full w-full bg-black24 bg-opacity-80  shadow-lg lg:hidden z-10  rounded-b-md transition-all duration-700 ${sideBar ? ' translate-y-0' : '-translate-y-0.5'}  `">
+                    <div v-if="sideBar" :class="`sidebar max-w-full md:max-w-3xl mx-auto absolute left-0 md:left-1/2 transform md:-translate-x-1/2  top-full w-full lg:hidden z-10  rounded-b-md transition-all duration-700 ${sideBar ? ' translate-y-0' : '-translate-y-0.5'}  `">
                         <ul class="flex flex-col items-center space-y-4 py-5">
                             <li>
                                 <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="/index-new">Home</router-link>
@@ -126,7 +126,7 @@ import {VueScrollFixedNavbar} from 'vue-scroll-fixed-navbar'
         justify-content: center;
         background: transparent;
         transition: all 0.1s linear;
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
     }
     .toggle span {
         width: 40px;
@@ -170,10 +170,20 @@ import {VueScrollFixedNavbar} from 'vue-scroll-fixed-navbar'
 
     /* Sticky Header */
     #myHeader.sticky  header { 
-        @apply bg-black24 top-0 py-4
+        top: 0px;
+        padding: 16px 0px !important;  
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        background: rgba( 255, 255, 255, 0.15 );
     }
-    #myHeader.sticky .sidebar {
-        @apply bg-opacity-95
+
+
+
+    /* Dropdown  sidebar  */
+    .sidebar { 
+        backdrop-filter: blur( 20px ) !important;
+        background: rgba( 255, 255, 255, 0.05 );
+        -webkit-backdrop-filter: blur( 20px );
     }
 
 </style>
