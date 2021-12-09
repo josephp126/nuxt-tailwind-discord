@@ -187,7 +187,7 @@
                                     <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Server-wise economy & engaging games such as Among Us</p>
                                 </div>
                                 <div class="row-start-1 lg:row-start-auto">
-                                    <img src="/img/slider-thumb-three.png" alt="bg-img" class="mx-auto" />
+                                    <img src="/img/slider-thumb1.png" alt="bg-img" class="mx-auto" />
                                 </div>
                             </div>
                         </swiper-slide>
