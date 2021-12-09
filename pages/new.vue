@@ -148,96 +148,9 @@
         </section>
         <!-- why-discortics  end  -->
 
-        <!-- Text Animation  start  -->
-        <section class=" text-animation-content relative overflow-hidden pt-36 md:py-60 pb-60 md:pb-96">
-            <div class="text-animation text-animation--one">
-                <div>
-                     <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">  Fantastic Features.</span>
-                    <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                     <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">  Fantastic Features.</span>
-                    <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                </div>
-                <div>
-                     <span
-                        class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                        style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                                Fantastic Features.
-                    </span>
-                            <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                     <span
-                        class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                        style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                                Fantastic Features.
-                            </span>
-                    <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                </div>
-            </div>
-            <div class="text-animation text-animation--two">
-                <div>
-                     <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">  Fantastic Features.</span>
-                    <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                     <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">  Fantastic Features.</span>
-                    <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                </div>
-                <div>
-                     <span
-                        class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                        style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                                Fantastic Features.
-                    </span>
-                            <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                     <span
-                        class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                        style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                                Fantastic Features.
-                            </span>
-                    <span class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</span>
-                </div>
-            </div>
-            <!-- <div class="relative max-w-full py-40 lg:py-80">
-                <div class="bg-black24 flex items-center transform text-animation--one">
-                    <marquee width="100%" direction="right" scrollamount="20">
-                        <div class="flex items-center py-3">
-                            <p
-                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                            >
-                                Fantastic Features.
-                            </p>
-                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
-                            <p
-                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                            >
-                                Fantastic Features.
-                            </p>
-                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
-                        </div>
-                    </marquee>
-                </div>
-                <div class="bg-black24 flex items-center transform text-animation--two">
-                    <marquee width="100%" direction="left" scrollamount="15">
-                        <div class="flex items-center py-3">
-                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
-                            <p
-                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                            >
-                                Fantastic Features.
-                            </p>
-                            <p class="text-4xl md:text-body61 font-montserrat font-extrabold" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #4febf9;">Fantastic Features.</p>
-                            <p
-                                class="text-4xl md:text-body61 font-montserrat font-extrabold"
-                                style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-                            >
-                                Fantastic Features.
-                            </p>
-                        </div>
-                    </marquee>
-                </div>
-            </div> -->
-        </section>
-        <!-- Text Animation  end  -->
+    <!-- Text Animation  start  -->
+        <FeatureAnimation/> 
+    <!-- Text Animation  end  -->
 
         <!-- Don't Cross this Border  -->
 
@@ -385,136 +298,96 @@
             </div>
         </div>
         <!--  Partner section   -->
-        <section class="py-16 lg:py-24">
-            <!-- Partner One  -->
-            <div class="mb-6">
-                <div class="auto-slider">
-                    <div class="auto-slider-track">
-                        <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                            <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
-                                <div class="flex items-center">
-                                    <img class="mr-4" :src="item.icon" alt="" />
-                                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="mr-2" src="/svg/user.svg" alt="" />
-                                    <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
-                                </div>
+               <section class="py-16 lg:py-24">
+        <!-- Partner One  -->
+        <div class="mb-6">
+            <div class="auto-slider">
+                <div class="auto-slider-track">
+                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                            <div class="flex items-center">
+                                <img class="mr-4" :src="item.icon" alt="" />
+                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
                             </div>
-                        </div>
-                        <!-- Doubled  -->
-                        <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                            <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
-                                <div class="flex items-center">
-                                    <img class="mr-4" :src="item.icon" alt="" />
-                                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="mr-2" src="/svg/user.svg" alt="" />
-                                    <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
-                                </div>
+                            <div class="flex items-center">
+                                <img class="mr-2" src="/svg/user.svg" alt="" />
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Partner slider alternate  -->
-            <div class="mb-6">
-                <div class="auto-slider">
-                    <div class="auto-slider-track auto-slider-track--alternate">
-                        <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                            <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
-                                <div class="flex items-center">
-                                    <router-link to="#">
-                                        <img class="mr-4" :src="item.icon" alt="" />
-                                    </router-link>
-                                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="mr-2" src="/svg/user.svg" alt="" />
-                                    <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.users}}</h4>
-                                </div>
+                    <!-- Doubled  -->
+                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                            <div class="flex items-center">
+                                <img class="mr-4" :src="item.icon" alt="" />
+                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
                             </div>
-                        </div>
-                        <!-- Doubled  -->
-                        <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                            <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
-                                <div class="flex items-center">
-                                     <router-link to="#">
-                                        <img class="mr-4" :src="item.icon" alt="" />
-                                    </router-link>
-                                    <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="mr-2" src="/svg/user.svg" alt="" />
-                                    <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.users}}</h4>
-                                </div>
+                            <div class="flex items-center">
+                                <img class="mr-2" src="/svg/user.svg" alt="" />
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-          
-        </section>
-
-        <!-- Slider End -->
-
-        <!-- Start Server Section -->
-        <div class="bg-content bg-no-repeat bg-center bg-black24 py-16 lg:py-24 relative z-10 overflow-hidden">
-            <div class="container">
-                <div class="lg:grid grid-cols-12 gap-6 items-center">
-                    <div class="col-span-6 2xl:pr-56 mb-8 lg:mb-0 lg:text-left text-center">
-                        <h2 
-                         data-aos="fade-up"
-                        data-aos-delay="100"
-                        data-aos-duration="450"
-                        data-aos-easing="ease-in-out"
-                        class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span> of your <span class="font-bold">dreams.</span></h2>
-                        <p 
-                          data-aos="fade-zoom-in"
-                        data-aos-easing="ease-in-back"
-                        data-aos-delay="120"
-                        data-aos-duration="300"
-                        class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.
-                        </p>
-                    </div>
-                    <div class="col-span-6">
-                        <div class="sm:flex flex-wrap justify-center sm:space-x-5">
-                            <nuxt-link to="/" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-4 px-8 tracking-wider text-center mb-4 sm:mb-0">
-                                DASHBOARD
-                                <img class="ml-3" src="/svg/dashedboard.svg" alt="" />
-                            </nuxt-link>
-                            <nuxt-link to="/" class="border border-grayb5 border-opacity-80 text-gray9d font-bold rounded-full flex items-center text-body15 font-quicksand uppercase py-4 px-8 tracking-wider justify-center">
-                                INVITE BOT
-                                <img class="ml-3" src="/svg/plane.svg" alt="" />
-                            </nuxt-link>
-                        </div>
-                    </div>
-                </div>
-                <div class="circle-layout" >
-                    <div class="circle-layout--one">
-                    </div>
-                    <div class="circle-layout--two"></div>
-                    <div class="circle-layout--three"></div>
-                    <div class="circle-layout--four"></div>
                 </div>
             </div>
         </div>
+        <!-- Partner slider alternate  -->
+        <div class="mb-6">
+            <div class="auto-slider">
+                <div class="auto-slider-track auto-slider-track--alternate">
+                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                            <div class="flex items-center">
+                                <router-link to="#">
+                                    <img class="mr-4" :src="item.icon" alt="" />
+                                </router-link>
+                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
+                            </div>
+                            <div class="flex items-center">
+                                <img class="mr-2" src="/svg/user.svg" alt="" />
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.users}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Doubled  -->
+                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                            <div class="flex items-center">
+                                <router-link to="#">
+                                    <img class="mr-4" :src="item.icon" alt="" />
+                                </router-link>
+                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
+                            </div>
+                            <div class="flex items-center">
+                                <img class="mr-2" src="/svg/user.svg" alt="" />
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.users}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Slider End -->
+
+        <!-- Start Server Section -->
+            <ServerContact/>
         <!-- End Sever -->
     </div>
 </template>
 <script>
     import VueJsCounter from "vue-js-counter";
     import {KinesisContainer, KinesisElement} from "vue-kinesis";
-
+    import FeatureAnimation from "~/components/FeatureAnimation.vue";
+    import ServerContact from "~/components/ServerContact.vue";
     export default {
         name: "IndexNew",
         components: {
             VueJsCounter,
             KinesisContainer,
-            KinesisElement
+            KinesisElement,
+            FeatureAnimation,
+            ServerContact
         },
         data() {
             return {
@@ -659,85 +532,8 @@
         -webkit-text-fill-color: transparent;
     }
 
-    /* Animation Text roate  */
-    .text-animation .text-animation--one,
-    .text-animation .text-animation--two {
-        position: absolute;
-        top: 50%;
-    }
-    .text-animation .text-animation--one {
-        width: 120%;
-        left: 50%;
-        transform: translateX(-50%) rotate(12deg);
-    }
-    .text-animation .text-animation--two {
-        width: 120%;
-        right: 50%;
-        transform: translateX(50%) rotate(-12deg);
-    }
 
-    /* Circle pulse  */
-    .circle-layout { 
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        position: absolute;
-        background-color: #242424;
-    }
 
-    .circle-layout--one { 
-        width: 160px;
-        height: 160px;
-          -webkit-animation: pulsate 2s ease-out;
-
-    }
-    .circle-layout--two { 
-        width: 340px;
-        height: 340px;
-        -webkit-animation: pulsate 5s  ease-out;
-
-    }
-    .circle-layout--three { 
-        width: 540px;
-        height: 540px;
-          -webkit-animation: pulsate 12s ease-out;
-
-    }
-    .circle-layout--four { 
-        width: 750px;
-        height: 750px;
-        -webkit-animation: pulsate 16s ease-out;
-
-    }
-
-    .circle-layout--one,
-    .circle-layout--two,
-    .circle-layout--three,
-    .circle-layout--four { 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border-radius: 50%;
-        border: 2px solid rgba(79, 235, 249,.2);
-        -webkit-animation-iteration-count: infinite;
-
-    }
-
-@-webkit-keyframes pulsate {
-        0% {
-            transform: translate(-50%, -50%)  scale(0.1, 0.1);
-            opacity: 0;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            transform: translate(-50%, -50%) scale(1.3, 1.3);
-            opacity: 0;
-        }
-}
 
 
 .auto-slider { 
@@ -796,59 +592,5 @@
 /* .auto-slider-content > div:hover { 
     transform: translateZ(20px);
 } */
-
-
-/* Text Animation scroll  */
-.text-animation-content { 
-    position: relative;
-}
-.text-animation { 
-  width: 100%;
-  display:flex;
-  position: absolute;
-  top: 50%;
-}
-.text-animation div  {
-    display: flex;
-    align-items: center;
-    padding: 16px 0px;
-    white-space: nowrap;
-    background: #242424;
-    animation: animate 40s linear infinite;
-    animation-delay: -40s;
-}
-
-.text-animation div:nth-child(2) {
-    animation: animate2 40s linear infinite;
-    animation-delay: -20s;
-}
-
-@keyframes animate {
-    0% { 
-        transform: translateX(100%);
-    } 100% { 
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes animate2 {
-    0% { 
-        transform: translateX(0);
-    } 100% { 
-        transform: translateX(-200%);
-    }
-}
-
-
-
-.text-animation--one { 
-    left: 50%;
-    transform: translateX(-50%) rotate(12deg);
-}
-.text-animation--two { 
-    right: 50%;
-    transform: translateX(50%) rotate(-12deg);
-}
-
 
 </style>
