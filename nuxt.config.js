@@ -1,5 +1,5 @@
 import Constants from './data/Constants'
-// import Secret from './data/Secret'
+import Secret from './data/Secret'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -147,7 +147,7 @@ export default {
       home: '/refresh'
     },
     resetOnError: true,
-    rewriteRedirects: true,
+    rewriteRedirects: false,
     strategies: {
       discordapp: {
         scheme: 'oauth2',
@@ -156,7 +156,7 @@ export default {
           token: 'https://discord.com/api/oauth2/token',
           userInfo: 'https://discord.com/api/users/@me'
         },
-        // clientId: Secret.clientID,
+        clientId: Secret.clientID,
         codeChallengeMethod: "",
         responseType: 'token',
         scope: "identify guilds",

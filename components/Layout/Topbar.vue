@@ -145,25 +145,25 @@
                   title === key ? 'block' : 'hidden'
                 } absolute -left-2 flex flex-row items-center`"
               >
-                <SVGNewPointer :size="24" />
+                <SVGNewPointer :size="34" />
               </div>
               <NuxtLink
                 :to="route"
                 :class="`${
-                  title === key ? 'bg-discortics-button' : 'text-gray-300'
+                  title === key ? 'bg-sidebarselectedbox' : 'text-gray-300'
                 }
                 tracking-wide
-                p-2
+                p-1.5
                 transition
                 duration-300
                 ease-in-out
                 capitalize
                 h-12
-                ${toggleNav ? 'w-full rounded-md justify-start' : 'w-12 rounded-full justify-center'} group-hover:w-full
-                group-hover:rounded-md
+                ${toggleNav ? 'w-full rounded-xl justify-start' : 'w-12 rounded-xl justify-center'} group-hover:w-full
+                group-hover:rounded-xl
                 text-sm
                 font-medium
-                hover:bg-discortics-button
+                hover:bg-sidebarselectedbox
                 hover:bg-opacity-100
                 hover:text-discortics-link
                 block
@@ -172,14 +172,14 @@
 `"
                 :disabled="greyed"
                 ><span
-                  ><SVGNewWrapper :name="routeIcon"
+                  ><SVGNewWrapper :name="routeIcon" :size="34"
                 /></span>
                 <span
                   :class="`${
                     title === key
                       ? 'bg-navCurrent text-transparent bg-clip-text'
                       : 'text-gray-300'
-                  } py-2 ${toggleNav ? 'block' : 'hidden'} group-hover:block`"
+                  } font-quicksand text-body15 font-bold ${toggleNav ? 'block' : 'hidden'} group-hover:block`"
                   >{{ name }}</span
                 ></NuxtLink
               >
@@ -237,3 +237,10 @@ export default {
   },
 }
 </script>
+<style>
+a.naviconselected span div svg path,a.navicon:hover span div svg path {
+    fill: #8BADFF;
+    stroke: #8BADFF;
+    box-shadow: 0px 3px 7px rgba(89, 136, 255, 0.3), inset 0px 2px 5px rgba(255, 255, 255, 0.3);
+}
+</style>
