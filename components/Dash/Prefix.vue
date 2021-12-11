@@ -12,9 +12,15 @@
             </div>
           </div>
           <div class="py-2 flex flex-col lg:flex-row items-center mx-auto">
-            <div class="group relative">
+            <div v-if="$fetchState.pending" class="group relative">
+              <div
+              class="border-gray-500 border-opacity-80 bg-transparent h-12 w-72 border-2 p-2 rounded-md"
+            ><div class="h-full my-auto bg-gray-600 rounded animate-pulse"></div></div>
+            </div>
+            <div v-else class="group relative">
               <input
                 v-model="prefix"
+                v-on:input="prefixCheck"
                 class="
                   border-gray-500 border-opacity-80
                   bg-transparent
@@ -29,6 +35,28 @@
             </div>
           </div>
           <div
+            v-if="$fetchState.pending"
+            class="
+              flex flex-row flex-wrap
+              justify-start
+              space-x-2
+              py-2
+              text-gray-300
+              pointer-events-none
+            "
+          >
+            <div class="h-8 py-3 flex flex-row items-center">
+              <div class="h-8 w-24 exampleText text-xs rounded"><div class="animate-pulse m-2 p-2 h-2 bg-gray-600 rounded"></div></div>
+            </div>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <div class="h-8 w-24 exampleText text-xs rounded"><div class="animate-pulse m-2 p-2 h-2 bg-gray-600 rounded"></div></div>
+            </div>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <div class="h-8 w-24 exampleText text-xs rounded"><div class="animate-pulse m-2 p-2 h-2 bg-gray-600 rounded"></div></div>
+            </div>
+          </div>
+          <div
+            v-else
             class="
               flex flex-row flex-wrap
               justify-start
@@ -56,12 +84,49 @@
 export default {
   data() {
     return {
-      prefix: 'loading'
+      prefix: ';',
+      oldPrefix: ';'
     }
   },
   methods: {
+    prefixCheck() {
+      if(this.prefix !== this.oldPrefix){
+        if(!this.toastID){
+          this.toastID = this.$vToastify.info({
+            body: "Hold up! You have unsaved changes!",
+            mode: "prompt",
+            answers: {
+              Reset: false,
+              Save: true
+            },
+            canTimeout: false,
+            draggable: false,
+          })/* .then(value => {
+              if (value) {
+                  console.log(this.prefix);
+              }else{
+                this.prefix = this.oldPrefix;
+              }
+          }) */;
+          this.$vToastify.listen("vtPromptResponse", payload => {
+              if(this.toastID && payload.id === this.toastID){
+                delete this.toastID;
+                const value = payload.response;
+                if (value) {
+                    this.updatePrefix();
+                }else{
+                  this.prefix = this.oldPrefix;
+                }
+              }
+          });
+        }
+      }else if(this.toastID){
+        this.$vToastify.removeToast(this.toastID);
+        delete this.toastID;
+      }
+    },
     async updatePrefix() {
-      const prefix = this.prefix
+      const prefix = this.prefix;
       const response = await this.$api.request({
         url: `/v2/prefix/${localStorage.getItem('guildID')}`,
         method: 'post',
@@ -72,8 +137,9 @@ export default {
           prefix,
         },
       })
-      if (response.status === 200)
-        this.$toast.success('Successfully updated prefix!', { duration: 10000 })
+      if (response.status === 200){
+        this.oldPrefix = this.prefix;
+      }
     },
   },
   async fetch() {
@@ -89,6 +155,7 @@ export default {
     if (response.status === 200) prefix = response.data.prefix
 
     this.prefix = prefix;
+    this.oldPrefix = prefix;
     
   },
 }

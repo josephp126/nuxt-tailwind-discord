@@ -24,10 +24,10 @@
       <div id = "choice-stuff" :class="`z-30 bg-gradient-to-l border border-gray-600 rounded-xl w-full p-2 divide-y divide-gray-600 h-32 overflow-y-scroll from-discortics-header via-discortics-header to-discortics-header absolute flex flex-col items-start -bottom-32 ${dropOpen ? 'block' : 'hidden'}`">
         <div v-if="$fetchState.pending" class="items-center hover:bg-gray-800 p-2 w-full cursor-pointer">
           <div v-for="server of [1,2,3]" :key="server" class="flex flex-row animate-pulse items-center hover:bg-gray-800 p-2 w-full cursor-pointer">
-            <div class="flex flex-row items-center justify-center  bg-gray-500 h-10 w-16 rounded-full">
+            <div class="flex flex-row items-center justify-center  bg-gray-600 h-10 w-16 rounded-full">
             </div>
             <div
-              class="truncate text-sm font-semibold px-1 ml-2 bg-gray-500 h-6 w-full rounded-md"
+              class="truncate text-sm font-semibold px-1 ml-2 bg-gray-600 h-6 w-full rounded-md"
             >
             </div>
           </div>

@@ -48,6 +48,10 @@ export default {
     {
       src: '~/plugins/aos.js',
       mode: 'client'
+    },
+    { 
+      src: '~/plugins/vue-toastify.js', 
+      mode: 'client' 
     }
   ],
 
