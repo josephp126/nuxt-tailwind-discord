@@ -174,6 +174,9 @@ import {VueScrollFixedNavbar} from 'vue-scroll-fixed-navbar'
         padding: 16px 0px !important;  
         backdrop-filter: blur( 20px );
         -webkit-backdrop-filter: blur( 20px );
+        -moz-backdrop-filter: blur( 20px );
+        -ms-background-filter: blur( 20px );
+        -o-backdrop-filter: blur( 20px );
         background: rgba( 255, 255, 255, 0.15 );
     }
 
