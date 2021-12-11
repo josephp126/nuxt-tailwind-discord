@@ -102,6 +102,7 @@ module.exports = {
           'headervia': '#212121',
           'headerto': '#181818',
           'button': '#333334',
+          'dropselected': '#5E76C04D',
         },
         maid: {
           'border': '#4ef0fc',

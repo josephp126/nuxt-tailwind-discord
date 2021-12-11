@@ -153,7 +153,7 @@
                   </a>
                 </div>
               </div>
-              <p class="overflow-hidden font-bold text-md p-px">{{ guild.name }}</p>
+              <p class="overflow-hidden font-bold text-md p-px pr-2">{{ guild.name }}</p>
               <p class="text-xs p-px">{{ guild.userType }}</p>
             </div>
           </div>

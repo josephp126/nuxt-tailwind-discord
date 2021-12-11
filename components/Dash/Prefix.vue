@@ -77,7 +77,6 @@ export default {
     },
   },
   async fetch() {
-    localStorage.setItem('guildID', '708944530413453393')
     const token = localStorage.getItem('sessionToken')
     const response = await this.$api.request({
       url: `/v2/prefix/${localStorage.getItem('guildID')}`,
