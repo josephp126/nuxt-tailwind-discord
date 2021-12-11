@@ -136,6 +136,10 @@ export default {
               }
           });
         }
+        if(this.toastID && !prefix){
+          this.$vToastify.removeToast(this.toastID);
+          delete this.toastID;
+        }
       }else if(this.toastID){
         this.$vToastify.removeToast(this.toastID);
         delete this.toastID;

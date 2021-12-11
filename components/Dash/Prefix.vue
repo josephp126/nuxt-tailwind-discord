@@ -34,7 +34,7 @@
               />
               <div v-if="inputValid" class="font-quicksand pt-2">
                 <vs-alert variant="error" no-bg >
-                  <span>The prefix cannot be <b>blank</b></span>
+                  <span>The prefix cannot be <b>blank</b>!</span>
                 </vs-alert>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default {
   },
   methods: {
     prefixCheck() {
-      if(this.prefix) this.$emit("prefixChange",this.prefix,this.oldPrefix);
+      this.$emit("prefixChange",this.prefix,this.oldPrefix);
     },
     async updatePrefix() {
         if(this.oldPrefix !== this.prefix){

@@ -3,6 +3,6 @@ import VueToastify from "vue-toastify";
 
 Vue.use(VueToastify,{
 	position: "bottom-center",
-	withBackdrop: true,
+	withBackdrop: false,
 	iconEnabled: false,
 });
