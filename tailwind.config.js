@@ -71,6 +71,7 @@ module.exports = {
         body53: ["53px","110%"],
         body55: ["55px","110%"],
         body22: ["22px","27px"],
+        body27: ["27px","32px"],
         body42: ["42px","52px"],
         body47: ["47px","57px"],
         body48: ["48px", "64px"],

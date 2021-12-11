@@ -6,7 +6,7 @@
           <div class="p-4 flex flex-col items-start space-y-1">
             <span
               class="
-                text-2xl
+                text-body27
                 bg-navCurrent
                 text-transparent
                 bg-clip-text
@@ -28,7 +28,7 @@
           "
         >
           <div class="py-2 flex flex-col">
-            <DashPrefix />
+            <DashPrefix @prefixChange="prefixChanged"  ref = "prefix" />
           </div>
           <div class="py-2 flex flex-col">
             <DashLanguage />
@@ -41,7 +41,7 @@
           <div class="p-4 flex flex-col items-start space-y-1">
             <span
               class="
-                text-2xl
+                text-body27
                 bg-navCurrent
                 text-transparent
                 bg-clip-text
@@ -109,6 +109,38 @@ export default {
       Features,
       Features2,
     }
+  },
+  methods: {
+    prefixChanged(prefix,oldPrefix) {
+      if(prefix !== oldPrefix){
+        if(!this.toastID){
+          this.toastID = this.$vToastify.info({
+            body: "Hold up! You have unsaved changes!",
+            mode: "prompt",
+            answers: {
+              Reset: false,
+              Save: true
+            },
+            canTimeout: false,
+            draggable: false,
+          });
+          this.$vToastify.listen("vtPromptResponse", payload => {
+              if(this.toastID && payload.id === this.toastID){
+                delete this.toastID;
+                const value = payload.response;
+                if (value) {
+                    this.$refs.prefix.updatePrefix();
+                }else{
+                  this.$refs.prefix.prefix = this.$refs.prefix.oldPrefix;
+                }
+              }
+          });
+        }
+      }else if(this.toastID){
+        this.$vToastify.removeToast(this.toastID);
+        delete this.toastID;
+      }
+    },
   },
   layout: 'dashboard',
 }

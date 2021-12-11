@@ -1,5 +1,5 @@
 <template>
-    <div class="py-1 lg:py-8 px-4">
+    <div class="py-1 lg:py-4 px-4">
       <div class="mx-auto max-w-xl form-card w-full lg:w-112 relative lg:h-64 overflow-hidden">
         <div class="px-8">
           <div class="gradient-circle w-24 h-24 absolute right-2 top-2" />
@@ -32,6 +32,11 @@
                 "
                 maxlength="10"
               />
+              <div v-if="inputValid" class="font-quicksand pt-2">
+                <vs-alert variant="error" no-bg >
+                  <span>The prefix cannot be <b>blank</b></span>
+                </vs-alert>
+              </div>
             </div>
           </div>
           <div
@@ -88,58 +93,36 @@ export default {
       oldPrefix: ';'
     }
   },
+   computed:{
+    inputValid(){
+      if(this.prefix){
+        return false
+      } else {
+        return true
+      }
+    }
+  },
   methods: {
     prefixCheck() {
-      if(this.prefix !== this.oldPrefix){
-        if(!this.toastID){
-          this.toastID = this.$vToastify.info({
-            body: "Hold up! You have unsaved changes!",
-            mode: "prompt",
-            answers: {
-              Reset: false,
-              Save: true
-            },
-            canTimeout: false,
-            draggable: false,
-          })/* .then(value => {
-              if (value) {
-                  console.log(this.prefix);
-              }else{
-                this.prefix = this.oldPrefix;
-              }
-          }) */;
-          this.$vToastify.listen("vtPromptResponse", payload => {
-              if(this.toastID && payload.id === this.toastID){
-                delete this.toastID;
-                const value = payload.response;
-                if (value) {
-                    this.updatePrefix();
-                }else{
-                  this.prefix = this.oldPrefix;
-                }
-              }
-          });
-        }
-      }else if(this.toastID){
-        this.$vToastify.removeToast(this.toastID);
-        delete this.toastID;
-      }
+      if(this.prefix) this.$emit("prefixChange",this.prefix,this.oldPrefix);
     },
     async updatePrefix() {
-      const prefix = this.prefix;
-      const response = await this.$api.request({
-        url: `/v2/prefix/${localStorage.getItem('guildID')}`,
-        method: 'post',
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem('sessionToken')}`,
-        },
-        data: {
-          prefix,
-        },
-      })
-      if (response.status === 200){
-        this.oldPrefix = this.prefix;
-      }
+        if(this.oldPrefix !== this.prefix){
+          const prefix = this.prefix;
+                const response = await this.$api.request({
+                  url: `/v2/prefix/${localStorage.getItem('guildID')}`,
+                  method: 'post',
+                  headers: {
+                    Authorization: `Bearer ${localStorage.getItem('sessionToken')}`,
+                  },
+                  data: {
+                    prefix,
+                  },
+                })
+                if (response.status === 200){
+                  this.oldPrefix = this.prefix;
+                }
+              }
     },
   },
   async fetch() {
@@ -151,8 +134,8 @@ export default {
         Authorization: `Bearer ${token}`,
       },
     })
-    let prefix = ''
-    if (response.status === 200) prefix = response.data.prefix
+    let prefix = ';';
+    if (response.status === 200) prefix = response.data.prefix;
 
     this.prefix = prefix;
     this.oldPrefix = prefix;
@@ -160,3 +143,8 @@ export default {
   },
 }
 </script>
+<style scoped>
+.vs-alert--no-bg.vs-alert-error {
+  color: #ff7682;
+}
+</style>
