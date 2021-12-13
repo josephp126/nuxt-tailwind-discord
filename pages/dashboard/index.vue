@@ -11,7 +11,7 @@
       <div
         class="spinner-grow text-secondary align-self-center loader-lg"
       ></div>
-      <div class="flex flex-wrap">
+      <div class="flex flex-col md:flex-row flex-wrap items-center md:items-start">
         <CardsServers
           v-for="stuff in servers"
           :key="stuff.name"
