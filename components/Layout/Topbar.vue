@@ -13,7 +13,7 @@
         rounded-none
         block
         w-full
-        fixed
+        fixed 
         lg:absolute lg:top-0 lg:left-0 lg:rounded-t-md
         bg-discortics-header
         border-maid-border border-opacity-70 border-b
@@ -122,7 +122,7 @@
       <div
         class="
           block
-          min-h-screen
+          min-h-screen overflow-x-scroll max-h-screen
           top-0
           left-0
           bg-discortics-header
