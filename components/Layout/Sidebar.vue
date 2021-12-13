@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 fixed h-full font-montserrat">
+  <div class="p-4 z-40 fixed h-full font-montserrat">
     <div
       :class="`
         z-40 h-full
