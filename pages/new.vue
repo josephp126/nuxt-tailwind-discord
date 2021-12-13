@@ -439,13 +439,12 @@
                 ],
                 //   swiper One
                 swiperOptionOne: {
-                    slidesPerView: 1,
                     spaceBetween: 80,
                     centeredSlides: true,
-                    loop:true,
-                    autoplay: {
-                        delay: 1600,
-                        disableOnInteraction: false,
+                    slidesPerView: "auto",
+                    freeMode: true,
+                    mousewheel: {
+                        releaseOnEdges: true,
                     },
                     breakpoints: {
                         1199: {
@@ -467,13 +466,12 @@
                 },
                 //   swiper two
                 swiperOptionTwo: {
-                    slidesPerView: 1,
                     spaceBetween: 80,
                     centeredSlides: true,
-                    loop:true,
-                    autoplay: {
-                        delay: 2000,
-                        disableOnInteraction: true,
+                    slidesPerView: "auto",
+                    freeMode: true,
+                    mousewheel: {
+                        releaseOnEdges: true,
                     },
                     breakpoints: {
                         1199: {
