@@ -20,7 +20,7 @@ export default [
             },
             {
                 name: `Premium`,
-                route: `/premium`,
+                route: `/dashboard/premium`,
                 key: `premium`,
                 routeIcon: "prepremium",
             },
@@ -40,7 +40,7 @@ export default [
             },
             {
                 name: `Statistics`,
-                route: `/stats`,
+                route: `/dashboard/stats`,
                 key: `stats`,
                 routeIcon: "prestats",
             },

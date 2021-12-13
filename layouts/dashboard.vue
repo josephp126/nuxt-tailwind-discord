@@ -16,7 +16,7 @@
     <main class="flex-1 w-full p-2 mx-auto lg:px-8 mt-5 lg:mt-0 lg:ml-48">
       <div id="content" class="p-2 flex flex-col justify-start">
         <LayoutTopstuff ref = "topbar"/>
-        <div class="lg:ml-20 mt-5 lg:mt-20 mx-auto px-2">
+        <div class="lg:ml-5 mt-5 lg:mt-20 mx-auto px-2 w-full flex flex-col items-start">
           <div class="p-px w-full">
             <Nuxt />
           </div>

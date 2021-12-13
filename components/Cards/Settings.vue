@@ -3,8 +3,9 @@
     class="
       flex flex-col
       itemx-center
-      bg-discortics-500
+      bg-discortics-header
       z-50
+      shadow-md
       bg-opacity-100
       rounded-md
       w-full
@@ -23,7 +24,7 @@
               $auth.user.avatar +
               '.webp'
             "
-            class="object-cover w-24"
+            class="object-cover w-8"
             alt="discordian"
           />
         </div>
@@ -33,21 +34,21 @@
       </div>
     </div>
     <div class="flex dropdown-item p-2 px-4 block">
-      <a href="/user/" class="group flex justify-between text-lg"
+      <a href="/user/" class="group flex space-x-2 justify-between text-lg"
         ><SVGUser />
-        <span class="group-hover:text-gray-500">My Profile</span></a
+        <span class="transition duration-500 ease-in-out group-hover:text-gray-500">My Profile</span></a
       >
     </div>
     <div class="flex dropdown-item p-2 px-4 block">
-      <a href="/dashboard" class="group flex justify-between text-lg"
+      <a href="/dashboard" class="group flex space-x-2 justify-between text-lg"
         ><SVGServer />
-        <span class="group-hover:text-gray-500">Servers</span></a
+        <span class="transition duration-500 ease-in-out group-hover:text-gray-500">Servers</span></a
       >
     </div>
     <div id="signout" class="flex dropdown-item p-2 pb-4 px-4 block">
-      <a href="/logout" class="group flex justify-between text-lg"
+      <a href="/logout" class="group flex space-x-2 justify-between text-lg"
         ><SVGLogout />
-        <span class="group-hover:text-gray-500">Sign Out</span></a
+        <span class="transition duration-500 ease-in-out group-hover:text-gray-500">Sign Out</span></a
       >
     </div>
   </div>

@@ -120,7 +120,7 @@
 `"
                 :disabled="greyed"
                 ><span
-                  ><SVGNewWrapper :name="routeIcon"
+                  ><SVGNewWrapper :name="routeIcon" size = "36"
                 /></span>
                 <span
                   :class="`${

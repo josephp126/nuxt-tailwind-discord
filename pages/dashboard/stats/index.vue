@@ -219,7 +219,7 @@
 </template>
 
 <script>
-import conf from '../stats/conf'
+import conf from './conf'
 console.log({
   ...conf,
   labels: ['Offline', 'Idle', 'DND', 'Online'],
