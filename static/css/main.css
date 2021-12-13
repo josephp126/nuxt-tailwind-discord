@@ -3,6 +3,12 @@
   padding: 0 12px;
 }
 
+@media (min-width: 1536px) and (max-width: 1537px) { 
+  .container { 
+    padding: 0px 60px;
+  }
+} 
+
 .tooltip {
   position: relative;
   display: inline-block;
