@@ -79,7 +79,7 @@
               <div
                 :class="`
                   flex
-                  w-48
+                  w-72
                   h-auto
                   right-0
                   max-w-md

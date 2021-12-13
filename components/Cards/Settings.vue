@@ -8,7 +8,7 @@
       shadow-md
       bg-opacity-100
       rounded-md
-      w-full
+      w-72
     "
     aria-labelledby="userProfileDropdown"
   >
@@ -40,10 +40,7 @@
       >
     </div>
     <div class="flex dropdown-item p-2 px-4 block">
-      <a href="/dashboard" class="group flex space-x-2 justify-between text-lg"
-        ><SVGServer />
-        <span class="transition duration-500 ease-in-out group-hover:text-gray-500">Servers</span></a
-      >
+      <TopbarServer />
     </div>
     <div id="signout" class="flex dropdown-item p-2 pb-4 px-4 block">
       <a href="/logout" class="group flex space-x-2 justify-between text-lg"
