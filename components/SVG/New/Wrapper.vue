@@ -106,7 +106,7 @@ export default {
     size: {
       type: String,
       default() {
-        return '24'
+        return '48'
       },
     },
   },

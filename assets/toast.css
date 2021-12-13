@@ -1,0 +1,36 @@
+.vt-theme-toasted {
+    background-color: #21222af2;
+    flex-flow: row !important;
+    color: white;
+    width: 900px !important;
+    min-height: 50px !important;
+    justify-content: left !important;
+}
+
+.vt-theme-toasted > .vt-content {
+    margin-right: 0px !important;
+    max-width: 500px !important;
+}
+
+.vt-theme-toasted > .vt-buttons {
+    display: block !important;
+    flex-basis: auto !important;
+    margin-left: auto !important;
+    margin-right: 0px !important;
+}
+
+.vt-theme-toasted > .vt-buttons > button:nth-child(1) {
+    border-width: 0px !important;
+    padding: 8px 40px !important;
+    margin-left: auto !important;
+
+}
+.vt-theme-toasted > .vt-buttons > button:nth-child(2) {
+    border-width: 2px !important;
+    padding: 8px 40px !important;
+    margin-left: auto !important;
+    background-color: #4FA4F9 !important;
+    border-color: #4FA4F9 !important;
+    color: black !important;
+
+}

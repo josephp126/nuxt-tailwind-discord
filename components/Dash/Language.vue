@@ -19,7 +19,7 @@
             </div>
             <div v-else class="group relative">
 
-                <div id="dropdown" class="rounded-xl bg-transparent border-gray-700 border-2">
+                <div id="dropdown" class="rounded-xl bg-transparent border-gray-700 border-2 hover:border-selectorhighlight active:border-selectorhighlight">
                   <div
                     :class="`inset-0 w-full fixed h-full z-10 block ${
                       dropOpen2 ? 'visible' : 'invisible'
@@ -111,10 +111,20 @@ export default {
           flag: "flagEN",
           examples: ['This is an example',"Hi.","Successful"]
         },{
+          name: "Neko",
+          value: "neko",
+          flag: "flagNEKO",
+          examples: ['This is an exampwe',"hi. *looks at you*","Successfuw"]
+        },{
           name: "Français",
           value: "french",
           flag: "flagFR",
           examples: ['Ceci est un exemple',"Salut.","À succès"]
+        },{
+          name: "российский",
+          value: "russian",
+          flag: "flagRU",
+          examples: ['Это пример',"Привет.","Успешный"]
         },{
           name: "Polski",
           value: "polish",
@@ -130,6 +140,41 @@ export default {
           value: "malayalam",
           flag: "flagHI",
           examples: ['ഇതൊരു ഉദാഹരണമാണ്',"ഹായ്.","വിജയിച്ചു"]
+        },{
+          name: "Hollands",
+          value: "dutch",
+          flag: "flagNL",
+          examples: ['Dit is een voorbeeld',"Hoi.","Succesvol"]
+        },{
+          name: "Español",
+          value: "spanish",
+          flag: "flagES",
+          examples: ['Esto es un ejemplo',"Hola.","Exitoso"]
+        },{
+          name: "Tiếng Việt",
+          value: "vietnamese",
+          flag: "flagVN",
+          examples: ['Đây là một ví dụ',"Chào.","Thành công"]
+        },{
+          name: "Deutsche",
+          value: "german",
+          flag: "flagDE",
+          examples: ['Dies ist ein Beispiel',"Hallo.","Erfolgreich"]
+        },{
+          name: "Norsk",
+          value: "norwegian",
+          flag: "flagNO",
+          examples: ['Dette er et eksempel',"Hei.","Vellykket"]
+        },{
+          name: "中国官话",
+          value: "mandarin",
+          flag: "flagCN",
+          examples: ['这是一个例子',"你好.","成功的"]
+        },{
+          name: "العربية",
+          value: "arabic",
+          flag: "flagAE",
+          examples: ['هذا مثال',"مرحبا.","ناجح"]
         },
       ];
     return {

@@ -21,7 +21,7 @@
               <input
                 v-model="prefix"
                 class="
-                  border-gray-500 border-opacity-80
+                  border-gray-500 border-opacity-80 hover:border-selectorhighlight active:border-selectorhighlight
                   bg-transparent
                   p-2
                   border-2

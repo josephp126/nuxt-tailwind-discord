@@ -7,7 +7,7 @@ export default {
 props: {
 size: {
 type: String,
-default() {return "24"}
+default() {return "48"}
 }
 },
 }

@@ -25,6 +25,7 @@ export default {
     './assets/transition.css',
     './static/css/main.css',
     './static/css/cards.css',
+    './assets/toast.css',
     'aos/dist/aos.css',
   ],
 

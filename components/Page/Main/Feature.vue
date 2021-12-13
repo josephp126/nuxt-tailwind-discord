@@ -5,16 +5,16 @@
         font-montserrat cursor-default
         hover:bg-featureHover
         hover:bg-purple-900
-        border-discortics-header border
+        border-gray-700 border-2
         transform
         transition-all group
         duration-500
         ease-in-out
         hover:translate-y-1
         block
-        p-4
+        py-2 px-3
         w-full
-        h-56
+        h-48
         lg:w-72
         rounded-xl
       "

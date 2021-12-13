@@ -1,6 +1,6 @@
 
 <template>
-  <div id="dropdown" class="rounded-xl bg-discortics-100 border-gray-700 border-2">
+  <div id="dropdown" class="rounded-xl bg-discortics-100 border-gray-700 border-2 hover:border-selectorhighlight active:border-selectorhighlight">
           <div
       :class="`inset-0 w-full fixed h-full z-10 block ${
         dropOpen ? 'visible' : 'invisible'
@@ -41,9 +41,15 @@
             </div>
           </div>
         </div>
-        <div v-else-if="$fetchState.error">
-          <div class="text-md">An error occured :(</div>
-          (
+        <div v-if="$fetchState.error" class="items-center hover:bg-gray-800 p-2 w-full cursor-pointer">
+          <div v-for="server of [1,2,3]" :key="server" class="flex flex-row animate-pulse items-center hover:bg-gray-800 p-2 w-full cursor-pointer">
+            <div class="flex flex-row items-center justify-center  bg-gray-600 h-10 w-16 rounded-full pl-1">
+            </div>
+            <div
+              class="truncate text-sm font-semibold px-1 ml-2 bg-gray-600 h-6 w-full rounded-md"
+            >
+            </div>
+          </div>
         </div>
         <div
           v-else
