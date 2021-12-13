@@ -1,5 +1,5 @@
 <template>
-  <div class="md:flex flex-row items-start justify-between ml-4">
+  <div class="hidden lg:flex flex-row items-start justify-between ml-4">
     <div :class="`${ $route.name === 'dashboard' ? 'hidden ' : '' }flex flex-row items-center my-auto`">
       <TopbarSearch ref = "search" />
     </div>

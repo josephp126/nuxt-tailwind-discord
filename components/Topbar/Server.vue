@@ -7,7 +7,7 @@
       }`"
       @click="toggleOff"
      />
-    <div id="dropdown-stuff" class="h-14 w-64 p-2 relative flex flex-col items-center">
+    <div id="dropdown-stuff" class="h-14 w-full lg:w-64 p-2 relative flex flex-col items-center">
       <div v-if="$fetchState.pending" id = "default-stuff" class="w-full flex flex-row items-center p-1 cursor-pointer" :key="guild.id" @click = "toggleDrop">
         <div class="flex flex-row h-full items-center justify-center">
           <div class="object-cover bg-gray-600 h-9 w-9 rounded-full">
