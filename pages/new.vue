@@ -560,7 +560,6 @@
 
 @keyframes scroll { 
     0% { 
-        
         transform: translateX(0);
         }
     100% { 

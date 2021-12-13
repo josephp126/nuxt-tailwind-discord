@@ -58,31 +58,6 @@ export default {
         background-color: #242424;
     }
 
-    .circle-layout--one { 
-        width: 160px;
-        height: 160px;
-          -webkit-animation: pulsate 2s ease-out;
-
-    }
-    .circle-layout--two { 
-        width: 340px;
-        height: 340px;
-        -webkit-animation: pulsate 5s  ease-out;
-
-    }
-    .circle-layout--three { 
-        width: 540px;
-        height: 540px;
-          -webkit-animation: pulsate 12s ease-out;
-
-    }
-    .circle-layout--four { 
-        width: 750px;
-        height: 750px;
-        -webkit-animation: pulsate 16s ease-out;
-
-    }
-
     .circle-layout--one,
     .circle-layout--two,
     .circle-layout--three,
@@ -92,9 +67,34 @@ export default {
         left: 50%;
         border-radius: 50%;
         border: 2px solid rgba(79, 235, 249,.2);
+        animation: pulsate 6s ease-in-out;
+        -webkit-animation: pulsate 6s ease-in-out;
+        animation-iteration-count: infinite;
         -webkit-animation-iteration-count: infinite;
-
     }
+
+    .circle-layout--one { 
+        width: 160px;
+        height: 160px;
+        animation-delay: 0.8s;
+    }
+    .circle-layout--two { 
+        width: 340px;
+        height: 340px;
+        animation-delay: 0.6s;
+    }
+    .circle-layout--three { 
+        width: 540px;
+        height: 540px;
+        animation-delay: 0.4s;
+    }
+    .circle-layout--four { 
+        width: 750px;
+        height: 750px;
+        animation-delay: 0.2s;
+    }
+
+
 
 @-webkit-keyframes pulsate {
         0% {
