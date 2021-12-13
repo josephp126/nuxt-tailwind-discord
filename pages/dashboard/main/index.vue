@@ -28,10 +28,10 @@
           "
         >
           <div class="py-2 flex flex-col">
-            <DashPrefix @prefixChange="prefixChanged"  ref = "prefix" />
+            <DashPrefix ref = "prefix" @prefixChange="valueChanged" />
           </div>
           <div class="py-2 flex flex-col">
-            <DashLanguage />
+            <DashLanguage ref = "lang" @langChange="valueChanged" />
           </div>
         </div>
       </div>
@@ -104,6 +104,7 @@ import Features from '@/data/FeaturesMain'
 import Features2 from '@/data/FeaturesSub'
 
 export default {
+  layout: 'dashboard',
   data() {
     return {
       Features,
@@ -111,8 +112,8 @@ export default {
     }
   },
   methods: {
-    prefixChanged(prefix,oldPrefix) {
-      if(prefix !== oldPrefix){
+    valueChanged() {
+      if((this.$refs.prefix.oldPrefix !== this.$refs.prefix.prefix) || (this.$refs.lang.selected.value !== this.$refs.lang.oldSelected.value)){
         if(!this.toastID){
           this.toastID = this.$vToastify.info({
             body: "Hold up! You have unsaved changes!",
@@ -130,13 +131,15 @@ export default {
                 const value = payload.response;
                 if (value) {
                     this.$refs.prefix.updatePrefix();
+                    this.$refs.lang.updateLang();
                 }else{
                   this.$refs.prefix.prefix = this.$refs.prefix.oldPrefix;
+                  this.$refs.lang.selected = this.$refs.lang.oldSelected;
                 }
               }
           });
         }
-        if(this.toastID && !prefix){
+        if(this.toastID && !this.$refs.prefix.prefix){
           this.$vToastify.removeToast(this.toastID);
           delete this.toastID;
         }
@@ -146,6 +149,5 @@ export default {
       }
     },
   },
-  layout: 'dashboard',
 }
 </script>

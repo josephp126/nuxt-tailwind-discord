@@ -20,7 +20,6 @@
             <div v-else class="group relative">
               <input
                 v-model="prefix"
-                v-on:input="prefixCheck"
                 class="
                   border-gray-500 border-opacity-80
                   bg-transparent
@@ -30,6 +29,7 @@
                   w-72
                   h-12
                 "
+                @input="prefixCheck"
                 maxlength="10"
               />
               <div v-if="inputValid" class="font-quicksand pt-2">
@@ -93,38 +93,6 @@ export default {
       oldPrefix: ';'
     }
   },
-   computed:{
-    inputValid(){
-      if(this.prefix){
-        return false
-      } else {
-        return true
-      }
-    }
-  },
-  methods: {
-    prefixCheck() {
-      this.$emit("prefixChange",this.prefix,this.oldPrefix);
-    },
-    async updatePrefix() {
-        if(this.oldPrefix !== this.prefix){
-          const prefix = this.prefix;
-                const response = await this.$api.request({
-                  url: `/v2/prefix/${localStorage.getItem('guildID')}`,
-                  method: 'post',
-                  headers: {
-                    Authorization: `Bearer ${localStorage.getItem('sessionToken')}`,
-                  },
-                  data: {
-                    prefix,
-                  },
-                })
-                if (response.status === 200){
-                  this.oldPrefix = this.prefix;
-                }
-              }
-    },
-  },
   async fetch() {
     const token = localStorage.getItem('sessionToken')
     const response = await this.$api.request({
@@ -140,6 +108,38 @@ export default {
     this.prefix = prefix;
     this.oldPrefix = prefix;
     
+  },
+   computed:{
+    inputValid(){
+      if(this.prefix){
+        return false
+      } else {
+        return true
+      }
+    }
+  },
+  methods: {
+    prefixCheck() {
+      this.$emit("prefixChange",true);
+    },
+    async updatePrefix() {
+      if(this.oldPrefix !== this.prefix){
+        const prefix = this.prefix;
+        const response = await this.$api.request({
+          url: `/v2/prefix/${localStorage.getItem('guildID')}`,
+          method: 'post',
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('sessionToken')}`,
+          },
+          data: {
+            prefix,
+          },
+        })
+        if (response.status === 200){
+          this.oldPrefix = this.prefix;
+        }
+      }
+    },
   },
 }
 </script>

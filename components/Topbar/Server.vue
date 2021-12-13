@@ -79,12 +79,11 @@ import MapperMap from '@/helper/mappermap'
 
 export default {
   data() {
-    const curId = localStorage.getItem('guildID')
-    const curName = localStorage.getItem('guildName')
-    const curIcon = localStorage.getItem('guildIcon')
     return {
       servers: [],
-      guild: { id: curId, name: curName || "Select a Server", icon: curIcon || `/img/user_icon.png` },
+      get guild() {
+        return { id: localStorage.getItem('guildID'), name: localStorage.getItem('guildName') || "Select a Server", icon: localStorage.getItem('guildIcon') || `/img/user_icon.png` };
+      },
       dropOpen: false,
     }
   },

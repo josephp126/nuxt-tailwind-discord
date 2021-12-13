@@ -12,7 +12,12 @@
             </div>
           </div>
           <div class="py-2 flex flex-col lg:flex-row items-center mx-auto">
-            <div class="group relative">
+            <div v-if="$fetchState.pending" class="group relative">
+              <div
+              class="border-gray-500 border-opacity-80 bg-transparent h-12 w-72 border-2 p-2 rounded-md"
+            ><div class="h-full my-auto bg-gray-600 rounded animate-pulse"></div></div>
+            </div>
+            <div v-else class="group relative">
 
                 <div id="dropdown" class="rounded-xl bg-transparent border-gray-700 border-2">
                   <div
@@ -54,6 +59,28 @@
               </div>
             </div>
           <div
+            v-if="$fetchState.pending"
+            class="
+              flex flex-row flex-wrap
+              justify-start
+              space-x-2
+              py-2
+              text-gray-300
+              pointer-events-none
+            "
+          >
+            <div class="h-8 py-3 flex flex-row items-center">
+              <div class="h-8 w-24 exampleText text-xs rounded"><div class="animate-pulse m-2 p-2 h-2 bg-gray-600 rounded"></div></div>
+            </div>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <div class="h-8 w-24 exampleText text-xs rounded"><div class="animate-pulse m-2 p-2 h-2 bg-gray-600 rounded"></div></div>
+            </div>
+            <div class="h-8 py-3 flex flex-row items-center">
+              <div class="h-8 w-24 exampleText text-xs rounded"><div class="animate-pulse m-2 p-2 h-2 bg-gray-600 rounded"></div></div>
+            </div>
+          </div>
+          <div
+            v-else
             class="
               flex flex-row flex-wrap
               justify-start
@@ -88,44 +115,46 @@ export default {
           value: "french",
           flag: "flagFR",
           examples: ['Ceci est un exemple',"Salut.","À succès"]
+        },{
+          name: "Polski",
+          value: "polish",
+          flag: "flagPL",
+          examples: ['To jest przykład',"Cześć.","Udany"]
+        },{
+          name: "हिन्दी",
+          value: "hindi",
+          flag: "flagHI",
+          examples: ['यह एक उदाहरण है',"नमस्ते।","सफल"]
+        },{
+          name: "മലയാളം",
+          value: "malayalam",
+          flag: "flagHI",
+          examples: ['ഇതൊരു ഉദാഹരണമാണ്',"ഹായ്.","വിജയിച്ചു"]
         },
       ];
     return {
       langs ,
       selected: langs[0],
+      oldSelected: langs[0],
       dropOpen2: false,
     }
   },
-  // async fetch() {
-  //   const token = localStorage.getItem('sessionToken')
-  //   const allServers = await this.$api.$request({
-  //     url: 'v2/@me/guilds',
-  //     method: 'get',
-  //     headers: { Authorization: `Bearer ${token}` },
-  //   })
-  //   const guilds = new MapperMap()
-  //   allServers.servers.forEach((guild) => {
-  //     if (guild.permissions === 2147483647) {
-  //       guild.exists = false
-  //       if (guild.botPresent) guild.exists = true
-  //       guilds.set(guild.id, guild)
-  //     }
-  //   })
+  async fetch() {
+    const token = localStorage.getItem('sessionToken')
+    const response = await this.$api.request({
+      url: `/v2/language/${localStorage.getItem('guildID')}`,
+      method: 'get',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+    let lang = this.langs[0];
+    if (response.status === 200) lang = response.data.language;
 
-  //   this.servers = guilds
-  //     .filter((x) => x.exists)
-  //     .map((x) => ({
-  //       name: x.name,
-  //       icon: x.icon,
-  //       id: x.id,
-  //       exists: x.exists,
-  //       userType: this.$_.capitalize(x.userType),
-  //     }))
-  //   const curId = localStorage.getItem('guildID');
-  //   const curName = localStorage.getItem('guildName');
-  //   const curIcon = localStorage.getItem('guildIcon');
-  //   this.guild = { id: curId, name: curName || "Select a Server", icon: curIcon || `/img/user_icon.png` };
-  // },
+    this.selected = this.langs.find(i => i.value === lang);
+    this.oldSelected = this.selected;
+    
+  },
   methods: {
     toggleDrop2() {
       this.dropOpen2 = !this.dropOpen2
@@ -133,9 +162,28 @@ export default {
     toggleOff2() {
         this.dropOpen2 = false;
     },
+    async updateLang() {
+      if(this.oldSelected !== this.selected){
+        const language = this.selected.value;
+        const response = await this.$api.request({
+          url: `/v2/language/${localStorage.getItem('guildID')}`,
+          method: 'post',
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('sessionToken')}`,
+          },
+          data: {
+            language,
+          },
+        })
+        if (response.status === 200){
+          this.oldSelected = this.selected;
+        }
+      }
+    },
     switchLang(lang) {
       this.toggleOff2();
       this.selected = lang;
+      this.$emit("langChange",true);
     },
   },
 }
