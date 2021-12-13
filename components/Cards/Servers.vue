@@ -6,7 +6,7 @@
           relative
           overflow-hidden
           form-card
-          w-full
+          min-w-xs w-96
           lg:w-72
           h-52
           lg:h-36
