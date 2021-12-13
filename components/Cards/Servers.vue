@@ -1,13 +1,13 @@
 <template>
-  <div class="p-2 relative w-full lg:max-w-sm">
-    <div class="w-full h-full lg:h-40">
+  <div class="p-2 relative lg:max-w-sm">
+    <div class="w-full h-full">
       <div
         class="
           relative
           overflow-hidden
           form-card
           w-full
-          lg:w-80
+          lg:w-72
           h-52
           lg:h-36
           rounded-md
@@ -28,7 +28,7 @@
             rounded-md
             transform
             filter
-            blur-3xl
+            blur-2xl
             transition
             duration-500
             ease-in-out
@@ -46,7 +46,7 @@
             absolute
             object-cover
             inset-0
-            bg-black bg-opacity-80
+            bg-black bg-opacity-60
             z-20
           "
         />
@@ -78,14 +78,14 @@
           >
             <div class="flex items-center p-2 w-full lg:w-36">
               <img
-                class="w-20 h-20 mx-auto z-30"
+                class="w-20 h-20 mx-auto z-30 rounded-md"
                 :src="
                   guild.icon
-                    ? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`
+                    ? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith('a_') ? 'gif' : 'png'}`
                     : `/img/user_icon.png`
                 "
                 alt="server icon"
-                style="box-shadow: 0px 26px 11px -14px rgba(0, 0, 0, 0.52)"
+                style="-webkit-filter: drop-shadow( 0px 26px 11px rgba(0, 0, 0, 0.52));filter: drop-shadow( 0px 26px 11px rgba(0, 0, 0, 0.52))"
               />
             </div>
             <div
@@ -124,7 +124,7 @@
                       hover:text-white
                     "
                   >
-                    <span class="text-center text-sm mx-auto">Manage</span>
+                    <span class="text-center font-semibold text-sm mx-auto">Manage</span>
                   </a>
                   <a
                     v-else
@@ -153,7 +153,7 @@
                   </a>
                 </div>
               </div>
-              <p class="font-semibold text-sm p-px">{{ guild.name }}</p>
+              <p class="overflow-hidden font-bold text-md p-px pr-2">{{ guild.name }}</p>
               <p class="text-xs p-px">{{ guild.userType }}</p>
             </div>
           </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="py-1 lg:py-8 px-4">
+    <div class="py-1 lg:py-4 px-4">
       <div class="mx-auto max-w-xl form-card w-full lg:w-112 relative lg:h-64 overflow-hidden">
         <div class="px-8">
           <div class="gradient-circle w-24 h-24 absolute right-2 top-2" />
@@ -54,5 +54,4 @@
 </template>
 
 <script>
-
 </script>

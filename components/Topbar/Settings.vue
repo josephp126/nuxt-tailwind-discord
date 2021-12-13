@@ -16,7 +16,7 @@
       <div class="text-sm text-indigo-300 px-1 cursor-pointer" @click="toggleDrop">
         <span class = "text-white">Hi,</span> {{ $auth.user.username }}
       </div>
-      <div class="text-gray-300 cursor-pointer" @click="toggleDrop"><SVGDown /></div>
+      <div class="text-gray-300 cursor-pointer" @click="toggleDrop"><SVGDown :class="`${dropOpen ? 'transform rotate-180 transition duration-500' : 'transition duration-500'}`" /></div>
       <div :class = "`${dropOpen ? 'block' : 'hidden'} absolute -bottom-28 flex flex-col divide-y divide-gray-600 p-2 rounded-xl w-48 right-0`" style="background: linear-gradient(102.94deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 232.2%); border: 1px solid #2F2F36;">
           <NuxtLink to = "/dashboard" id = "signout" class = "flex flex-row items-center py-2 justify-start"><SVGNewPreServers /> <span class = "px-1">Servers</span></NuxtLink>
           <div id = "signout" class = "flex flex-row items-center py-2 justify-start" @click = "$auth.logout"><SVGNewSignout /> <span class = "px-1">Sign Out</span></div>

@@ -1,5 +1,5 @@
 import Constants from './data/Constants'
- import Secret from './data/Secret'
+import Secret from './data/Secret'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -48,7 +48,15 @@ export default {
     {
       src: '~/plugins/aos.js',
       mode: 'client'
-    }
+    },
+    { 
+      src: '~/plugins/vue-toastify.js', 
+      mode: 'client' 
+    },
+    { 
+      src: '~plugins/vs-alert',
+       mode: 'client' 
+     },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -147,7 +155,7 @@ export default {
       home: '/refresh'
     },
     resetOnError: true,
-    rewriteRedirects: true,
+    rewriteRedirects: false,
     strategies: {
       discordapp: {
         scheme: 'oauth2',

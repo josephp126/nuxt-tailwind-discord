@@ -1,7 +1,7 @@
 <template>
   <svg
     :width="size"
-    height="24"
+    :height="size"
  viewBox="0 0 7 33"     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >

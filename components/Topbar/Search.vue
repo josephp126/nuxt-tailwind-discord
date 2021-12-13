@@ -7,7 +7,7 @@
                     <SVGCross v-if = "isitFocused()" size = "24" />
                     </button>
                 </div>
-            <input type = "text" v-model = "query" class = "bg-discortics-header h-16 w-full placeholder-gray-500 py-2 px-4 pl-12 rounded-xl" placeholder = "Search..."/>
+            <input type = "text" v-model = "query" class = "bg-discortics-header h-12 w-full placeholder-gray-500 px-4 pl-12 rounded-xl" placeholder = "Search..."/>
             </label>
 </template>
 

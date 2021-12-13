@@ -1,12 +1,12 @@
 <template>
-  <div class="hidden md:flex flex-row items-start justify-between ml-28">
-    <div class="flex flex-row items-center">
+  <div class="md:flex flex-row items-start justify-between ml-4">
+    <div :class="`${ $route.name === 'dashboard' ? 'hidden ' : '' }flex flex-row items-center my-auto`">
       <TopbarSearch ref = "search" />
     </div>
-    <div class="flex flex-row items-center">
+    <div :class="`${ $route.name === 'dashboard' ? 'hidden ' : '' }flex flex-row items-center ml-auto`">
       <TopbarServer ref = "server"/>
     </div>
-    <div class="flex flex-row items-center">
+    <div class="flex flex-row items-center ml-auto">
       <TopbarSettings ref = "settings"/>
     </div>
   </div>

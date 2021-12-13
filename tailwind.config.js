@@ -62,15 +62,17 @@ module.exports = {
         'button': 'linear-gradient(90deg, #1E1A56 -0.59%, rgba(45, 43, 120, 0.0734855) 284.31%, rgba(46, 44, 122, 0) 335.77%)',
         'navCurrent': 'linear-gradient(90deg, #7875FC 0%, #4FA4F9 0.03%, #F586C4 114.81%, rgba(249, 174, 131, 0) 317.33%)',
         'buttonBg': ' linear-gradient(83.08deg, #4FEBF9 7.34%, #3FC1CD 92.07%)',
+        'sidebarselectedbox': 'linear-gradient(115.76deg, #333334 18.28%, rgba(76, 78, 88, 0) 138.11%)',
       },
       fontSize:{
-        
+        body14: ["14px","17px"],
         body15: ["15px", "120%"],
         body16: ["15px", "26px"],
         body17: ["17px","28px"],
         body53: ["53px","110%"],
         body55: ["55px","110%"],
         body22: ["22px","27px"],
+        body27: ["27px","32px"],
         body42: ["42px","52px"],
         body47: ["47px","57px"],
         body48: ["48px", "64px"],
@@ -102,6 +104,7 @@ module.exports = {
           'headervia': '#212121',
           'headerto': '#181818',
           'button': '#333334',
+          'dropselected': '#5E76C04D',
         },
         maid: {
           'border': '#4ef0fc',
