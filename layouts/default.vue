@@ -27,7 +27,7 @@ export default {
 <template>
   <div class="flex flex-col min-h-screen font-quicksand tracking-wide bg-discortics-100 text-white">
     <HeaderNew />
-    <main class = "flex-1">
+    <main class = "flex-1 mt-10">
       <Nuxt />
     </main>
     <FooterNew/>
