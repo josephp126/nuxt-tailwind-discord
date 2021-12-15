@@ -60,7 +60,7 @@
                     <div v-if="sideBar" :class="`sidebar max-w-full md:max-w-3xl mx-auto absolute left-0 md:left-1/2 transform md:-translate-x-1/2  top-full w-full bg-black24 bg-opacity-80  shadow-lg lg:hidden z-10  rounded-b-md transition-all duration-700 ${sideBar ? ' translate-y-0' : '-translate-y-0.5'}  `">
                         <ul class="flex flex-col items-center space-y-4 py-5">
                             <li>
-                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="/index-new">Home</router-link>
+                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="/">Home</router-link>
                             </li>
                             <li>
                                 <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="#">Dashboard</router-link>
