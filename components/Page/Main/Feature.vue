@@ -53,7 +53,7 @@
       <div class="flex flex-col justify-start w-full h-full">
         <div
           class="
-            text-xl relative
+            text-lg relative
             p-2
             font-quicksand font-semibold
             flex flex-row
