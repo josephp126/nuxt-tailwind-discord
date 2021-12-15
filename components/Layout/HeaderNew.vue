@@ -7,7 +7,7 @@
                         <div class="hidden lg:block justify-self-start">
                             <ul class="flex items-center space-x-4 xl:space-x-12">
                                 <li>
-                                    <nuxt-link to="/index-new" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Home</nuxt-link>
+                                    <nuxt-link to="/" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Home</nuxt-link>
                                 </li>
                                 <li>
                                     <nuxt-link to="#" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Dashboard</nuxt-link>
