@@ -46,11 +46,11 @@
                                 <!-- Login Button -->
                                 <li>
                                     <div>
-                                    <nuxt-link to="#" class="flex items-center space-x-3 group relative rounded-full border border-blue4f py-3 px-6">
+                                    <nuxt-link to="#" class="flex items-center space-x-3 group relative rounded-full border border-blue4f hover:bg-blue4f py-3 px-6">
                                         <!-- <span class="img-fluid flex-shrink-0"> -->
                                             <SVGDiscord class="text-blue4f block transition-all duration-400 ease-in-out w-8 group-hover:w-0" />
                                         <!-- </span> -->
-                                        <p class="font-quicksand font-bold text-xs uppercase text-blue4f">Login</p>
+                                        <span class="font-quicksand font-bold text-xs uppercase text-blue4f group-hover:text-discortics-100 group-hover:mx-0">Login</span>
                                     </nuxt-link></div>
                                 </li>
                             </ul>
@@ -80,11 +80,11 @@
                             </li>
                             <!-- Login Button -->
                             <li>
-                                <nuxt-link to="#" class="flex items-center space-x-3 group relative rounded-full border border-blue4f py-3 px-6">
+                                <nuxt-link to="#" class="flex items-center space-x-3 group relative rounded-full border border-blue4f hover:bg-blue4f py-3 px-6">
                                     <!-- <span class="img-fluid flex-shrink-0"> -->
                                         <SVGDiscord class="text-blue4f block transition-all duration-400 ease-in-out w-24 group-hover:w-0" />
                                     <!-- </span> -->
-                                    <p class="font-quicksand font-bold text-xs uppercase text-blue4f">Login</p>
+                                    <span class="font-quicksand font-bold text-xs uppercase text-blue4f group-hover:text-discortics-100 group-hover:mx-0">Login</span>
                                 </nuxt-link>
                             </li>
                         </ul>
