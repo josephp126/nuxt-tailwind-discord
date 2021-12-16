@@ -4,7 +4,7 @@ import Secret from './data/Secret'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'discortics',
+    title: 'Discortics™',
     htmlAttrs: {
       lang: 'en'
     },
@@ -94,7 +94,7 @@ export default {
     register: [ // Register custom toasts
       {
         name: 'invite',
-        message: 'Invite bot',
+        message: 'Invite Bot',
         options: {
           className: 'bg-discortics-dashboard',
           type: 'info',

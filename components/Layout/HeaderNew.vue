@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <VueScrollFixedNavbar>
-                <header class="absolute top-7 lg:top-14 w-full py-3 lg:py-0 z-20 transition-all duration-300 ">
+                <header class="absolute top-7 lg:top-5 py-3 w-full z-20 transition-all duration-300 ">
                     <div class="container grid grid-cols-2 lg:grid-cols-3 lg:justify-items-center items-center">
                         <!-- left Menu  -->
                         <div class="hidden lg:block justify-self-start">
@@ -10,10 +10,10 @@
                                     <nuxt-link to="/" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Home</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link to="#" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Dashboard</nuxt-link>
+                                    <nuxt-link to="/dashboard" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Dashboard</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link to="#" class="text-base capitalize text-graye1 hover:text-blue4f transition-all">Documentation</nuxt-link>
+                                    <a href="https://docs.discortics.com" class="text-base capitalize text-graye1 hover:text-blue4f transition-all" target="_blank">Documentation</a>
                                 </li>
                             </ul>
                         </div>
@@ -35,22 +35,23 @@
                         <div class="hidden lg:block justify-self-end">
                             <ul class="flex items-center space-x-4 xl:space-x-12">
                                 <li>
-                                    <nuxt-link to="#" class="text-base capitalize font-quicksand font-medium text-graye1 hover:text-blue4f transition-all"> Support</nuxt-link>
+                                    <a href="https://discord.gg/buHBCtE" class="text-base capitalize font-quicksand font-medium text-graye1 hover:text-blue4f transition-all" target="_blank"> Support</a>
                                 </li>
                                 <li>
-                                    <nuxt-link to="#" class="text-base capitalize font-quicksand font-medium text-graye1 hover:text-blue4f transition-all"> Pricing</nuxt-link>
+                                    <a href="https://patreon.com/discortics" class="text-base capitalize font-quicksand font-medium text-graye1 hover:text-blue4f transition-all" target="_blank"> Pricing</a>
                                 </li>
                                 <li>
                                     <nuxt-link to="#" class="text-base capitalize font-quicksand font-medium text-graye1 hover:text-blue4f transition-all"> More</nuxt-link>
                                 </li>
                                 <!-- Login Button -->
                                 <li>
+                                    <div>
                                     <nuxt-link to="#" class="flex items-center space-x-3 relative rounded-full border border-blue4f py-3 px-6">
-                                        <span class="img-fluid flex-shrink-0">
-                                            <img src="/svg/discord.svg" alt="icon" />
-                                        </span>
+                                        <!-- <span class="img-fluid flex-shrink-0"> -->
+                                            <SVGDiscord class="text-blue4f group-hover:w-0" />
+                                        <!-- </span> -->
                                         <p class="font-quicksand font-bold text-xs uppercase text-blue4f">Login</p>
-                                    </nuxt-link>
+                                    </nuxt-link></div>
                                 </li>
                             </ul>
                         </div>
@@ -63,16 +64,16 @@
                                 <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="/">Home</router-link>
                             </li>
                             <li>
-                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="#">Dashboard</router-link>
+                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="/dashboard">Dashboard</router-link>
                             </li>
                             <li>
-                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="#">Documentation</router-link>
+                                <a class="text-base capitalize text-graye1 hover:text-blue4f transition-all" href="https://docs.discortics.com" target="_blank">Documentation</a>
                             </li>
                             <li>
-                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="#">Support</router-link>
+                                <a class="text-base capitalize text-graye1 hover:text-blue4f transition-all" href="https://discord.gg/buHBCtE" target="_blank">Support</a>
                             </li>
                             <li>
-                                <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="#">Pricing</router-link>
+                                <a class="text-base capitalize text-graye1 hover:text-blue4f transition-all" href="https://patreon.com/discortics" target="_blank">Pricing</a>
                             </li>
                             <li>
                                 <router-link class="text-base capitalize text-graye1 hover:text-blue4f transition-all" to="#">More</router-link>
@@ -80,9 +81,9 @@
                             <!-- Login Button -->
                             <li>
                                 <nuxt-link to="#" class="flex items-center space-x-3 relative rounded-full border border-blue4f py-3 px-6">
-                                    <span class="img-fluid flex-shrink-0">
-                                        <img src="/svg/discord.svg" alt="icon" />
-                                    </span>
+                                    <!-- <span class="img-fluid flex-shrink-0"> -->
+                                        <SVGDiscord class="text-blue4f group-hover:w-0" />
+                                    <!-- </span> -->
                                     <p class="font-quicksand font-bold text-xs uppercase text-blue4f">Login</p>
                                 </nuxt-link>
                             </li>
