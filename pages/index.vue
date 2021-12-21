@@ -1,26 +1,26 @@
 <template lang="">
     <div>
         <!-- banner section start  -->
-        <section :style="bgLayer" class="relative bg-top bg-cover bg-no-repeat pt-56 overflow-hidden ">
-            <div class="container grid grid-cols-1 xl:grid-cols-4  items-center">
+        <section class="relative bg-top bg-cover bg-no-repeat pt-40 overflow-hidden ">
+            <div class="container grid grid-cols-1 xl:grid-cols-7  items-center">
                 <!-- Information  -->
-                <div class="xl:col-span-2 xl:max-w-xl text-center xl:text-left overflow-hidden ">
-                    <h2 
+                <div class="xl:col-span-3 xl:max-w-xl text-center xl:text-left overflow-hidden">
+                    <h2
                      data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-duration="450"
                     data-aos-easing="ease-in-out"
-                    class="font-montserrat text-4xl lg:text-body55 text-blue4f font-bold mb-4 lg:mb-8">Welcome to Discoritics</h2>
+                    class="font-grifter text-4xl lg:text-body55 bg-clip-text text-transparent bg-frontText font-bold mb-4 lg:mb-8">Welcome to Discortics</h2>
                     <p
                     data-aos="fade-left"
                     data-aos-easing="ease-in-back"
                     data-aos-delay="160"
                     data-aos-duration="1000"
                      class="text-body17 capitalize font-quicksand font-normal mb-8">
-                        Discortics™ is a highly efficient modern Discord Bot for almost all your Needs! Being completely free, Discortics™ brings many Premium Features right at your fingertips. What are you waiting for?
+                        Ready to take your server to the next level? Enhance your community, let it grow to its potential. Get started by inviting and prepared to be amazed!
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center xl:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        <nuxt-link to="#" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-5 px-8 tracking-wider text-center w-full sm:w-auto">
+                        <nuxt-link to="/dashboard" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-5 px-8 tracking-wider text-center w-full sm:w-auto">
                             DASHBOARD
                             <img class="ml-3" src="/svg/dashboard-btn.svg" alt="" />
                         </nuxt-link>
@@ -30,10 +30,10 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class=" xl:col-start-3  row-start-1 xl:row-start-auto">
+                <div class=" xl:col-start-4  row-start-1 xl:row-start-auto">
                     <div class="relative banner-img z-10  mb-12 xl:mb-0">
                         <kinesis-container class="" >
-                            <kinesis-element :strength="12" type="depth">
+                            <kinesis-element :strength="3" :maxX="70" type="depth">
                                   <img src="/img/bg-dashboard.png" alt="background-layer" class=" max-w-full  md:max-w-lg  xl:max-w-4xl mx-auto "/>
                             </kinesis-element>
                         </kinesis-container>
@@ -44,32 +44,44 @@
             <!-- counter start   -->
             <div class=" py-16 sm:py-36 lg:pt-24 xl:pb-72">
                 <div class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
-                            <VueJsCounter start="0" end="20" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
+                    <div data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="450"
+                        data-aos-easing="ease-in-out" class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-grifter font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="23" duration="1800" class="font-grifter font-bold text-body48 text-gray7e" />
                             K
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Dependent Servers</p>
+                        <p class="text-base capitalize font-montserrat font-bold text-gray7e">Dependent Servers</p>
                     </div>
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
-                            <VueJsCounter start="0" end="8" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
+                    <div data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="450"
+                        data-aos-easing="ease-in-out" class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-grifter font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="8" duration="1800" class="font-grifter font-bold text-body48 text-gray7e" />
                             M+
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Discortics Users</p>
+                        <p class="text-base capitalize font-montserrat font-bold text-gray7e">Happy Users</p>
                     </div>
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
-                            <VueJsCounter start="0" end="50" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
+                    <div data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="450"
+                        data-aos-easing="ease-in-out" class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-grifter font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="200" duration="1800" class="font-grifter font-bold text-body48 text-gray7e" />
                             +
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Available Commands</p>
+                        <p class="text-base capitalize font-montserrat font-bold text-gray7e">Available Commands</p>
                     </div>
-                    <div class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
-                        <h6 class="font-montserrat font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
-                            <VueJsCounter start="0" end="20" duration="1800" class="font-montserrat font-bold text-body48 text-gray7e" />
+                    <div data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="450"
+                        data-aos-easing="ease-in-out" class="pb-4 border-b-2 border-gray7e text-center sm:text-left">
+                        <h6 class="font-grifter font-bold text-body48 text-gray7e flex items-center justify-center sm:justify-start uppercase">
+                            <VueJsCounter start="0" end="20" duration="1800" class="font-grifter font-bold text-body48 text-gray7e" />
                         </h6>
-                        <p class="text-base capitalize font-quicksand font-bold text-gray7e">Average Ping</p>
+                        <p class="text-base capitalize font-montserrat font-bold text-gray7e">Average Ping</p>
                     </div>
                 </div>
             </div>
@@ -86,10 +98,9 @@
                         data-aos-delay="100"
                         data-aos-duration="450"
                         data-aos-easing="ease-in-out"
-                        class="font-montserrat font-extrabold mb-4 sm:mb-8 text-3xl md:text-body42"
-                        style="background: linear-gradient(83.08deg, #4febf9 7.34%, rgba(79, 235, 249, 0.48) 92.07%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                        class="font-grifter font-extrabold mb-4 sm:mb-8 text-3xl md:text-body42 bg-clip-text text-transparent bg-frontText"
                     >
-                        Why Dicortics ?
+                        Why Discortics ?
                     </h2>
                     <p 
                         data-aos="fade-zoom-in"
@@ -97,8 +108,7 @@
                         data-aos-delay="120"
                         data-aos-duration="300"
                      class="text-body17 capitalize font-quicksand tracking-wide">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit corrupti atque animi ratione temporibus, laborum, nostrum magnam fuga vitae unde praesentium dignissimos dolore quo totam eaque laudantium, eligendi
-                        adipisci! Dolor!
+                        Discortics is your prime alternatives to bots for a better Discord. You get to implement with the easy to setup, commands user friendly, and adorable Discortics. Enhance your server theme as per your needs. Aesthetic? Gaming? Futuristic? You name it!
                     </p>
                 </div>
                 <div 
@@ -135,13 +145,13 @@
                         <span class="mb-4 inline-block">
                             <img src="/svg/diamond.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Premium Features</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Secure & Trusted</h2>
                     </div>
                     <div class=" w-full text-center xl:text-left">
                         <span class="mb-4 inline-block">
                             <img src="/svg/verify.svg" alt="icon" />
                         </span>
-                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Highly Compactable</h2>
+                        <h2 class="font-quicksand capitalize font-bold text-graye1 sm:whitespace-nowrap">Faster Support</h2>
                     </div>
                 </div>
             </div>
@@ -240,7 +250,7 @@
         <!-- Meet Section Start -->
         <div class="pt-16 lg:pt-24">
             <div class="container">
-                <div class="mb-20 text-center max-w-screen-md m-auto">
+                <div class="mb-16 text-center max-w-screen-md m-auto">
                     <h2 
                     data-aos="fade-up"
                     data-aos-duration="450"
@@ -252,14 +262,29 @@
                         data-aos-delay="120"
                         data-aos-duration="300"
                      class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc. Porttitor sed tellus massa adipiscing egestas placerat.
+                        The organisations/servers partnered with Discortics™
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12">
+                <div class="swiper grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12">
                             <div>
                                 <div class="h-315  mb-6 md:mb-12">
-                                    <img class="w-full h-full object-cover rounded-3xl" src="/img/meet1.png" alt="our-products" />
+                                    <img class="w-full h-full object-cover rounded-3xl" src="/img/meet3.png" alt="our-products" />
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Madsen Hosting</h4>
+                                    <div class="mb-5">
+                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">
+                                            Providing both free and paid plans, they provide the best hosting service out there. We recommend them if you're looking for cheap lag-free hosting providers.
+                                        </p>
+                                    </div>
+
+                                    <a href="https://billing.nmadsen.dk/aff.php?aff=49" target="_blank" class="text-green4f text-body15 font-quicksand flex justify-center">GRAB A DEAL <img class="ml-2" src="/svg/arrow.svg" alt="our-products" /></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="h-315  mb-6 md:mb-12">
+                                    <img class="w-full h-full object-cover rounded-3xl" src="/img/meet1.jpg" alt="our-products" />
                                 </div>
                                 <div class="text-center">
                                     <h4 class="text-body22 text-gray22 font-bold font-montserrat mb-4">Kaztro Gaming Discord</h4>
@@ -269,7 +294,7 @@
                                         </p>
                                     </div>
 
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="our-products" /></nuxt-link>
+                                    <a href="https://discord.gg/hJ8YKYNegC" target="_blank" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="our-products" /></a>
                                 </div>
                             </div>
                             <div>
@@ -282,16 +307,7 @@
                                         <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">DiscordGift.site is a fake nitro link generator, design for discord users to rick roll their friends.</p>
                                     </div>
 
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="text-center  lg:mt-28">
-                                    <div class="mb-5">
-                                        <p class="tracking-wide text-grayd5 font-quicksand text-body17 font-normal">Looking forward to partner with us? Open a ticket in the support server.</p>
-                                    </div>
-
-                                    <nuxt-link to="/" class="text-green4f text-body15 font-quicksand flex justify-center">JOIN <img class="ml-2" src="/svg/arrow.svg" alt="" /></nuxt-link>
+                                    <a href="https://discordgift.site/" target="_blank" class="text-green4f text-body15 font-quicksand flex justify-center">Rickroll Your Friends <img class="ml-2" src="/svg/arrow.svg" alt="" /></a>
                                 </div>
                             </div>
                 </div>
@@ -301,30 +317,44 @@
                <section class="py-16 lg:py-24">
         <!-- Partner One  -->
         <div class="mb-6">
+            <div class="mb-10 text-center max-w-screen-md m-auto">
+                <p
+                     data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="120"
+                    data-aos-duration="300"
+                 class="tracking-wide text-grayd5 font-quicksand text-body22 font-normal">
+                    They <b>use</b> Discortics™
+                </p>
+            </div>
             <div class="auto-slider">
                 <div class="auto-slider-track">
                     <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                        <div class="bg-gray26 py-3 px-5 pr-7 flex justify-between items-center w-350 transition duration-300 rounded-xl">
                             <div class="flex items-center">
-                                <img class="mr-4" :src="item.icon" alt="" />
-                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
+                                <img class="rounded-full w-12" :src="item.icon" alt="" />
+                                <SVGPartnered v-if="item.partnered"/>
+                                <SVGVerified v-else-if="item.verified"/>
+                                <h4 class="ml-3 text-body15 text-grayd5 font-quicksand font-bold">{{item.name}}</h4>
                             </div>
                             <div class="flex items-center">
                                 <img class="mr-2" src="/svg/user.svg" alt="" />
-                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.members}}</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Doubled  -->
-                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                    <div v-for="(item, itemIndex) in partnersList" :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 py-3 px-5 pr-7 flex justify-between items-center w-350 transition duration-300 rounded-xl">
                             <div class="flex items-center">
-                                <img class="mr-4" :src="item.icon" alt="" />
-                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
+                                <img class="rounded-full w-12" :src="item.icon" alt="" />
+                                <SVGPartnered v-if="item.partnered"/>
+                                <SVGVerified v-else-if="item.verified"/>
+                                <h4 class="ml-3 text-body15 text-grayd5 font-quicksand font-bold">{{item.name}}</h4>
                             </div>
                             <div class="flex items-center">
                                 <img class="mr-2" src="/svg/user.svg" alt="" />
-                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">991,967</h4>
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.members}}</h4>
                             </div>
                         </div>
                     </div>
@@ -335,32 +365,32 @@
         <div class="mb-6">
             <div class="auto-slider">
                 <div class="auto-slider-track auto-slider-track--alternate">
-                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                    <div v-for="(item, itemIndex) in partnersList2" :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 py-3 px-5 pr-7 flex justify-between items-center w-350 transition duration-300 rounded-xl">
                             <div class="flex items-center">
-                                <router-link to="#">
-                                    <img class="mr-4" :src="item.icon" alt="" />
-                                </router-link>
-                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
+                                    <img class="rounded-full w-12" :src="item.icon" alt="" />
+                                    <SVGPartnered v-if="item.partnered"/>
+                                    <SVGVerified v-else-if="item.verified"/>
+                                <h4 class="ml-3 text-body15 text-grayd5 font-quicksand font-bold">{{item.name}}</h4>
                             </div>
                             <div class="flex items-center">
                                 <img class="mr-2" src="/svg/user.svg" alt="" />
-                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.users}}</h4>
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.members}}</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Doubled  -->
-                    <div v-for="(item, itemIndex) in partnersList " :key="itemIndex" class="auto-slider-content">
-                        <div class="bg-gray26 rounded-lg py-3 px-5 flex justify-between items-center w-full transition duration-300">
+                    <div v-for="(item, itemIndex) in partnersList2 " :key="itemIndex" class="auto-slider-content">
+                        <div class="bg-gray26 py-3 px-5 pr-7 flex justify-between items-center w-350 transition duration-300 rounded-xl">
                             <div class="flex items-center">
-                                <router-link to="#">
-                                    <img class="mr-4" :src="item.icon" alt="" />
-                                </router-link>
-                                <h4 class="text-body17 text-grayd5 font-montserrat font-bold">{{item.title}}</h4>
+                                    <img class="rounded-full w-12" :src="item.icon" alt="" />
+                                    <SVGPartnered v-if="item.partnered"/>
+                                    <SVGVerified v-else-if="item.verified"/>
+                                <h4 class="ml-3 text-body15 text-grayd5 font-quicksand font-bold">{{item.name}}</h4>
                             </div>
                             <div class="flex items-center">
                                 <img class="mr-2" src="/svg/user.svg" alt="" />
-                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.users}}</h4>
+                                <h4 class="text-body15 text-gray8e font-quicksand font-normal">{{item.members}}</h4>
                             </div>
                         </div>
                     </div>
@@ -391,51 +421,123 @@
         },
         data() {
             return {
-                bgLayer: {
-                    backgroundImage: `url(https://i.imgur.com/XbYc0CR.png)`,
-                },
+                LmS: null,
 
                 partnersList: [
                     {
-                        title: "Rythm",
-                        users: "13,316",
-                        icon: "https://i.imgur.com/8vcIM9l.png"
-                    },
-                    {
-                        title: "Dank Memer",
-                        users: "21,222",
-                        icon: "https://i.imgur.com/Ls9nWgS.png"
-                    },
-                    {
-                        title: "Tatsu",
-                        users: "33,867",
-                        icon: "https://i.imgur.com/pW63MzK.png"
-                    },
-                    {
-                        title: "Astroz Music",
-                        users: "13,316",
-                        icon: "https://i.imgur.com/6SU67tY.png"
-                    },
-                    {
-                        title: "Fred Boat",
-                        users: "55,867",
-                        icon: "https://i.imgur.com/67TEW8O.png"
-                    },
-                    {
-                        title: "MEE6",
-                        users: "991,967",
-                        icon: "https://i.imgur.com/QtxoNZg.png"
-                    },
-                    {
-                        title: "Toasty",
-                        users: "55,867",
-                        icon: "https://i.imgur.com/NIW1UOr.png"
-                    },
-                    {
-                        title: "Dyno",
-                        users: "55,867",
-                        icon: "https://i.imgur.com/9rFcAqt.png"
-                    },
+                        "name": "IMX Bears",
+                        "members": 38000,
+                        "verified": false,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/897019585881059330/a_625c1f176a97af93868921ac242e0694.gif"
+                      },
+                      {
+                        "name": "Metasaurs by Dr. DMT",
+                        "members": 150000,
+                        "verified": false,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/887564447588159530/3168442f508ee19dfc4dbbb3baaf03b8.webp"
+                      },
+                      {
+                        "name": "danDAN",
+                        "members": 10000,
+                        "verified": false,
+                        "partnered": true,
+                        "icon": "https://cdn.discordapp.com/icons/707633644046647409/a_8c8ba77070c81dd5420e1402076c9c7b.gif"
+                      },
+                      {
+                        "name": "Genshin Impact Unofficial",
+                        "members": 200000,
+                        "verified": false,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/669895631757639682/4a95d55a0a1fbe09c8a046ec0ad7675f.webp"
+                      },
+                      {
+                        "name": "Official Nebulous",
+                        "members": 25000,
+                        "verified": true,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/373950345153609729/a_cbc301fa8ce3ac948974b1ef86269ecc.gif"
+                      },
+                      {                 
+                        "name": "Garena Free Fire Europe 🌍",
+                        "members": 52000,
+                        "verified": true,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/781092341658157066/766c47bd5fe3e83daa3066e56065256c.webp"
+                      },
+                      {
+                        "name": "Big Time",
+                        "members": 320000,
+                        "verified": true,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/666344617536520207/ab7b397a8a5fe55efae5d8cbd863771e.webp"
+                      },
+                      {
+                        "name": "BAGISTREAM",
+                        "members": 28000,
+                        "verified": false,
+                        "partnered": true,
+                        "icon": "https://cdn.discordapp.com/icons/315246139601453066/a_f6a1974e01222277f4598aee9f1a1e10.gif"
+                      },
+                ],
+                partnersList2: [
+                      {
+                        "name": "DeeterPlays",
+                        "members": 28000,
+                        "verified": false,
+                        "partnered": true,
+                        "icon": "https://cdn.discordapp.com/icons/273525914187333637/a_4f04a9d91ce0f0da3eb1f1200f0df1dc.gif"
+                      },
+                      {
+                        "name": "StudyWithMe",
+                        "members": 40000,
+                        "verified": false,
+                        "partnered": true,
+                        "icon": "https://cdn.discordapp.com/icons/770814980194959360/18b5447571f1b2a079727a35322ac869.webp"
+                      },
+                      {
+                        "name": "ZOMG's Giveaways and Trading",
+                        "members": 174000,
+                        "verified": false,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/552330042034749443/545bd0f962a8b41e8a8bbee0846c4641.webp"
+                      },
+                      {
+                        "name": "Anime and Manga Club",
+                        "members": 8100,
+                        "verified": false,
+                        "partnered": true,
+                        "icon": "https://cdn.discordapp.com/icons/221789407143788544/89540b2fb47903c22ebfa1ace81ffb1a.webp"
+                      },
+                      {
+                        "name": "Garena Free Fire North America",
+                        "members": 28000,
+                        "verified": true,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/699907693758120017/06f124972eb65de2c8eb5b5ee0fcadf1.webp"
+                      },
+                      {
+                        "name": "The Camp | Social",
+                        "members": 66000,
+                        "verified": false,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/802435727983771649/a_e3b51e667fcf01b996e96722e4a34909.gif"
+                      },
+                      {
+                        "name": "ChargeQ Esports",
+                        "members": 55000,
+                        "verified": false,
+                        "partnered": true,
+                        "icon": "https://cdn.discordapp.com/icons/568324577890140171/a_94369cf5200c9bfb0ec693618a642e47.gif"
+                      },
+                      {
+                        "name": "Anime Pirates",
+                        "members": 87000,
+                        "verified": false,
+                        "partnered": false,
+                        "icon": "https://cdn.discordapp.com/icons/440601479703691264/a_b6dc3da8d6a2f1d5843d0475ce09e8a6.gif"
+                      },
                 ],
                 //   swiper One
                 swiperOptionOne: {
@@ -499,13 +601,12 @@
 
     /* Banner img Shaddow  */
     .banner-img::after {
-        top:0;
-        left:0;
-        opacity: 1;
+        top:-60px;
+        left:60px;
         content: ''; 
         z-index: -1;
-        width: 100%;
-        height: 100%;
+        width: 300%;
+        height: 105%;
         opacity: 0.26;
         position:absolute;
         filter: blur(250px);

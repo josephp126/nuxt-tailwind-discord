@@ -8,19 +8,19 @@
                         data-aos-delay="100"
                         data-aos-duration="450"
                         data-aos-easing="ease-in-out"
-                        class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">server</span> of your <span class="font-bold">dreams.</span></h2>
+                        class="text-green4f text-4xl sm:text-body53 font-montserrat font-normal mb-4">Build the <span class="font-bold">Server</span> of your <span class="font-bold">Dreams.</span></h2>
                         <p 
                           data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back"
                         data-aos-delay="120"
                         data-aos-duration="300"
                         class="text-body17 text-white text-opacity-75 font-quicksand font-medium lg:pr-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor sed tellus massa adipiscing egestas placerat. Condimentum tempor lorem eu mi pretium nunc.
+                            Stop wasting time and money, get productive! Begin your journey with Discortics™ and we are pretty sure you will thank us later. 
                         </p>
                     </div>
                     <div class="col-span-6">
                         <div class="sm:flex flex-wrap justify-center sm:space-x-5">
-                            <nuxt-link to="/" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-4 px-8 tracking-wider text-center mb-4 sm:mb-0">
+                            <nuxt-link to="dashboard" class="bg-green4f text-black24 font-bold rounded-full flex items-center justify-center text-body15 font-quicksand uppercase py-4 px-8 tracking-wider text-center mb-4 sm:mb-0">
                                 DASHBOARD
                                 <img class="ml-3" src="/svg/dashedboard.svg" alt="" />
                             </nuxt-link>
@@ -32,8 +32,7 @@
                     </div>
                 </div>
                 <div class="circle-layout" >
-                    <div class="circle-layout--one">
-                    </div>
+                    <div class="circle-layout--one"></div>
                     <div class="circle-layout--two"></div>
                     <div class="circle-layout--three"></div>
                     <div class="circle-layout--four"></div>

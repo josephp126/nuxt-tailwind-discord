@@ -55,9 +55,9 @@ export default {
       mode: 'client' 
     },
     { 
-      src: '~plugins/vs-alert',
+      src: '~/plugins/vs-alert',
        mode: 'client' 
-     },
+     }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

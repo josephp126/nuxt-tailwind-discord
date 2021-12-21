@@ -26,7 +26,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'quicksand': ['Quicksand', 'sans-serif'],
-        'montserrat': ['Montserrat', 'sans-serif']
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'grifter' : ['Grifter','sans-serif']
       },
       padding: {
         '30x': "30%"
@@ -50,12 +51,18 @@ module.exports = {
         315: '315px',
       
       },
+      width: {
+        350: '400px',
+      
+      },
       spacing: {
         '100': '30rem',
         '106': '36rem',
         '112': '42rem',
       },
       backgroundImage: {
+        'defaultBack': "url('/img/defaultBack.png')",
+        'dashBack': "url('/img/dashBack.png')",
         'featureHover': 'linear-gradient(114deg, rgba(79,164,249,0.7) -73%, rgba(242,118,250,0.7) 240%)',
         'featureHover1': 'linear-gradient(113.57deg, #4FA4F9 -74.59%, rgba(242, 118, 250, 0) 249.06%)',
         'featureHoverPrem': 'linear-gradient(113.57deg, #FFDD86 -74.59%, rgba(250, 166, 118, 0.51) 249.06%)',
@@ -63,6 +70,7 @@ module.exports = {
         'navCurrent': 'linear-gradient(90deg, #7875FC 0%, #4FA4F9 0.03%, #F586C4 114.81%, rgba(249, 174, 131, 0) 317.33%)',
         'buttonBg': ' linear-gradient(83.08deg, #4FEBF9 7.34%, #3FC1CD 92.07%)',
         'sidebarselectedbox': 'linear-gradient(115.76deg, #333334 18.28%, rgba(76, 78, 88, 0) 138.11%)',
+        'frontText': 'linear-gradient(83.08deg, #4FEBF9 7.34%, rgba(79, 235, 249, 0.48) 92.07%)'
       },
       fontSize:{
         body13: ["13px","17px"],
@@ -102,10 +110,10 @@ module.exports = {
         discortics: {
           '100': '#101014',
           'quote': '#1b2e4b',
-          'header': '#232327',
+          'header': '#232327BF',
           'line': '#272727',
-          'headervia': '#212121',
-          'headerto': '#181818',
+          'headervia': '#212121BF',
+          'headerto': '#181818BF',
           'button': '#333334',
           'dropselected': '#5E76C04D',
         },
@@ -148,6 +156,7 @@ module.exports = {
       translate: ['active', 'group-hover', 'group-focus', 'hover'],
       visibility: ['hover', 'focus', 'group-hover', 'group-focus'],
       alignItems: ['group-hover'],
+      space: ['hover']
     },
   },
   plugins: [],

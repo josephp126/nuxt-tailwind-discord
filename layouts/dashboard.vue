@@ -10,7 +10,7 @@
       text-white
     "
   >
-  <div class = "lg:flex lg:flex-row w-full min-h-screen">
+  <div class = "lg:flex lg:flex-row w-full min-h-screen bg-dashBack bg-repeat-round">
     <LayoutSidebar ref = "mobilemenu" :title="$nuxt.$route.path.split('/').reverse()[0]" />
     <LayoutTopbar ref = "desktopmenu" :title="$nuxt.$route.path.split('/').reverse()[0]" />
     <main class="flex-1 w-full p-2 mx-auto lg:px-8 mt-5 lg:mt-0 lg:ml-32">
