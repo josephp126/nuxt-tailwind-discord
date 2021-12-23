@@ -171,7 +171,7 @@
                         <swiper-slide>
                             <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
                                 <div class=" text-center lg:text-left">
-                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Applications</h2>
+                                    <h2 class="text-white text-4xl md:text-body47 font-grifter font-bold mb-4 title-hedding">Applications</h2>
                                     <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Setup & Manage Staff Applications in your server</p>
                                 </div>
                                 <div class="row-start-1 lg:row-start-auto">
@@ -182,7 +182,7 @@
                         <swiper-slide>
                             <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
                                 <div  class=" text-center lg:text-left">
-                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Levels</h2>
+                                    <h2 class="text-white text-4xl md:text-body47 font-grifter font-bold mb-4 title-hedding">Levels</h2>
                                     <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Highly customisable Leveling system with UI Rank Cards & Role Rewards</p>
                                 </div>
                                 <div class="row-start-1 lg:row-start-auto">
@@ -193,7 +193,7 @@
                         <swiper-slide>
                             <div class="grid lg:grid-cols-2 gap-4 items-center justify-center">
                                 <div  class=" text-center lg:text-left">
-                                    <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Economy & Games</h2>
+                                    <h2 class="text-white text-4xl md:text-body47 font-grifter font-bold mb-4 title-hedding">Economy & Games</h2>
                                     <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Server-wise economy & engaging games such as Among Us</p>
                                 </div>
                                 <div class="row-start-1 lg:row-start-auto">
@@ -212,7 +212,7 @@
                                 <img src="/img/slider-thumb-five.png" alt="bg-img" class="mx-auto" />
                             </div>
                             <div  class=" text-center lg:text-left">
-                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Giveaways</h2>
+                                <h2 class="text-white text-4xl md:text-body47 font-grifter font-bold mb-4 title-hedding">Giveaways</h2>
                                 <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Host giveaways with various Requirements & Customised Embeds</p>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 <img src="/img/slider-thumb-four.png" alt="bg-img" class="mx-auto" />
                             </div>
                             <div  class=" text-center lg:text-left">
-                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Global AFK</h2>
+                                <h2 class="text-white text-4xl md:text-body47 font-grifter font-bold mb-4 title-hedding">Global AFK</h2>
                                 <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">Global AFK System to save you from setting AFK in multiple servers</p>
                             </div>
                         </div>
@@ -234,7 +234,7 @@
                                 <img src="/img/slider-thumb-three.png" alt="bg-img" class="mx-auto" />
                             </div>
                             <div  class=" text-center lg:text-left">
-                                <h2 class="text-white text-4xl md:text-body47 font-montserrat font-bold mb-4 title-hedding">Notification</h2>
+                                <h2 class="text-white text-4xl md:text-body47 font-grifter font-bold mb-4 title-hedding">Notification</h2>
                                 <p class="text-white font-quicksand text-opacity-80 text-body16 font-normal">
                                     Recieve notification from Youtube, Twitch, & Many More*
                                 </p>
